@@ -1,0 +1,648 @@
+{
+  "sage-branch": {
+    "generator": "OpenAI built-in imagegen",
+    "source": "artwork-masters/collection-v1/sage-branch.png",
+    "master": "artwork-masters/collection-v1/sage-branch.png",
+    "prompt": "docs/template-collection/prompts/sage-branch.txt",
+    "variants": {
+      "pdf": {
+        "path": "app/static/artwork/collection-v1/sage-branch-pdf.webp",
+        "bytes": 74610,
+        "size": [
+          500,
+          750
+        ]
+      },
+      "preview": {
+        "path": "app/static/artwork/collection-v1/sage-branch-preview.webp",
+        "bytes": 62038,
+        "size": [
+          467,
+          700
+        ]
+      },
+      "thumb": {
+        "path": "app/static/artwork/collection-v1/sage-branch-thumb.webp",
+        "bytes": 12044,
+        "size": [
+          160,
+          240
+        ]
+      }
+    },
+    "review": "Manually reviewed before integration; no lettering or unrelated symbols.",
+    "generation_asset": "exec-96034ea2-3116-4523-b8c8-e454196cbc5f.png"
+  },
+  "terracotta-arch": {
+    "generator": "OpenAI built-in imagegen",
+    "source": "artwork-masters/collection-v1/terracotta-arch.png",
+    "master": "artwork-masters/collection-v1/terracotta-arch.png",
+    "prompt": "docs/template-collection/prompts/terracotta-arch.txt",
+    "variants": {
+      "pdf": {
+        "path": "app/static/artwork/collection-v1/terracotta-arch-pdf.webp",
+        "bytes": 67116,
+        "size": [
+          933,
+          1400
+        ]
+      },
+      "preview": {
+        "path": "app/static/artwork/collection-v1/terracotta-arch-preview.webp",
+        "bytes": 21712,
+        "size": [
+          467,
+          700
+        ]
+      },
+      "thumb": {
+        "path": "app/static/artwork/collection-v1/terracotta-arch-thumb.webp",
+        "bytes": 4710,
+        "size": [
+          160,
+          240
+        ]
+      }
+    },
+    "review": "Manually reviewed before integration; no lettering or unrelated symbols.",
+    "generation_asset": "exec-c9859e55-ea92-46a5-9334-e8a5042e4eed.png"
+  },
+  "deco-corner": {
+    "generator": "OpenAI built-in imagegen",
+    "source": "artwork-masters/collection-v1/deco-corner.png",
+    "master": "artwork-masters/collection-v1/deco-corner.png",
+    "prompt": "docs/template-collection/prompts/deco-corner.txt",
+    "variants": {
+      "pdf": {
+        "path": "app/static/artwork/collection-v1/deco-corner-pdf.webp",
+        "bytes": 8400,
+        "size": [
+          388,
+          400
+        ]
+      },
+      "preview": {
+        "path": "app/static/artwork/collection-v1/deco-corner-preview.webp",
+        "bytes": 7478,
+        "size": [
+          388,
+          400
+        ]
+      },
+      "thumb": {
+        "path": "app/static/artwork/collection-v1/deco-corner-thumb.webp",
+        "bytes": 3556,
+        "size": [
+          233,
+          240
+        ]
+      }
+    },
+    "review": "Manually reviewed before integration; no lettering or unrelated symbols.",
+    "generation_asset": "exec-09bc3f05-2d27-435a-b7bd-5b564f61602e.png"
+  },
+  "ink-leaf": {
+    "generator": "OpenAI built-in imagegen",
+    "source": "artwork-masters/collection-v1/ink-leaf.png",
+    "master": "artwork-masters/collection-v1/ink-leaf.png",
+    "prompt": "docs/template-collection/prompts/ink-leaf.txt",
+    "variants": {
+      "pdf": {
+        "path": "app/static/artwork/collection-v1/ink-leaf-pdf.webp",
+        "bytes": 24818,
+        "size": [
+          300,
+          450
+        ]
+      },
+      "preview": {
+        "path": "app/static/artwork/collection-v1/ink-leaf-preview.webp",
+        "bytes": 21576,
+        "size": [
+          300,
+          450
+        ]
+      },
+      "thumb": {
+        "path": "app/static/artwork/collection-v1/ink-leaf-thumb.webp",
+        "bytes": 7554,
+        "size": [
+          160,
+          240
+        ]
+      }
+    },
+    "review": "Manually reviewed before integration; no lettering or unrelated symbols.",
+    "generation_asset": "exec-8054a344-cf84-43f2-8cbe-e3d057af79b6.png"
+  },
+  "kolam-corner": {
+    "generator": "OpenAI built-in imagegen",
+    "source": "artwork-masters/collection-v1/kolam-corner.png",
+    "master": "artwork-masters/collection-v1/kolam-corner.png",
+    "prompt": "docs/template-collection/prompts/kolam-corner.txt",
+    "variants": {
+      "pdf": {
+        "path": "app/static/artwork/collection-v1/kolam-corner-pdf.webp",
+        "bytes": 38430,
+        "size": [
+          400,
+          385
+        ]
+      },
+      "preview": {
+        "path": "app/static/artwork/collection-v1/kolam-corner-preview.webp",
+        "bytes": 35548,
+        "size": [
+          400,
+          385
+        ]
+      },
+      "thumb": {
+        "path": "app/static/artwork/collection-v1/kolam-corner-thumb.webp",
+        "bytes": 15440,
+        "size": [
+          240,
+          231
+        ]
+      }
+    },
+    "review": "Manually reviewed before integration; no lettering or unrelated symbols.",
+    "generation_asset": "exec-2dcd4b38-2823-4f42-9f96-44cf7fe061af.png"
+  },
+  "alpana-ornament": {
+    "generator": "OpenAI built-in imagegen",
+    "source": "artwork-masters/collection-v1/alpana-ornament.png",
+    "master": "artwork-masters/collection-v1/alpana-ornament.png",
+    "prompt": "docs/template-collection/prompts/alpana-ornament.txt",
+    "variants": {
+      "pdf": {
+        "path": "app/static/artwork/collection-v1/alpana-ornament-pdf.webp",
+        "bytes": 155258,
+        "size": [
+          600,
+          600
+        ]
+      },
+      "preview": {
+        "path": "app/static/artwork/collection-v1/alpana-ornament-preview.webp",
+        "bytes": 141610,
+        "size": [
+          600,
+          600
+        ]
+      },
+      "thumb": {
+        "path": "app/static/artwork/collection-v1/alpana-ornament-thumb.webp",
+        "bytes": 33140,
+        "size": [
+          240,
+          240
+        ]
+      }
+    },
+    "review": "Manually reviewed before integration; no lettering or unrelated symbols.",
+    "generation_asset": "exec-e7e5744e-2a20-4300-a849-51acb5be569f.png"
+  },
+  "patola-band": {
+    "generator": "OpenAI built-in imagegen",
+    "source": "artwork-masters/collection-v1/patola-band.png",
+    "master": "artwork-masters/collection-v1/patola-band.png",
+    "prompt": "docs/template-collection/prompts/patola-band.txt",
+    "variants": {
+      "pdf": {
+        "path": "app/static/artwork/collection-v1/patola-band-pdf.webp",
+        "bytes": 144078,
+        "size": [
+          933,
+          1400
+        ]
+      },
+      "preview": {
+        "path": "app/static/artwork/collection-v1/patola-band-preview.webp",
+        "bytes": 37114,
+        "size": [
+          467,
+          700
+        ]
+      },
+      "thumb": {
+        "path": "app/static/artwork/collection-v1/patola-band-thumb.webp",
+        "bytes": 6338,
+        "size": [
+          160,
+          240
+        ]
+      }
+    },
+    "review": "Manually reviewed before integration; no lettering or unrelated symbols.",
+    "generation_asset": "exec-e21d6024-d8cb-4ce6-8301-94e5a257bf82.png"
+  },
+  "paithani-peacock": {
+    "generator": "OpenAI built-in imagegen",
+    "source": "artwork-masters/collection-v1/paithani-peacock.png",
+    "master": "artwork-masters/collection-v1/paithani-peacock.png",
+    "prompt": "docs/template-collection/prompts/paithani-peacock.txt",
+    "variants": {
+      "pdf": {
+        "path": "app/static/artwork/collection-v1/paithani-peacock-pdf.webp",
+        "bytes": 59424,
+        "size": [
+          500,
+          750
+        ]
+      },
+      "preview": {
+        "path": "app/static/artwork/collection-v1/paithani-peacock-preview.webp",
+        "bytes": 46102,
+        "size": [
+          467,
+          700
+        ]
+      },
+      "thumb": {
+        "path": "app/static/artwork/collection-v1/paithani-peacock-thumb.webp",
+        "bytes": 8154,
+        "size": [
+          160,
+          240
+        ]
+      }
+    },
+    "review": "Manually reviewed before integration; no lettering or unrelated symbols.",
+    "generation_asset": "exec-a6a5edeb-4c1e-4d8d-a36a-c3d53f9c8448.png"
+  },
+  "miniature-pavilion": {
+    "generator": "OpenAI built-in imagegen",
+    "source": "artwork-masters/collection-v1/miniature-pavilion.png",
+    "master": "artwork-masters/collection-v1/miniature-pavilion.png",
+    "prompt": "docs/template-collection/prompts/miniature-pavilion.txt",
+    "variants": {
+      "pdf": {
+        "path": "app/static/artwork/collection-v1/miniature-pavilion-pdf.webp",
+        "bytes": 148578,
+        "size": [
+          750,
+          648
+        ]
+      },
+      "preview": {
+        "path": "app/static/artwork/collection-v1/miniature-pavilion-preview.webp",
+        "bytes": 116430,
+        "size": [
+          700,
+          605
+        ]
+      },
+      "thumb": {
+        "path": "app/static/artwork/collection-v1/miniature-pavilion-thumb.webp",
+        "bytes": 18696,
+        "size": [
+          240,
+          207
+        ]
+      }
+    },
+    "review": "Manually reviewed before integration; no lettering or unrelated symbols.",
+    "generation_asset": "exec-f44b7296-05a0-4ec8-899e-267d884c9b3d.png"
+  },
+  "braj-lotus": {
+    "generator": "OpenAI built-in imagegen",
+    "source": "artwork-masters/collection-v1/braj-lotus.png",
+    "master": "artwork-masters/collection-v1/braj-lotus.png",
+    "prompt": "docs/template-collection/prompts/braj-lotus.txt",
+    "variants": {
+      "pdf": {
+        "path": "app/static/artwork/collection-v1/braj-lotus-pdf.webp",
+        "bytes": 34760,
+        "size": [
+          300,
+          450
+        ]
+      },
+      "preview": {
+        "path": "app/static/artwork/collection-v1/braj-lotus-preview.webp",
+        "bytes": 30932,
+        "size": [
+          300,
+          450
+        ]
+      },
+      "thumb": {
+        "path": "app/static/artwork/collection-v1/braj-lotus-thumb.webp",
+        "bytes": 10732,
+        "size": [
+          160,
+          240
+        ]
+      }
+    },
+    "review": "Manually reviewed before integration; no lettering or unrelated symbols.",
+    "generation_asset": "exec-a66d909d-a8f5-49ef-a5a3-45ef6295c353.png"
+  },
+  "krishna": {
+    "generator": "OpenAI built-in imagegen",
+    "source": "artwork-masters/collection-v1/krishna.png",
+    "master": "artwork-masters/collection-v1/krishna.png",
+    "prompt": "docs/template-collection/prompts/krishna.txt",
+    "variants": {
+      "pdf": {
+        "path": "app/static/artwork/collection-v1/krishna-pdf.webp",
+        "bytes": 85802,
+        "size": [
+          533,
+          800
+        ]
+      },
+      "preview": {
+        "path": "app/static/artwork/collection-v1/krishna-preview.webp",
+        "bytes": 58842,
+        "size": [
+          467,
+          700
+        ]
+      },
+      "thumb": {
+        "path": "app/static/artwork/collection-v1/krishna-thumb.webp",
+        "bytes": 10430,
+        "size": [
+          160,
+          240
+        ]
+      }
+    },
+    "review": "Manually reviewed before integration; no lettering or unrelated symbols.",
+    "generation_asset": "exec-bd66f8ab-2b45-4b6a-9ce2-6cddb41012eb.png"
+  },
+  "ganesha": {
+    "generator": "OpenAI built-in imagegen",
+    "source": "artwork-masters/collection-v1/ganesha.png",
+    "master": "artwork-masters/collection-v1/ganesha.png",
+    "prompt": "docs/template-collection/prompts/ganesha.txt",
+    "variants": {
+      "pdf": {
+        "path": "app/static/artwork/collection-v1/ganesha-pdf.webp",
+        "bytes": 169286,
+        "size": [
+          750,
+          740
+        ]
+      },
+      "preview": {
+        "path": "app/static/artwork/collection-v1/ganesha-preview.webp",
+        "bytes": 129410,
+        "size": [
+          700,
+          691
+        ]
+      },
+      "thumb": {
+        "path": "app/static/artwork/collection-v1/ganesha-thumb.webp",
+        "bytes": 19680,
+        "size": [
+          240,
+          237
+        ]
+      }
+    },
+    "review": "Manually reviewed before integration; no lettering or unrelated symbols.",
+    "generation_asset": "exec-f319a2ca-98e1-483f-9587-0a230b46f160.png"
+  },
+  "rama": {
+    "generator": "OpenAI built-in imagegen",
+    "source": "artwork-masters/collection-v1/rama.png",
+    "master": "artwork-masters/collection-v1/rama.png",
+    "prompt": "docs/template-collection/prompts/rama.txt",
+    "variants": {
+      "pdf": {
+        "path": "app/static/artwork/collection-v1/rama-pdf.webp",
+        "bytes": 125164,
+        "size": [
+          600,
+          900
+        ]
+      },
+      "preview": {
+        "path": "app/static/artwork/collection-v1/rama-preview.webp",
+        "bytes": 70396,
+        "size": [
+          467,
+          700
+        ]
+      },
+      "thumb": {
+        "path": "app/static/artwork/collection-v1/rama-thumb.webp",
+        "bytes": 12672,
+        "size": [
+          160,
+          240
+        ]
+      }
+    },
+    "review": "Manually reviewed before integration; no lettering or unrelated symbols.",
+    "generation_asset": "exec-8186f07a-91c1-440c-b07e-4fc646774615.png"
+  },
+  "phulkari-band": {
+    "generator": "OpenAI built-in imagegen",
+    "source": "artwork-masters/collection-v1/phulkari-band.png",
+    "master": "artwork-masters/collection-v1/phulkari-band.png",
+    "prompt": "docs/template-collection/prompts/phulkari-band.txt",
+    "variants": {
+      "pdf": {
+        "path": "app/static/artwork/collection-v1/phulkari-band-pdf.webp",
+        "bytes": 218212,
+        "size": [
+          1400,
+          468
+        ]
+      },
+      "preview": {
+        "path": "app/static/artwork/collection-v1/phulkari-band-preview.webp",
+        "bytes": 63792,
+        "size": [
+          700,
+          234
+        ]
+      },
+      "thumb": {
+        "path": "app/static/artwork/collection-v1/phulkari-band-thumb.webp",
+        "bytes": 10702,
+        "size": [
+          240,
+          80
+        ]
+      }
+    },
+    "review": "Manually reviewed before integration; no lettering or unrelated symbols.",
+    "generation_asset": "exec-5c2331c7-4a02-4475-adbd-2a58dfcd9402.png"
+  },
+  "nikah-arch": {
+    "generator": "OpenAI built-in imagegen",
+    "source": "artwork-masters/collection-v1/nikah-arch.png",
+    "master": "artwork-masters/collection-v1/nikah-arch.png",
+    "prompt": "docs/template-collection/prompts/nikah-arch.txt",
+    "variants": {
+      "pdf": {
+        "path": "app/static/artwork/collection-v1/nikah-arch-pdf.webp",
+        "bytes": 129768,
+        "size": [
+          933,
+          1400
+        ]
+      },
+      "preview": {
+        "path": "app/static/artwork/collection-v1/nikah-arch-preview.webp",
+        "bytes": 41690,
+        "size": [
+          467,
+          700
+        ]
+      },
+      "thumb": {
+        "path": "app/static/artwork/collection-v1/nikah-arch-thumb.webp",
+        "bytes": 8698,
+        "size": [
+          160,
+          240
+        ]
+      }
+    },
+    "review": "Manually reviewed before integration; no lettering or unrelated symbols.",
+    "generation_asset": "exec-f9bfcd34-afaa-4e59-a2ab-429b81b9d6c4.png"
+  },
+  "cathedral-window": {
+    "generator": "OpenAI built-in imagegen",
+    "source": "artwork-masters/collection-v1/cathedral-window.png",
+    "master": "artwork-masters/collection-v1/cathedral-window.png",
+    "prompt": "docs/template-collection/prompts/cathedral-window.txt",
+    "variants": {
+      "pdf": {
+        "path": "app/static/artwork/collection-v1/cathedral-window-pdf.webp",
+        "bytes": 151814,
+        "size": [
+          933,
+          1400
+        ]
+      },
+      "preview": {
+        "path": "app/static/artwork/collection-v1/cathedral-window-preview.webp",
+        "bytes": 41744,
+        "size": [
+          467,
+          700
+        ]
+      },
+      "thumb": {
+        "path": "app/static/artwork/collection-v1/cathedral-window-thumb.webp",
+        "bytes": 8290,
+        "size": [
+          160,
+          240
+        ]
+      }
+    },
+    "review": "Manually reviewed before integration; no lettering or unrelated symbols.",
+    "generation_asset": "exec-5a7c76e4-9cc4-41a2-88e1-33900f300326.png"
+  },
+  "ahimsa-geometry": {
+    "generator": "OpenAI built-in imagegen",
+    "source": "artwork-masters/collection-v1/ahimsa-geometry.png",
+    "master": "artwork-masters/collection-v1/ahimsa-geometry.png",
+    "prompt": "docs/template-collection/prompts/ahimsa-geometry.txt",
+    "variants": {
+      "pdf": {
+        "path": "app/static/artwork/collection-v1/ahimsa-geometry-pdf.webp",
+        "bytes": 46170,
+        "size": [
+          600,
+          400
+        ]
+      },
+      "preview": {
+        "path": "app/static/artwork/collection-v1/ahimsa-geometry-preview.webp",
+        "bytes": 41398,
+        "size": [
+          600,
+          400
+        ]
+      },
+      "thumb": {
+        "path": "app/static/artwork/collection-v1/ahimsa-geometry-thumb.webp",
+        "bytes": 9850,
+        "size": [
+          240,
+          160
+        ]
+      }
+    },
+    "review": "Manually reviewed before integration; no lettering or unrelated symbols.",
+    "generation_asset": "exec-469ad638-97e8-4892-978a-49d752ab4c13.png"
+  },
+  "dhamma-lotus": {
+    "generator": "OpenAI built-in imagegen",
+    "source": "artwork-masters/collection-v1/dhamma-lotus.png",
+    "master": "artwork-masters/collection-v1/dhamma-lotus.png",
+    "prompt": "docs/template-collection/prompts/dhamma-lotus.txt",
+    "variants": {
+      "pdf": {
+        "path": "app/static/artwork/collection-v1/dhamma-lotus-pdf.webp",
+        "bytes": 18952,
+        "size": [
+          300,
+          450
+        ]
+      },
+      "preview": {
+        "path": "app/static/artwork/collection-v1/dhamma-lotus-preview.webp",
+        "bytes": 16816,
+        "size": [
+          300,
+          450
+        ]
+      },
+      "thumb": {
+        "path": "app/static/artwork/collection-v1/dhamma-lotus-thumb.webp",
+        "bytes": 6488,
+        "size": [
+          160,
+          240
+        ]
+      }
+    },
+    "review": "Manually reviewed before integration; no lettering or unrelated symbols.",
+    "generation_asset": "exec-a1ba1dc5-f2ff-4da2-a62c-88d2c0040b6e.png"
+  },
+  "ambedkar": {
+    "generator": "OpenAI built-in imagegen",
+    "source": "artwork-masters/collection-v1/ambedkar.png",
+    "master": "artwork-masters/collection-v1/ambedkar.png",
+    "prompt": "docs/template-collection/prompts/ambedkar.txt",
+    "variants": {
+      "pdf": {
+        "path": "app/static/artwork/collection-v1/ambedkar-pdf.webp",
+        "bytes": 153494,
+        "size": [
+          581,
+          700
+        ]
+      },
+      "preview": {
+        "path": "app/static/artwork/collection-v1/ambedkar-preview.webp",
+        "bytes": 134194,
+        "size": [
+          581,
+          700
+        ]
+      },
+      "thumb": {
+        "path": "app/static/artwork/collection-v1/ambedkar-thumb.webp",
+        "bytes": 15608,
+        "size": [
+          199,
+          240
+        ]
+      }
+    },
+    "review": "Manually reviewed before integration; no lettering or unrelated symbols.",
+    "generation_asset": "exec-9e9e5fec-ee72-4ccc-ac0f-aec24b5d5afc.png"
+  }
+}

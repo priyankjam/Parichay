@@ -1,0 +1,52 @@
+{
+  "notosansgujarati": {
+    "file": "NotoSansGujarati[wdth,wght].ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosansgujarati/NotoSansGujarati%5Bwdth%2Cwght%5D.ttf",
+    "sha": "3c760c2d69bf49c43d6fa2a0bed24c1b59263b43"
+  },
+  "notosansgurmukhi": {
+    "file": "NotoSansGurmukhi[wdth,wght].ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosansgurmukhi/NotoSansGurmukhi%5Bwdth%2Cwght%5D.ttf",
+    "sha": "49878eb913077538cc8973dcf4ad7c51f3e5fb22"
+  },
+  "notosansbengali": {
+    "file": "NotoSansBengali[wdth,wght].ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosansbengali/NotoSansBengali%5Bwdth%2Cwght%5D.ttf",
+    "sha": "25e13e26dc15c4933f8fe49c9efcda54152349db"
+  },
+  "notosanstamil": {
+    "file": "NotoSansTamil[wdth,wght].ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosanstamil/NotoSansTamil%5Bwdth%2Cwght%5D.ttf",
+    "sha": "cb08d499b2d05ef6fd8e470c36c2be47ff368f0d"
+  },
+  "notosanstelugu": {
+    "file": "NotoSansTelugu[wdth,wght].ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosanstelugu/NotoSansTelugu%5Bwdth%2Cwght%5D.ttf",
+    "sha": "e84dfdcd06a9cf32e992ecb96b4f641e8ddf3edd"
+  },
+  "notosanskannada": {
+    "file": "NotoSansKannada[wdth,wght].ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosanskannada/NotoSansKannada%5Bwdth%2Cwght%5D.ttf",
+    "sha": "8a3ff863d2d742be0583d5602ea1b1637dcec939"
+  },
+  "notosansmalayalam": {
+    "file": "NotoSansMalayalam[wdth,wght].ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosansmalayalam/NotoSansMalayalam%5Bwdth%2Cwght%5D.ttf",
+    "sha": "3a9a05e57c1567114386422a987280f4ff10f6fd"
+  },
+  "notonaskharabic": {
+    "file": "NotoNaskhArabic[wght].ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/notonaskharabic/NotoNaskhArabic%5Bwght%5D.ttf",
+    "sha": "a8d2867262dc7bb28492ad746de5d56235735c8b"
+  },
+  "notosanssymbols2": {
+    "file": "NotoSansSymbols2-Regular.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosanssymbols2/NotoSansSymbols2-Regular.ttf",
+    "sha": "caf89dd0e60e23ac39ce18da823095959d409437"
+  },
+  "notosanssymbols": {
+    "file": "NotoSansSymbols[wght].ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/notosanssymbols/NotoSansSymbols%5Bwght%5D.ttf",
+    "sha": "a0061bfbcbbec27bf2b280fc8c49ea42cf7cb7ab"
+  }
+}

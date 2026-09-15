@@ -1,0 +1,119 @@
+@font-face{font-family:"Inria Sans";src:url("../fonts/InriaSans-Regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Inria Sans";src:url("../fonts/InriaSans-Bold.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Figtree";src:url("../fonts/Figtree[wght].woff2") format("woff2");font-weight:300 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Poppins";src:url("../fonts/Poppins-Medium.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Poppins";src:url("../fonts/Poppins-SemiBold.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Poppins";src:url("../fonts/Poppins-Bold.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Tiro Sanskrit";src:url("../fonts/TiroDevanagariSanskrit-Regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Merriweather";src:url("../fonts/Merriweather-Italic[opsz,wdth,wght].woff2") format("woff2");font-weight:300 900;font-style:italic;font-display:swap}
+
+.theme-figma-peach-floral,.export-document[data-theme="figma-peach-floral"]{
+ --doc-accent:#9f6320;--doc-ink:#121212;--doc-paper:#fcfcfc;--page-paper:#fcfcfc;
+ --design-bg:url("/static/artwork/templates/figma-peach-floral.webp");--design-padding:73.143px 64.000px 82.286px 73.143px;--design-print-padding:22.575mm 19.765mm 25.397mm 22.588mm;
+ --design-body:"Inria Sans";--design-heading:"Inria Sans";--design-name:"Inria Sans";
+ --design-align:center;--design-name-style:normal;
+}
+
+
+.theme-figma-lavender-floral,.export-document[data-theme="figma-lavender-floral"]{
+ --doc-accent:#9f6320;--doc-ink:#121212;--doc-paper:#fcfcfc;--page-paper:#fcfcfc;
+ --design-bg:url("/static/artwork/templates/figma-lavender-floral.webp");--design-padding:73.143px 64.000px 82.286px 73.143px;--design-print-padding:22.575mm 19.765mm 25.397mm 22.588mm;
+ --design-body:"Inria Sans";--design-heading:"Inria Sans";--design-name:"Inria Sans";
+ --design-align:center;--design-name-style:normal;
+}
+
+
+.theme-figma-blue-botanical,.export-document[data-theme="figma-blue-botanical"]{
+ --doc-accent:#19197d;--doc-ink:#282828;--doc-paper:#fcfcfc;--page-paper:#fcfcfc;
+ --design-bg:url("/static/artwork/templates/figma-blue-botanical.webp");--design-padding:73.143px 41.143px 82.286px 41.143px;--design-print-padding:22.575mm 12.706mm 25.397mm 12.706mm;
+ --design-body:"Poppins";--design-heading:"Poppins";--design-name:"Poppins";
+ --design-align:left;--design-name-style:normal;
+}
+
+
+.theme-figma-amber-botanical,.export-document[data-theme="figma-amber-botanical"]{
+ --doc-accent:#9f6320;--doc-ink:#282828;--doc-paper:#fcfcfc;--page-paper:#fcfcfc;
+ --design-bg:url("/static/artwork/templates/figma-amber-botanical.webp");--design-padding:46.857px 41.143px 82.286px 41.143px;--design-print-padding:14.462mm 12.706mm 25.397mm 12.706mm;
+ --design-body:"Figtree";--design-heading:"Inria Sans";--design-name:"Figtree";
+ --design-align:left;--design-name-style:normal;
+}
+
+
+.theme-figma-slate-classic,.export-document[data-theme="figma-slate-classic"]{
+ --doc-accent:#41567a;--doc-ink:#2b3b55;--doc-paper:#fcfcfc;--page-paper:#fcfcfc;
+ --design-bg:url("/static/artwork/templates/figma-slate-classic.webp");--design-padding:70.857px 41.143px 54.857px 41.143px;--design-print-padding:21.869mm 12.706mm 16.931mm 12.706mm;
+ --design-body:"Figtree";--design-heading:"Inria Sans";--design-name:"Figtree";
+ --design-align:left;--design-name-style:normal;
+}
+
+
+.theme-figma-blue-frame,.export-document[data-theme="figma-blue-frame"]{
+ --doc-accent:#41567a;--doc-ink:#2b3b55;--doc-paper:#fcfcfc;--page-paper:#fcfcfc;
+ --design-bg:url("/static/artwork/templates/figma-blue-frame.webp");--design-padding:77.714px 64.000px 59.429px 64.000px;--design-print-padding:23.986mm 19.765mm 18.342mm 19.765mm;
+ --design-body:"Figtree";--design-heading:"Inria Sans";--design-name:"Figtree";
+ --design-align:left;--design-name-style:normal;
+}
+
+
+.theme-figma-floral-wreath,.export-document[data-theme="figma-floral-wreath"]{
+ --doc-accent:#41567a;--doc-ink:#2b3b55;--doc-paper:#fcfcfc;--page-paper:#fcfcfc;
+ --design-bg:url("/static/artwork/templates/figma-floral-wreath.webp");--design-padding:112.000px 64.000px 105.143px 64.000px;--design-print-padding:34.568mm 19.765mm 32.451mm 19.765mm;
+ --design-body:"Figtree";--design-heading:"Inria Sans";--design-name:"Figtree";
+ --design-align:left;--design-name-style:normal;
+}
+
+
+.theme-figma-garden-corners,.export-document[data-theme="figma-garden-corners"]{
+ --doc-accent:#41567a;--doc-ink:#2b3b55;--doc-paper:#fcfcfc;--page-paper:#fcfcfc;
+ --design-bg:url("/static/artwork/templates/figma-garden-corners.webp");--design-padding:112.000px 64.000px 142.857px 64.000px;--design-print-padding:34.568mm 19.765mm 44.091mm 19.765mm;
+ --design-body:"Figtree";--design-heading:"Inria Sans";--design-name:"Figtree";
+ --design-align:left;--design-name-style:normal;
+}
+
+
+.theme-figma-blossom,.export-document[data-theme="figma-blossom"]{
+ --doc-accent:#41567a;--doc-ink:#2b3b55;--doc-paper:#fcfcfc;--page-paper:#fcfcfc;
+ --design-bg:url("/static/artwork/templates/figma-blossom.webp");--design-padding:82.286px 43.429px 194.286px 43.429px;--design-print-padding:25.397mm 13.412mm 59.964mm 13.412mm;
+ --design-body:"Figtree";--design-heading:"Inria Sans";--design-name:"Figtree";
+ --design-align:center;--design-name-style:normal;
+}
+
+
+.theme-figma-blossom-serif,.export-document[data-theme="figma-blossom-serif"]{
+ --doc-accent:#41567a;--doc-ink:#2b3b55;--doc-paper:#fcfcfc;--page-paper:#fcfcfc;
+ --design-bg:url("/static/artwork/templates/figma-blossom-serif.webp");--design-padding:75.429px 43.429px 188.571px 43.429px;--design-print-padding:23.280mm 13.412mm 58.201mm 13.412mm;
+ --design-body:"Figtree";--design-heading:"Tiro Sanskrit";--design-name:"Merriweather";
+ --design-align:center;--design-name-style:italic;
+}
+
+
+.theme-figma-ganesha-ivory,.export-document[data-theme="figma-ganesha-ivory"]{
+ --doc-accent:#9f6320;--doc-ink:#121212;--doc-paper:#fcfcfc;--page-paper:#fcfcfc;
+ --design-bg:url("/static/artwork/templates/figma-ganesha-ivory.webp");--design-padding:174.857px 73.143px 77.714px 73.143px;--design-print-padding:53.968mm 22.588mm 23.986mm 22.588mm;
+ --design-body:"Inria Sans";--design-heading:"Inria Sans";--design-name:"Inria Sans";
+ --design-align:left;--design-name-style:normal;
+}
+
+
+.theme-figma-ganesha-rose,.export-document[data-theme="figma-ganesha-rose"]{
+ --doc-accent:#a7785a;--doc-ink:#2f2f2f;--doc-paper:#fcfcfc;--page-paper:#fcfcfc;
+ --design-bg:url("/static/artwork/templates/figma-ganesha-rose.webp");--design-padding:174.857px 73.143px 107.429px 73.143px;--design-print-padding:53.968mm 22.588mm 33.157mm 22.588mm;
+ --design-body:"Inria Sans";--design-heading:"Inria Sans";--design-name:"Tiro Sanskrit";
+ --design-align:left;--design-name-style:normal;
+}
+
+
+.theme-figma-ganesha-maroon,.export-document[data-theme="figma-ganesha-maroon"]{
+ --doc-accent:#d29464;--doc-ink:#ffe0a9;--doc-paper:#36090c;--page-paper:#36090c;
+ --design-bg:url("/static/artwork/templates/figma-ganesha-maroon.webp");--design-padding:240.000px 73.143px 86.857px 73.143px;--design-print-padding:69.922mm 22.588mm 25.305mm 22.588mm;
+ --design-body:"Inria Sans";--design-heading:"Inria Sans";--design-name:"Tiro Sanskrit";
+ --design-align:left;--design-name-style:normal;
+}
+
+
+.theme-figma-ganesha-festive,.export-document[data-theme="figma-ganesha-festive"]{
+ --doc-accent:#d29464;--doc-ink:#ffe0a9;--doc-paper:#36090c;--page-paper:#36090c;
+ --design-bg:url("/static/artwork/templates/figma-ganesha-festive.webp");--design-padding:182.857px 73.143px 171.429px 73.143px;--design-print-padding:53.274mm 22.588mm 49.944mm 22.588mm;
+ --design-body:"Inria Sans";--design-heading:"Inria Sans";--design-name:"Tiro Sanskrit";
+ --design-align:left;--design-name-style:normal;
+}

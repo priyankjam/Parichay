@@ -1,0 +1,12 @@
+SUBJECT: One small dignified Ganesha illustration seated calmly, a coherent elephant head with a single curved trunk, two large natural ears, four anatomically deliberate arms each clearly connected to the torso, respectful traditional iconography with an open blessing palm, a modak and small traditional implements, delicate Indian watercolor and refined linework, quiet saffron, wine and ivory.
+CULTURAL REFERENCE: Original contemporary Indian editorial craft; reinterpret the named tradition without copying an existing artwork.
+ART STYLE: Refined illustrative mark with controlled hand-drawn detail; premium stationery, not stock vector clipart.
+COMPOSITION: One isolated complete subject, centered with generous transparent clearance on every side. Do not crop any part of the subject. Sized for a small 25–40mm document-header slot.
+PALETTE: Restrained colours specified in the subject; warm ivory highlights only, no bright neon, no excessive gold.
+SAFE ZONE: The motif will occupy under 15% of an A4 sheet. No text or information containers. No filled overall page background.
+BACKGROUND: Genuine transparent alpha; do not simulate transparency with a checkerboard.
+LEVEL OF DETAIL: Crisp print-ready fine marks, readable at small size, no micro-detail noise.
+OUTPUT FORMAT: High-resolution transparent PNG.
+NEGATIVE REQUIREMENTS: No words, letters, numbers, pseudo-writing, religious text, watermark, logo, wedding couple, extra figures, cut-off subject, inaccurate anatomy, malformed hands, accidental faces or symbols from unrelated traditions. No photorealistic or cinematic deity treatment.
+
+ACCEPTED REVISION: Lighter translucent watercolor, fewer jewelry details, muted ochre. One intact tusk and one visibly shorter broken tusk. Four intentional arms: axe, lotus, blessing palm, modak. No forehead pseudo-script. First overly ornate output rejected.

@@ -1,0 +1,107 @@
+{
+  "sage-branch": {
+    "asset": "sage-branch",
+    "placement": "corner",
+    "density": "low",
+    "body_art": false,
+    "continuation": "native-rule-only"
+  },
+  "terracotta-arch": {
+    "asset": "terracotta-arch",
+    "placement": "arch",
+    "density": "low",
+    "body_art": false,
+    "continuation": "native-rule-only"
+  },
+  "deco-corner": {
+    "asset": "deco-corner",
+    "placement": "deco",
+    "density": "low",
+    "body_art": false,
+    "continuation": "native-rule-only"
+  },
+  "ink-leaf": {
+    "asset": "ink-leaf",
+    "placement": "small",
+    "density": "low",
+    "body_art": false,
+    "continuation": "native-rule-only"
+  },
+  "kolam-corner": {
+    "asset": "kolam-corner",
+    "placement": "corners",
+    "density": "medium",
+    "body_art": false,
+    "continuation": "native-rule-only"
+  },
+  "alpana-ornament": {
+    "asset": "alpana-ornament",
+    "placement": "emblem",
+    "density": "medium",
+    "body_art": false,
+    "continuation": "native-rule-only"
+  },
+  "patola-band": {
+    "asset": "patola-band",
+    "placement": "rail",
+    "density": "medium",
+    "body_art": false,
+    "continuation": "native-rule-only"
+  },
+  "paithani-peacock": {
+    "asset": "paithani-peacock",
+    "placement": "footer-corner",
+    "density": "medium",
+    "body_art": false,
+    "continuation": "native-rule-only"
+  },
+  "miniature-pavilion": {
+    "asset": "miniature-pavilion",
+    "placement": "pavilion",
+    "density": "medium",
+    "body_art": false,
+    "continuation": "native-rule-only"
+  },
+  "braj-lotus": {
+    "asset": "braj-lotus",
+    "placement": "devotional",
+    "density": "medium",
+    "body_art": false,
+    "continuation": "native-rule-only"
+  },
+  "phulkari-band": {
+    "asset": "phulkari-band",
+    "placement": "footer-band",
+    "density": "medium",
+    "body_art": false,
+    "continuation": "native-rule-only"
+  },
+  "nikah-arch": {
+    "asset": "nikah-arch",
+    "placement": "arch",
+    "density": "medium",
+    "body_art": false,
+    "continuation": "native-rule-only"
+  },
+  "cathedral-window": {
+    "asset": "cathedral-window",
+    "placement": "cathedral",
+    "density": "medium",
+    "body_art": false,
+    "continuation": "native-rule-only"
+  },
+  "ahimsa-geometry": {
+    "asset": "ahimsa-geometry",
+    "placement": "emblem",
+    "density": "medium",
+    "body_art": false,
+    "continuation": "native-rule-only"
+  },
+  "dhamma-lotus": {
+    "asset": "dhamma-lotus",
+    "placement": "small",
+    "density": "medium",
+    "body_art": false,
+    "continuation": "native-rule-only"
+  }
+}

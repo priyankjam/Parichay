@@ -1,0 +1,6 @@
+{% from 'components.html' import brand, icon %}
+<!doctype html>
+<html lang="en" dir="ltr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Parichay — Let’s get you back</title><link rel="icon" href="{{ url_for('static', filename='favicon.svg') }}"><link rel="stylesheet" href="{{ url_for('static', filename='css/tokens.css') }}"><link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}"></head>
+<body><main class="error-page">{{ brand() }}<p class="error-code">LET’S GET YOU BACK</p><h1>{{ message }}</h1><p>Your saved draft is still in this browser. Return to the editor to continue.</p><a class="button primary" href="{{ url_for('editor.create') }}">Return to your biodata {{ icon('arrow-right', true) }}</a><a class="button quiet" href="/">Go to homepage</a></main></body>
+</html>

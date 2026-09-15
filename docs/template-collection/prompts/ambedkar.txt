@@ -1,0 +1,10 @@
+SUBJECT: A respectful small bust portrait of Dr. B. R. Ambedkar: recognisable broad face, neat side-parted hair, his characteristic round dark glasses, formal suit and tie, dignified calm expression, controlled constitutional-blue and warm charcoal pen-and-ink engraving on a transparent ground, head and upper torso only, no caricature or rally-poster graphics.
+CULTURAL REFERENCE: Original contemporary Indian editorial craft; reinterpret the named tradition without copying an existing artwork.
+ART STYLE: Refined illustrative mark with controlled hand-drawn detail; premium stationery, not stock vector clipart.
+COMPOSITION: One isolated complete subject, centered with generous transparent clearance on every side. Do not crop any part of the subject. Sized for a small 25–40mm document-header slot.
+PALETTE: Restrained colours specified in the subject; warm ivory highlights only, no bright neon, no excessive gold.
+SAFE ZONE: The motif will occupy under 15% of an A4 sheet. No text or information containers. No filled overall page background.
+BACKGROUND: Genuine transparent alpha; do not simulate transparency with a checkerboard.
+LEVEL OF DETAIL: Crisp print-ready fine marks, readable at small size, no micro-detail noise.
+OUTPUT FORMAT: High-resolution transparent PNG.
+NEGATIVE REQUIREMENTS: No words, letters, numbers, pseudo-writing, religious text, watermark, logo, wedding couple, extra figures, cut-off subject, inaccurate anatomy, malformed hands, accidental faces or symbols from unrelated traditions. No photorealistic or cinematic deity treatment.

@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.env
+.env.*
+!.env.example
+instance/
+tmp/
+output/
+# Original reference documents may contain personal information. The app uses
+# the prepared, self-contained assets under app/static instead.
+Biodata template/
+.DS_Store
+.browser-cache/
+*.pyc
+*.log
+*.sqlite
+*.sqlite3
+*.db
+.coverage
+htmlcov/

@@ -1,0 +1,1 @@
+Batch 2 accepted after 42 content scenarios and six isolated export jobs. Each of the six generated assets was manually inspected. Color/grayscale first-page proofs and quiet continuation sheets were reviewed. The Paithani footer page number was moved clear of the peacock. Full results: output/template-collection/batch-2.

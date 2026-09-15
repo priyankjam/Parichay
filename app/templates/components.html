@@ -1,0 +1,6 @@
+{% macro icon(name, directional=false) -%}
+<svg class="ui-icon{{ ' directional' if directional else '' }}" aria-hidden="true" focusable="false"><use href="{{ url_for('static', filename='icons.svg') }}#{{ name }}"></use></svg>
+{%- endmacro %}
+{% macro brand(href='/', caption=true) -%}
+<a class="brand" href="{{ href }}" aria-label="Parichay home"><span class="brand-symbol" aria-hidden="true">प</span><span>parichay{% if caption %}<span class="brand-caption">A THOUGHTFUL INTRODUCTION</span>{% endif %}</span></a>
+{%- endmacro %}

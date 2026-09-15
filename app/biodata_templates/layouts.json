@@ -1,0 +1,13 @@
+{
+ "editorial":{"columns":2,"display":"serif","header":"name-left-portrait-right","minimum_body_pt":10.5},
+ "modular":{"columns":1,"display":"sans","header":"portrait-left-name-right","minimum_body_pt":10.5},
+ "arch":{"columns":2,"display":"serif","header":"open-architectural","minimum_body_pt":10.5},
+ "centered":{"columns":2,"display":"serif","header":"centered-name","minimum_body_pt":10.5},
+ "narrative":{"columns":1,"display":"serif","header":"large-name-small-photo","minimum_body_pt":10.5},
+ "rail":{"columns":1,"display":"serif","header":"textile-rail","minimum_body_pt":10.5},
+ "pavilion":{"columns":1,"display":"serif","header":"small-pavilion","minimum_body_pt":10.5},
+ "devotional":{"columns":2,"display":"serif","header":"centered-sacred-slot","minimum_body_pt":10.5},
+ "devotional-aside":{"columns":1,"display":"serif","header":"sacred-slot-left","minimum_body_pt":10.5},
+ "cathedral":{"columns":1,"display":"serif","header":"tall-architectural","minimum_body_pt":10.5},
+ "academic":{"columns":1,"display":"serif","header":"portrait-left-cultural-medallion-right","minimum_body_pt":10.5}
+}

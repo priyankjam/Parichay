@@ -1,0 +1,56 @@
+{% from 'components.html' import icon, brand %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Create a thoughtful marriage biodata. Biodata designs, English and Hindi, and no signup.">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+  <title>Parichay — Your story, thoughtfully introduced</title>
+  <link rel="icon" href="{{ url_for('static', filename='favicon.svg') }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/tokens.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/workspace.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/mobile-product.css') }}">
+  <script id="app-config" type="application/json">{{ config_data|tojson }}</script>
+  <script type="module" src="{{ url_for('static', filename='js/editor.js') }}"></script>
+</head>
+<body class="editor-page">
+<a class="skip-link" href="#step-content">Skip to editor</a>
+<header class="app-header">
+  {{ brand(caption=false) }}
+  <div class="header-right"><span class="guest-label" data-i18n="guest">Guest workspace</span><label class="language-control"><select id="language" aria-label="Interface and document language"><option value="en">English</option><option value="hi">हिन्दी</option></select></label><button id="more-button" class="icon-button" aria-label="Draft options" aria-expanded="false" aria-controls="draft-menu">{{ icon('more') }}</button></div>
+  <div id="draft-menu" class="draft-menu" hidden><button id="backup-button" data-i18n="backup">Download editable backup</button><button id="import-button" data-i18n="import">Restore a backup</button><input type="file" id="import-file" accept="application/json,.json" hidden><button id="menu-privacy" data-i18n="privacy">How your data is handled</button><button id="clear-button" class="danger" data-i18n="delete">Delete this draft</button></div>
+</header>
+<div class="workspace">
+  <aside class="sidebar"><div class="sidebar-title" data-i18n="yourBiodata">YOUR BIODATA</div><nav id="steps" aria-label="Biodata steps"></nav><div class="sidebar-bottom"><span class="lock-icon">{{ icon('lock') }}</span><strong data-i18n="privateDraft">Your story stays yours.</strong><p data-i18n="localNote">Your draft is saved in this browser. Nothing is published.</p><button id="privacy-button" class="text-button" data-i18n="privacy">How your data is handled</button></div></aside>
+  <main class="editor-main" id="editor-main">
+    <div class="mobile-step-navigation"><label for="section-jump" data-i18n="jumpTo">Go to section</label><select id="section-jump"></select></div>
+    <div class="editor-topline"><span id="step-count">01 / 10</span><span id="save-status" role="status" aria-live="polite">Ready when you are</span></div>
+    <p id="content-progress" class="content-progress"></p>
+    <div id="storage-warning" class="storage-warning" role="alert" hidden><p data-i18n="storageHelp"></p><button id="storage-backup" class="button secondary" data-i18n="backup"></button></div>
+    <div class="mobile-progress"><span id="progress-fill"></span></div>
+    <div id="step-content" tabindex="-1"></div>
+    <div id="form-error" class="message error" role="alert" hidden></div>
+    <footer class="step-footer"><button id="back" class="button quiet" data-i18n="back">Back</button><button id="skip" class="text-button" data-i18n="skip">Skip for now</button><button id="next" class="button primary"><span data-i18n="continue">Continue</span>{{ icon('arrow-right', true) }}</button></footer>
+    <div class="editor-reassurance" data-i18n="optionalNote">Only share what feels right. You can change anything later.</div>
+  </main>
+  <aside class="preview-panel" id="preview-panel" aria-label="Live biodata preview">
+    <div class="preview-toolbar"><strong id="preview-title" data-i18n="preview">Preview</strong><button id="expand-preview" class="button secondary" data-i18n="readPreview">Full preview</button></div>
+    <div class="preview-caption"><strong id="template-name"></strong><span id="page-count">A4</span></div>
+    <div class="preview-scroll" tabindex="-1"><div id="preview-scale"><div id="document-preview" data-state="empty">
+      <img id="preview-page-image" width="1200" height="1698" alt="" hidden>
+      <div id="preview-message"><span class="document-placeholder" aria-hidden="true"></span><p id="preview-message-text" role="status"></p><button id="preview-retry" class="button secondary" data-i18n="tryAgain" hidden>Try again</button></div>
+    </div></div></div>
+    <div id="preview-page-controls" class="preview-page-controls" hidden><button id="preview-previous" class="icon-button" aria-label="Previous page">{{ icon('arrow-left') }}</button><span id="preview-page-number" role="status"></span><button id="preview-next" class="icon-button" aria-label="Next page">{{ icon('arrow-right') }}</button><button id="preview-zoom" class="text-button" aria-pressed="false" data-i18n="zoomIn">Zoom in</button></div>
+    <div id="preview-text" class="sr-only" role="document" aria-label="Biodata text"></div>
+    <p class="preview-note" data-i18n="previewProcessing">Included details are processed temporarily to preview and download. Nothing is published.</p>
+  </aside>
+</div>
+<div class="mobile-action-dock"><button id="mobile-preview" class="button secondary" data-i18n="previewShort">Preview</button><button id="mobile-next" class="button primary" data-i18n="continue">Continue</button></div>
+<dialog id="preview-dialog" aria-labelledby="preview-title"></dialog>
+<div id="toast" class="toast" role="status" hidden></div>
+<dialog id="info-dialog" aria-label="Draft information and confirmation"><button class="dialog-close icon-button" aria-label="Close dialog">{{ icon('x') }}</button><div id="dialog-content"></div></dialog>
+<dialog id="crop-dialog" aria-labelledby="crop-title"><button class="dialog-close icon-button" aria-label="Close crop">{{ icon('x') }}</button><h2 id="crop-title" data-i18n="adjustPhoto">Make it your own</h2><p data-i18n="cropNote">Adjust the portrait crop. Your appearance is never altered.</p><p id="crop-quality" class="message" role="status" hidden></p><canvas id="crop-canvas" width="600" height="750"></canvas><div class="crop-controls"><label><span data-i18n="zoom">Zoom</span><input type="range" id="crop-zoom" min="1" max="3" value="1" step="0.05"></label><label><span data-i18n="horizontal">Horizontal position</span><input type="range" id="crop-x" min="-1" max="1" value="0" step="0.02"></label><label><span data-i18n="vertical">Vertical position</span><input type="range" id="crop-y" min="-1" max="1" value="0" step="0.02"></label></div><div class="dialog-actions"><button id="rotate-photo" class="button secondary" data-i18n="rotate">Rotate</button><button id="apply-crop" class="button primary" data-i18n="usePhoto">Use this photo</button></div></dialog>
+<input id="photo-input" type="file" accept="image/jpeg,image/png,image/webp" hidden>
+<noscript><div class="noscript">Please enable JavaScript to create and save your biodata on this device.</div></noscript>
+</body></html>

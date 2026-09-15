@@ -1,0 +1,814 @@
+[
+  {
+    "id": "figma-peach-floral",
+    "node": "1:2",
+    "name": "Peach Floral",
+    "hi": "पीच फ्लोरल",
+    "group": "Floral",
+    "color": "#9f6320",
+    "ink": "#121212",
+    "padding": [
+      64,
+      56,
+      72,
+      64
+    ],
+    "layers": [
+      {
+        "asset": "b8d79",
+        "box": [
+          -48,
+          -124,
+          692,
+          1038
+        ],
+        "image": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "flip": false
+      }
+    ],
+    "paper": "#fcfcfc",
+    "body": "Inria Sans",
+    "heading": "Inria Sans",
+    "border": "#89a6a0",
+    "center": true,
+    "family": "Floral",
+    "caption": "Original floral artwork from your Figma collection",
+    "captionHi": "फूलों और पत्तियों की मूल कलाकृति",
+    "thumbnail": "/static/artwork/thumbnails/figma-peach-floral.webp",
+    "background": "/static/artwork/templates/figma-peach-floral.webp",
+    "printSafePadding": [
+      180,
+      64,
+      225,
+      64
+    ]
+  },
+  {
+    "id": "figma-lavender-floral",
+    "node": "1:85",
+    "name": "Lavender Floral",
+    "hi": "लैवेंडर फ्लोरल",
+    "group": "Floral",
+    "color": "#9f6320",
+    "ink": "#121212",
+    "padding": [
+      64,
+      56,
+      72,
+      64
+    ],
+    "layers": [
+      {
+        "asset": "bc4fe",
+        "box": [
+          -48,
+          -124,
+          692,
+          1038
+        ],
+        "image": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "flip": false
+      }
+    ],
+    "paper": "#fcfcfc",
+    "body": "Inria Sans",
+    "heading": "Inria Sans",
+    "border": "#a5b3e3",
+    "center": true,
+    "family": "Floral",
+    "caption": "Original floral artwork from your Figma collection",
+    "captionHi": "फूलों और पत्तियों की मूल कलाकृति",
+    "thumbnail": "/static/artwork/thumbnails/figma-lavender-floral.webp",
+    "background": "/static/artwork/templates/figma-lavender-floral.webp",
+    "printSafePadding": [
+      180,
+      64,
+      225,
+      64
+    ]
+  },
+  {
+    "id": "figma-blue-botanical",
+    "node": "1:168",
+    "name": "Blue Botanical",
+    "hi": "ब्लू बोटैनिकल",
+    "group": "Floral",
+    "color": "#19197d",
+    "ink": "#282828",
+    "padding": [
+      64,
+      36,
+      72,
+      36
+    ],
+    "layers": [
+      {
+        "asset": "2e975",
+        "box": [
+          -20,
+          -56,
+          636,
+          954
+        ],
+        "image": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "flip": false
+      }
+    ],
+    "paper": "#fcfcfc",
+    "body": "Poppins",
+    "heading": "Poppins",
+    "family": "Floral",
+    "caption": "Original floral artwork from your Figma collection",
+    "captionHi": "फूलों और पत्तियों की मूल कलाकृति",
+    "thumbnail": "/static/artwork/thumbnails/figma-blue-botanical.webp",
+    "background": "/static/artwork/templates/figma-blue-botanical.webp",
+    "printSafePadding": [
+      64,
+      190,
+      190,
+      36
+    ]
+  },
+  {
+    "id": "figma-amber-botanical",
+    "node": "1:254",
+    "name": "Amber Botanical",
+    "hi": "ऐंबर बोटैनिकल",
+    "group": "Floral",
+    "color": "#9f6320",
+    "ink": "#282828",
+    "padding": [
+      41,
+      36,
+      72,
+      36
+    ],
+    "layers": [
+      {
+        "asset": "2e975",
+        "box": [
+          0,
+          -56,
+          599,
+          898
+        ],
+        "image": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "flip": false
+      },
+      {
+        "asset": "15840",
+        "box": [
+          0,
+          0,
+          599,
+          361
+        ],
+        "image": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "flip": false
+      }
+    ],
+    "paper": "#fcfcfc",
+    "body": "Figtree",
+    "heading": "Inria Sans",
+    "family": "Floral",
+    "caption": "Original floral artwork from your Figma collection",
+    "captionHi": "फूलों और पत्तियों की मूल कलाकृति",
+    "thumbnail": "/static/artwork/thumbnails/figma-amber-botanical.webp",
+    "background": "/static/artwork/templates/figma-amber-botanical.webp",
+    "printSafePadding": [
+      64,
+      190,
+      190,
+      36
+    ]
+  },
+  {
+    "id": "figma-slate-classic",
+    "node": "1:339",
+    "name": "Slate Classic",
+    "hi": "स्लेट क्लासिक",
+    "group": "Classic",
+    "color": "#41567a",
+    "ink": "#2b3b55",
+    "padding": [
+      62,
+      36,
+      48,
+      36
+    ],
+    "layers": [],
+    "paper": "#fcfcfc",
+    "body": "Figtree",
+    "heading": "Inria Sans",
+    "stripe": "#c26062",
+    "family": "Classic",
+    "caption": "Clean typography and a defined frame",
+    "captionHi": "स्पष्ट अक्षर और सुंदर फ़्रेम",
+    "thumbnail": "/static/artwork/thumbnails/figma-slate-classic.webp",
+    "background": "/static/artwork/templates/figma-slate-classic.webp"
+  },
+  {
+    "id": "figma-blue-frame",
+    "node": "1:425",
+    "name": "Blue Frame",
+    "hi": "ब्लू फ़्रेम",
+    "group": "Classic",
+    "color": "#41567a",
+    "ink": "#2b3b55",
+    "padding": [
+      68,
+      56,
+      52,
+      56
+    ],
+    "layers": [
+      {
+        "asset": "7c54d",
+        "box": [
+          -7,
+          -10,
+          608.426,
+          467.312
+        ],
+        "image": [
+          0,
+          -0.05,
+          100,
+          195.3
+        ],
+        "flip": false
+      },
+      {
+        "asset": "7c54d",
+        "box": [
+          -7,
+          457.312,
+          608.426,
+          393.688
+        ],
+        "image": [
+          0,
+          -131.75,
+          100,
+          231.82
+        ],
+        "flip": false
+      }
+    ],
+    "paper": "#fcfcfc",
+    "body": "Figtree",
+    "heading": "Inria Sans",
+    "family": "Classic",
+    "caption": "Clean typography and a defined frame",
+    "captionHi": "स्पष्ट अक्षर और सुंदर फ़्रेम",
+    "thumbnail": "/static/artwork/thumbnails/figma-blue-frame.webp",
+    "background": "/static/artwork/templates/figma-blue-frame.webp"
+  },
+  {
+    "id": "figma-floral-wreath",
+    "node": "1:508",
+    "name": "Floral Wreath",
+    "hi": "फ्लोरल रीथ",
+    "group": "Floral",
+    "color": "#41567a",
+    "ink": "#2b3b55",
+    "padding": [
+      98,
+      56,
+      92,
+      56
+    ],
+    "layers": [
+      {
+        "asset": "a4fdd",
+        "box": [
+          0,
+          9,
+          595,
+          555
+        ],
+        "image": [
+          -0.03,
+          -20.72,
+          100.06,
+          160.9
+        ],
+        "flip": false
+      },
+      {
+        "asset": "a4fdd",
+        "box": [
+          0,
+          362,
+          595,
+          480
+        ],
+        "image": [
+          -0.03,
+          -39.58,
+          100.06,
+          186.04
+        ],
+        "flip": false
+      },
+      {
+        "asset": "a4fdd",
+        "box": [
+          63,
+          697,
+          469,
+          211
+        ],
+        "image": [
+          -0.03,
+          -233.21,
+          100.06,
+          333.21
+        ],
+        "flip": false
+      },
+      {
+        "asset": "a4fdd",
+        "box": [
+          89,
+          -50,
+          417,
+          188
+        ],
+        "image": [
+          -0.03,
+          -233.21,
+          100.06,
+          333.21
+        ],
+        "flip": true
+      }
+    ],
+    "paper": "#fcfcfc",
+    "body": "Figtree",
+    "heading": "Inria Sans",
+    "family": "Floral",
+    "caption": "Original floral artwork from your Figma collection",
+    "captionHi": "फूलों और पत्तियों की मूल कलाकृति",
+    "thumbnail": "/static/artwork/thumbnails/figma-floral-wreath.webp",
+    "background": "/static/artwork/templates/figma-floral-wreath.webp"
+  },
+  {
+    "id": "figma-garden-corners",
+    "node": "1:591",
+    "name": "Garden Corners",
+    "hi": "गार्डन कॉर्नर्स",
+    "group": "Floral",
+    "color": "#41567a",
+    "ink": "#2b3b55",
+    "padding": [
+      98,
+      56,
+      125,
+      56
+    ],
+    "layers": [
+      {
+        "asset": "06e27",
+        "box": [
+          0,
+          0,
+          487,
+          372
+        ],
+        "image": [
+          0,
+          -0.05,
+          100,
+          196.15
+        ],
+        "flip": false
+      },
+      {
+        "asset": "06e27",
+        "box": [
+          108,
+          495,
+          487,
+          347
+        ],
+        "image": [
+          0,
+          -106.69,
+          100,
+          210.29
+        ],
+        "flip": false
+      }
+    ],
+    "paper": "#fcfcfc",
+    "body": "Figtree",
+    "heading": "Inria Sans",
+    "family": "Floral",
+    "caption": "Original floral artwork from your Figma collection",
+    "captionHi": "फूलों और पत्तियों की मूल कलाकृति",
+    "thumbnail": "/static/artwork/thumbnails/figma-garden-corners.webp",
+    "background": "/static/artwork/templates/figma-garden-corners.webp",
+    "printSafePadding": [
+      98,
+      64,
+      170,
+      56
+    ]
+  },
+  {
+    "id": "figma-blossom",
+    "node": "1:676",
+    "name": "Blossom",
+    "hi": "ब्लॉसम",
+    "group": "Floral",
+    "color": "#41567a",
+    "ink": "#2b3b55",
+    "padding": [
+      72,
+      38,
+      170,
+      38
+    ],
+    "layers": [
+      {
+        "asset": "f24e7",
+        "box": [
+          0,
+          -51,
+          595,
+          893
+        ],
+        "image": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "flip": false
+      }
+    ],
+    "paper": "#fcfcfc",
+    "body": "Figtree",
+    "heading": "Inria Sans",
+    "center": true,
+    "duplicates": [
+      "1:756"
+    ],
+    "family": "Floral",
+    "caption": "Original floral artwork from your Figma collection",
+    "captionHi": "फूलों और पत्तियों की मूल कलाकृति",
+    "thumbnail": "/static/artwork/thumbnails/figma-blossom.webp",
+    "background": "/static/artwork/templates/figma-blossom.webp",
+    "printSafePadding": [
+      180,
+      38,
+      170,
+      38
+    ]
+  },
+  {
+    "id": "figma-blossom-serif",
+    "node": "1:837",
+    "name": "Blossom Serif",
+    "hi": "ब्लॉसम सेरिफ़",
+    "group": "Floral",
+    "color": "#41567a",
+    "ink": "#2b3b55",
+    "padding": [
+      66,
+      38,
+      165,
+      38
+    ],
+    "layers": [
+      {
+        "asset": "e59b9",
+        "box": [
+          0,
+          -51,
+          595,
+          893
+        ],
+        "image": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "flip": false
+      },
+      {
+        "asset": "e59b9",
+        "box": [
+          0,
+          0,
+          595,
+          436
+        ],
+        "image": [
+          -0.03,
+          0,
+          100.06,
+          204.82
+        ],
+        "flip": false
+      }
+    ],
+    "paper": "#fcfcfc",
+    "body": "Figtree",
+    "heading": "Tiro Sanskrit",
+    "center": true,
+    "nameFont": "Merriweather",
+    "italic": true,
+    "family": "Floral",
+    "caption": "Original floral artwork from your Figma collection",
+    "captionHi": "फूलों और पत्तियों की मूल कलाकृति",
+    "thumbnail": "/static/artwork/thumbnails/figma-blossom-serif.webp",
+    "background": "/static/artwork/templates/figma-blossom-serif.webp",
+    "printSafePadding": [
+      180,
+      38,
+      170,
+      38
+    ]
+  },
+  {
+    "id": "figma-ganesha-ivory",
+    "node": "1:965",
+    "name": "Ganesha Ivory",
+    "hi": "गणेश आइवरी",
+    "group": "Ganesha",
+    "color": "#9f6320",
+    "ink": "#121212",
+    "padding": [
+      153,
+      64,
+      68,
+      64
+    ],
+    "layers": [
+      {
+        "asset": "48bd0",
+        "box": [
+          -4,
+          -8,
+          603,
+          859
+        ],
+        "image": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "flip": false
+      },
+      {
+        "asset": "18065",
+        "box": [
+          502,
+          757,
+          98,
+          94
+        ],
+        "image": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "flip": true
+      }
+    ],
+    "paper": "#fcfcfc",
+    "body": "Inria Sans",
+    "heading": "Inria Sans",
+    "sacred": true,
+    "family": "Ganesha",
+    "caption": "Ganesha artwork and a traditional border",
+    "captionHi": "गणेश चित्र और पारंपरिक सजावट",
+    "thumbnail": "/static/artwork/thumbnails/figma-ganesha-ivory.webp",
+    "background": "/static/artwork/templates/figma-ganesha-ivory.webp"
+  },
+  {
+    "id": "figma-ganesha-rose",
+    "node": "1:1048",
+    "name": "Ganesha Rose",
+    "hi": "गणेश रोज़",
+    "group": "Ganesha",
+    "color": "#a7785a",
+    "ink": "#2f2f2f",
+    "padding": [
+      153,
+      64,
+      94,
+      64
+    ],
+    "layers": [
+      {
+        "asset": "fd9cd",
+        "box": [
+          -25.333,
+          -63,
+          646,
+          969
+        ],
+        "image": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "flip": false
+      },
+      {
+        "asset": "fd9cd",
+        "box": [
+          195.774,
+          79.649,
+          239.448,
+          143.669
+        ],
+        "image": [
+          -14.47,
+          -261.7,
+          269.79,
+          674.47
+        ],
+        "flip": false
+      },
+      {
+        "asset": "fd9cd",
+        "box": [
+          387.332,
+          188.675,
+          198.691,
+          225.183
+        ],
+        "image": [
+          -44.1,
+          -162.9,
+          325.13,
+          430.32
+        ],
+        "flip": false
+      },
+      {
+        "asset": "fd9cd",
+        "box": [
+          215.134,
+          13.42,
+          165.066,
+          115.139
+        ],
+        "image": [
+          -84.32,
+          -45.45,
+          268.64,
+          576.36
+        ],
+        "flip": false
+      }
+    ],
+    "paper": "#fcfcfc",
+    "body": "Inria Sans",
+    "heading": "Inria Sans",
+    "nameFont": "Tiro Sanskrit",
+    "sacred": true,
+    "family": "Ganesha",
+    "caption": "Ganesha artwork and a traditional border",
+    "captionHi": "गणेश चित्र और पारंपरिक सजावट",
+    "thumbnail": "/static/artwork/thumbnails/figma-ganesha-rose.webp",
+    "background": "/static/artwork/templates/figma-ganesha-rose.webp"
+  },
+  {
+    "id": "figma-ganesha-maroon",
+    "node": "1:1137",
+    "name": "Ganesha Maroon",
+    "hi": "गणेश मरून",
+    "group": "Ganesha",
+    "color": "#d29464",
+    "ink": "#ffe0a9",
+    "padding": [
+      210,
+      64,
+      76,
+      64
+    ],
+    "layers": [
+      {
+        "asset": "c06b9",
+        "box": [
+          0,
+          0,
+          595,
+          892
+        ],
+        "image": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "flip": false
+      },
+      {
+        "asset": "c06b9",
+        "box": [
+          388,
+          171,
+          168,
+          231
+        ],
+        "image": [
+          -116.07142857142858,
+          -103.89610389610388,
+          354.16666666666663,
+          386.1471861471861
+        ],
+        "flip": false
+      }
+    ],
+    "paper": "#36090c",
+    "body": "Inria Sans",
+    "heading": "Inria Sans",
+    "nameFont": "Tiro Sanskrit",
+    "sacred": true,
+    "height": 892,
+    "family": "Ganesha",
+    "caption": "Ganesha artwork and a traditional border",
+    "captionHi": "गणेश चित्र और पारंपरिक सजावट",
+    "thumbnail": "/static/artwork/thumbnails/figma-ganesha-maroon.webp",
+    "background": "/static/artwork/templates/figma-ganesha-maroon.webp"
+  },
+  {
+    "id": "figma-ganesha-festive",
+    "node": "1:1217",
+    "name": "Ganesha Festive",
+    "hi": "गणेश उत्सव",
+    "group": "Ganesha",
+    "color": "#d29464",
+    "ink": "#ffe0a9",
+    "padding": [
+      160,
+      64,
+      150,
+      64
+    ],
+    "layers": [
+      {
+        "asset": "7de7d",
+        "box": [
+          -46,
+          -48,
+          687,
+          1030
+        ],
+        "image": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "flip": false
+      }
+    ],
+    "paper": "#36090c",
+    "body": "Inria Sans",
+    "heading": "Inria Sans",
+    "nameFont": "Tiro Sanskrit",
+    "sacred": true,
+    "height": 892,
+    "family": "Ganesha",
+    "caption": "Ganesha artwork and a traditional border",
+    "captionHi": "गणेश चित्र और पारंपरिक सजावट",
+    "thumbnail": "/static/artwork/thumbnails/figma-ganesha-festive.webp",
+    "background": "/static/artwork/templates/figma-ganesha-festive.webp"
+  }
+]

@@ -1,0 +1,9 @@
+/* The native cursor is hidden only after a fine pointer has entered the hero. */
+.craft-cursor{position:fixed;top:0;left:0;z-index:100;pointer-events:none!important;contain:layout style;width:0;height:0}
+.craft-dot{position:absolute;left:-3.5px;top:-3.5px;width:7px;height:7px;border-radius:50%;background:#6a2945}
+.craft-ring{position:absolute;left:-15px;top:-15px;width:30px;height:30px;border:1px solid #6a294559;border-radius:50%;transition:transform 250ms ease,opacity 180ms}
+.craft-label{position:absolute;left:15px;top:-19px;white-space:nowrap;border-radius:99px;background:#6a2945;color:#fbf7ef;padding:10px 15px;font:12px/1.5 var(--sans);opacity:0;transition:opacity 180ms}
+.craft-cursor.over-control .craft-ring{transform:scale(1.4)}.craft-cursor.over-design .craft-ring{opacity:0}.craft-cursor.over-design .craft-label{opacity:1}
+@media(hover:hover) and (pointer:fine) and (forced-colors:none){.editorial-hero.craft-pointer,.editorial-hero.craft-pointer *{cursor:none!important}}
+@media(prefers-reduced-motion:reduce){.craft-cursor *{transition:none!important}}
+@media print{.craft-cursor{display:none!important}}

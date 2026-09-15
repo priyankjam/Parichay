@@ -1,0 +1,36 @@
+from playwright.sync_api import sync_playwright, expect
+from browser_support import chromium_executable
+with sync_playwright() as p:
+ browser=p.chromium.launch(executable_path=chromium_executable(),headless=True,chromium_sandbox=True)
+ page=browser.new_page(viewport={'width':1440,'height':900})
+ errors=[]; payloads=[]
+ page.on('pageerror',lambda e:errors.append(str(e)))
+ page.on('request',lambda r:payloads.append(r.post_data_json) if '/api/preview' in r.url and r.method=='POST' else None)
+ page.goto('http://127.0.0.1:5050/create')
+ page.locator('[data-step="5"]').click()
+ page.locator('[data-field="family.0.mother"]').fill('Visible mother')
+ field=page.locator('[data-field="family.0.father"]');field.fill('Visibility Test Father')
+ toggle=page.locator('[data-field-visibility="family.0.father"]')
+ expect(toggle).to_have_text('Remove')
+ expect(toggle.locator('svg')).to_be_visible()
+ expect(page.locator('#preview-text')).to_contain_text('Visibility Test Father',timeout=65000)
+ toggle.click();expect(toggle).to_have_text('Add back');expect(field).to_have_value('Visibility Test Father')
+ page.wait_for_timeout(2500)
+ assert payloads and 'Visibility Test Father' not in str(payloads[-1]),str(payloads[-1])
+ page.reload();expect(toggle).to_have_text('Add back');expect(field).to_have_value('Visibility Test Father')
+ toggle.click();expect(toggle).to_have_text('Remove')
+ page.wait_for_timeout(2500)
+ assert 'Visibility Test Father' in str(payloads[-1])
+ page.set_viewport_size({'width':390,'height':844})
+ expect(toggle).to_be_visible()
+ box=toggle.bounding_box();assert box['x']>=0 and box['x']+box['width']<=390
+ page.locator('#section-jump').select_option('7')
+ expect(page.locator('[data-field-visibility="about.0.interests"]')).to_be_visible()
+ page.locator('details').filter(has=page.locator('#add-custom')).locator('summary').first.click()
+ page.locator('#add-custom').click()
+ custom=page.locator('[data-field-visibility]').filter(has_text='Remove')
+ pair=page.locator('.custom-row [data-field-visibility]');expect(pair).to_have_count(2)
+ pair.first.click();expect(pair.first).to_have_text('Add back');expect(pair.last).to_have_text('Add back')
+ assert not errors,errors
+ browser.close()
+print('Field controls: values retained, preview payload filtered/restored, reload persists, mobile fits, custom pair stays synchronized.')

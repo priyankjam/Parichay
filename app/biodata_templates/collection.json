@@ -1,0 +1,1341 @@
+[
+  {
+    "id": "craft-editorial-ivory",
+    "slug": "editorial-ivory",
+    "name": "Editorial Ivory",
+    "hi": "Editorial Ivory",
+    "number": 1,
+    "batch": 1,
+    "family": "Contemporary",
+    "category": [
+      "Contemporary"
+    ],
+    "cultural_tags": [],
+    "religious_style": null,
+    "region": [],
+    "photo_mode": "vertical",
+    "preferred_pages": 1,
+    "supports_no_photo": true,
+    "supports_rtl": true,
+    "art_density": "none",
+    "palette": [
+      "#F8F3EA",
+      "#292329",
+      "#6A2945"
+    ],
+    "layout_id": "editorial",
+    "artwork_pack_id": "none",
+    "art_placement": "none",
+    "recommended_for": [
+      "A professional introduction with equal room for qualifications and character"
+    ],
+    "intent": "A professional introduction with equal room for qualifications and character",
+    "tone": "Quiet editorial confidence",
+    "grid": "A typographic two-column spread, with a large left-aligned name and profession/city subtitle, a vertical portrait at right, and contact closing the document.",
+    "section_priority": [
+      "personal",
+      "education",
+      "career",
+      "about",
+      "family",
+      "culture",
+      "astrology",
+      "partner",
+      "custom",
+      "contact"
+    ],
+    "right_sections": [
+      "about",
+      "family",
+      "partner",
+      "custom"
+    ],
+    "default_sacred_art": "none",
+    "supported_sacred_art": [
+      "none"
+    ],
+    "assets": [],
+    "safe_zones": {
+      "header_art_zone": "Natural measured header; arch minimum 90mm; sacred artwork 32×36mm; never behind body text",
+      "body_safe_zone": "18mm inline margins, below measured header, 19mm clear at foot",
+      "photo_zone": "vertical frame in first header; contain-fit approved image",
+      "footer_art_zone": "Reserved outer edge or below reading area, first page only",
+      "page_2_continuation_zone": "Compact running name/rule; 23mm bottom margin; no repeated large artwork"
+    },
+    "caption": "Quiet editorial confidence",
+    "color": "#292329",
+    "text_accent": "#292329"
+  },
+  {
+    "id": "craft-modern-mono",
+    "slug": "modern-mono",
+    "name": "Modern Mono",
+    "hi": "Modern Mono",
+    "number": 2,
+    "batch": 1,
+    "family": "Contemporary",
+    "category": [
+      "Contemporary"
+    ],
+    "cultural_tags": [],
+    "religious_style": null,
+    "region": [],
+    "photo_mode": "hero",
+    "preferred_pages": 1,
+    "supports_no_photo": true,
+    "supports_rtl": true,
+    "art_density": "none",
+    "palette": [
+      "#FAF9F4",
+      "#242629",
+      "#666C70"
+    ],
+    "layout_id": "modular",
+    "artwork_pack_id": "none",
+    "art_placement": "none",
+    "recommended_for": [
+      "A clear education and professional history"
+    ],
+    "intent": "A clear education and professional history",
+    "tone": "Architectural precision",
+    "grid": "A 30% portrait rail at left, name at upper-right, then full-width modular rows with narrow section-label columns. No artwork.",
+    "section_priority": [
+      "education",
+      "career",
+      "personal",
+      "about",
+      "family",
+      "culture",
+      "astrology",
+      "partner",
+      "custom",
+      "contact"
+    ],
+    "right_sections": [],
+    "default_sacred_art": "none",
+    "supported_sacred_art": [
+      "none"
+    ],
+    "assets": [],
+    "safe_zones": {
+      "header_art_zone": "Natural measured header; arch minimum 90mm; sacred artwork 32×36mm; never behind body text",
+      "body_safe_zone": "18mm inline margins, below measured header, 19mm clear at foot",
+      "photo_zone": "hero frame in first header; contain-fit approved image",
+      "footer_art_zone": "Reserved outer edge or below reading area, first page only",
+      "page_2_continuation_zone": "Compact running name/rule; 23mm bottom margin; no repeated large artwork"
+    },
+    "caption": "Architectural precision",
+    "color": "#242629",
+    "text_accent": "#242629"
+  },
+  {
+    "id": "craft-sage-botanical",
+    "slug": "sage-botanical",
+    "name": "Sage Botanical",
+    "hi": "Sage Botanical",
+    "number": 3,
+    "batch": 1,
+    "family": "Contemporary",
+    "category": [
+      "Contemporary"
+    ],
+    "cultural_tags": [],
+    "religious_style": null,
+    "region": [],
+    "photo_mode": "square",
+    "preferred_pages": 1,
+    "supports_no_photo": true,
+    "supports_rtl": true,
+    "art_density": "low",
+    "palette": [
+      "#F9F5EC",
+      "#4E6651",
+      "#A76452"
+    ],
+    "layout_id": "editorial",
+    "artwork_pack_id": "sage-branch",
+    "art_placement": "corner",
+    "recommended_for": [
+      "A warm personal narrative with readable structured detail"
+    ],
+    "intent": "A warm personal narrative with readable structured detail",
+    "tone": "Natural and softly romantic",
+    "grid": "Left name and square right portrait, a full-width introduction, then a relaxed asymmetric information grid. Botanical corners remain outside the reading area.",
+    "section_priority": [
+      "about",
+      "personal",
+      "education",
+      "career",
+      "family",
+      "partner",
+      "culture",
+      "astrology",
+      "custom",
+      "contact"
+    ],
+    "right_sections": [
+      "family",
+      "partner",
+      "custom"
+    ],
+    "default_sacred_art": "none",
+    "supported_sacred_art": [
+      "none"
+    ],
+    "assets": [
+      "sage-branch"
+    ],
+    "safe_zones": {
+      "header_art_zone": "Natural measured header; arch minimum 90mm; sacred artwork 32×36mm; never behind body text",
+      "body_safe_zone": "18mm inline margins, below measured header, 19mm clear at foot",
+      "photo_zone": "square frame in first header; contain-fit approved image",
+      "footer_art_zone": "Reserved outer edge or below reading area, first page only",
+      "page_2_continuation_zone": "Compact running name/rule; 23mm bottom margin; no repeated large artwork"
+    },
+    "caption": "Natural and softly romantic",
+    "color": "#4E6651",
+    "text_accent": "#4E6651"
+  },
+  {
+    "id": "craft-terracotta-arch",
+    "slug": "terracotta-arch",
+    "name": "Terracotta Arch",
+    "hi": "Terracotta Arch",
+    "number": 4,
+    "batch": 1,
+    "family": "Contemporary",
+    "category": [
+      "Contemporary"
+    ],
+    "cultural_tags": [],
+    "religious_style": null,
+    "region": [],
+    "photo_mode": "arched",
+    "preferred_pages": 1,
+    "supports_no_photo": true,
+    "supports_rtl": true,
+    "art_density": "low",
+    "palette": [
+      "#FAF0E5",
+      "#A65E46",
+      "#652D3F"
+    ],
+    "layout_id": "arch",
+    "artwork_pack_id": "terracotta-arch",
+    "art_placement": "arch",
+    "recommended_for": [
+      "A welcoming portrait-led introduction"
+    ],
+    "intent": "A welcoming portrait-led introduction",
+    "tone": "Contemporary Indian warmth",
+    "grid": "An architectural first-page header occupies up to 85mm, with name and portrait inside a clean arch opening. Body details begin below the arch.",
+    "section_priority": [
+      "personal",
+      "about",
+      "education",
+      "career",
+      "family",
+      "partner",
+      "culture",
+      "astrology",
+      "custom",
+      "contact"
+    ],
+    "right_sections": [],
+    "default_sacred_art": "none",
+    "supported_sacred_art": [
+      "none"
+    ],
+    "assets": [
+      "terracotta-arch"
+    ],
+    "safe_zones": {
+      "header_art_zone": "Natural measured header; arch minimum 90mm; sacred artwork 32×36mm; never behind body text",
+      "body_safe_zone": "18mm inline margins, below measured header, 19mm clear at foot",
+      "photo_zone": "arched frame in first header; contain-fit approved image",
+      "footer_art_zone": "Reserved outer edge or below reading area, first page only",
+      "page_2_continuation_zone": "Compact running name/rule; 23mm bottom margin; no repeated large artwork"
+    },
+    "caption": "Contemporary Indian warmth",
+    "color": "#A65E46",
+    "text_accent": "#95553F"
+  },
+  {
+    "id": "craft-midnight-art-deco",
+    "slug": "midnight-art-deco",
+    "name": "Midnight Art Deco",
+    "hi": "Midnight Art Deco",
+    "number": 5,
+    "batch": 1,
+    "family": "Contemporary",
+    "category": [
+      "Contemporary"
+    ],
+    "cultural_tags": [],
+    "religious_style": null,
+    "region": [],
+    "photo_mode": "circle",
+    "preferred_pages": 1,
+    "supports_no_photo": true,
+    "supports_rtl": true,
+    "art_density": "low",
+    "palette": [
+      "#FBF8F0",
+      "#20394D",
+      "#A08550"
+    ],
+    "layout_id": "centered",
+    "artwork_pack_id": "deco-corner",
+    "art_placement": "deco",
+    "recommended_for": [
+      "A balanced formal introduction with strong scanability"
+    ],
+    "intent": "A balanced formal introduction with strong scanability",
+    "tone": "Poised urban luxury",
+    "grid": "Central name with a right circular portrait, stepped linear framing and a symmetrical body grid. Midnight is ink and geometry, not a dark page fill.",
+    "section_priority": [
+      "personal",
+      "education",
+      "career",
+      "family",
+      "about",
+      "partner",
+      "culture",
+      "astrology",
+      "custom",
+      "contact"
+    ],
+    "right_sections": [],
+    "default_sacred_art": "none",
+    "supported_sacred_art": [
+      "none"
+    ],
+    "assets": [
+      "deco-corner"
+    ],
+    "safe_zones": {
+      "header_art_zone": "Natural measured header; arch minimum 90mm; sacred artwork 32×36mm; never behind body text",
+      "body_safe_zone": "18mm inline margins, below measured header, 19mm clear at foot",
+      "photo_zone": "circle frame in first header; contain-fit approved image",
+      "footer_art_zone": "Reserved outer edge or below reading area, first page only",
+      "page_2_continuation_zone": "Compact running name/rule; 23mm bottom margin; no repeated large artwork"
+    },
+    "caption": "Poised urban luxury",
+    "color": "#20394D",
+    "text_accent": "#20394D"
+  },
+  {
+    "id": "craft-paper-and-ink",
+    "slug": "paper-and-ink",
+    "name": "Paper & Ink",
+    "hi": "Paper & Ink",
+    "number": 6,
+    "batch": 2,
+    "family": "Contemporary",
+    "category": [
+      "Contemporary"
+    ],
+    "cultural_tags": [],
+    "religious_style": null,
+    "region": [],
+    "photo_mode": "medallion",
+    "preferred_pages": 1,
+    "supports_no_photo": true,
+    "supports_rtl": true,
+    "art_density": "low",
+    "palette": [
+      "#F7F0E5",
+      "#2D2925",
+      "#9F5746"
+    ],
+    "layout_id": "narrative",
+    "artwork_pack_id": "ink-leaf",
+    "art_placement": "small",
+    "recommended_for": [
+      "A creative person in their own words"
+    ],
+    "intent": "A creative person in their own words",
+    "tone": "Handmade and intimate",
+    "grid": "An expansive serif name and small medallion portrait; About leads in a wide measure and the remaining facts follow compactly. A single leaf is the only illustrative motif.",
+    "section_priority": [
+      "about",
+      "personal",
+      "education",
+      "career",
+      "family",
+      "partner",
+      "culture",
+      "astrology",
+      "custom",
+      "contact"
+    ],
+    "right_sections": [],
+    "default_sacred_art": "none",
+    "supported_sacred_art": [
+      "none"
+    ],
+    "assets": [
+      "ink-leaf"
+    ],
+    "safe_zones": {
+      "header_art_zone": "Natural measured header; arch minimum 90mm; sacred artwork 32×36mm; never behind body text",
+      "body_safe_zone": "24mm inline margins, below measured header, 19mm clear at foot",
+      "photo_zone": "medallion frame in first header; contain-fit approved image",
+      "footer_art_zone": "Reserved outer edge or below reading area, first page only",
+      "page_2_continuation_zone": "Compact running name/rule; 23mm bottom margin; no repeated large artwork"
+    },
+    "caption": "Handmade and intimate",
+    "color": "#2D2925",
+    "text_accent": "#2D2925"
+  },
+  {
+    "id": "craft-southern-kolam",
+    "slug": "southern-kolam",
+    "name": "Southern Kolam",
+    "hi": "Southern Kolam",
+    "number": 7,
+    "batch": 2,
+    "family": "Regional",
+    "category": [
+      "Regional"
+    ],
+    "cultural_tags": [
+      "South India"
+    ],
+    "religious_style": null,
+    "region": [
+      "South India"
+    ],
+    "photo_mode": "square",
+    "preferred_pages": 1,
+    "supports_no_photo": true,
+    "supports_rtl": true,
+    "art_density": "medium",
+    "palette": [
+      "#FBF5E9",
+      "#8C502F",
+      "#563A2A"
+    ],
+    "layout_id": "centered",
+    "artwork_pack_id": "kolam-corner",
+    "art_placement": "corners",
+    "recommended_for": [
+      "Personal and birth information followed by education and family"
+    ],
+    "intent": "Personal and birth information followed by education and family",
+    "tone": "Ordered and welcoming",
+    "grid": "Centered name, right portrait and paired structured sections; birth details rise naturally when present. Small kolam-inspired corners do not underlay text.",
+    "section_priority": [
+      "personal",
+      "astrology",
+      "culture",
+      "education",
+      "career",
+      "family",
+      "about",
+      "partner",
+      "custom",
+      "contact"
+    ],
+    "right_sections": [],
+    "default_sacred_art": "none",
+    "supported_sacred_art": [
+      "none"
+    ],
+    "assets": [
+      "kolam-corner"
+    ],
+    "safe_zones": {
+      "header_art_zone": "Natural measured header; arch minimum 90mm; sacred artwork 32×36mm; never behind body text",
+      "body_safe_zone": "18mm inline margins, below measured header, 19mm clear at foot",
+      "photo_zone": "square frame in first header; contain-fit approved image",
+      "footer_art_zone": "Reserved outer edge or below reading area, first page only",
+      "page_2_continuation_zone": "Compact running name/rule; 23mm bottom margin; no repeated large artwork"
+    },
+    "caption": "Ordered and welcoming",
+    "color": "#8C502F",
+    "text_accent": "#8C502F"
+  },
+  {
+    "id": "craft-bengal-alpana",
+    "slug": "bengal-alpana",
+    "name": "Bengal Alpana",
+    "hi": "Bengal Alpana",
+    "number": 8,
+    "batch": 2,
+    "family": "Regional",
+    "category": [
+      "Regional"
+    ],
+    "cultural_tags": [
+      "Bengal"
+    ],
+    "religious_style": null,
+    "region": [
+      "Bengal"
+    ],
+    "photo_mode": "circle",
+    "preferred_pages": 1,
+    "supports_no_photo": true,
+    "supports_rtl": true,
+    "art_density": "medium",
+    "palette": [
+      "#FBF8EF",
+      "#963F3C",
+      "#302628"
+    ],
+    "layout_id": "centered",
+    "artwork_pack_id": "alpana-ornament",
+    "art_placement": "emblem",
+    "recommended_for": [
+      "A concise introduction in Bengali or English"
+    ],
+    "intent": "A concise introduction in Bengali or English",
+    "tone": "Expressive and graceful",
+    "grid": "A small circular Alpana-inspired ornament above the name, a gently offset round portrait, and a calm two-column structure below.",
+    "section_priority": [
+      "personal",
+      "about",
+      "family",
+      "education",
+      "career",
+      "culture",
+      "astrology",
+      "partner",
+      "custom",
+      "contact"
+    ],
+    "right_sections": [],
+    "default_sacred_art": "none",
+    "supported_sacred_art": [
+      "none"
+    ],
+    "assets": [
+      "alpana-ornament"
+    ],
+    "safe_zones": {
+      "header_art_zone": "Natural measured header; arch minimum 90mm; sacred artwork 32×36mm; never behind body text",
+      "body_safe_zone": "18mm inline margins, below measured header, 19mm clear at foot",
+      "photo_zone": "circle frame in first header; contain-fit approved image",
+      "footer_art_zone": "Reserved outer edge or below reading area, first page only",
+      "page_2_continuation_zone": "Compact running name/rule; 23mm bottom margin; no repeated large artwork"
+    },
+    "caption": "Expressive and graceful",
+    "color": "#963F3C",
+    "text_accent": "#963F3C"
+  },
+  {
+    "id": "craft-gujarat-patola",
+    "slug": "gujarat-patola",
+    "name": "Gujarat Patola",
+    "hi": "Gujarat Patola",
+    "number": 9,
+    "batch": 2,
+    "family": "Regional",
+    "category": [
+      "Regional"
+    ],
+    "cultural_tags": [
+      "Gujarat"
+    ],
+    "religious_style": null,
+    "region": [
+      "Gujarat"
+    ],
+    "photo_mode": "vertical",
+    "preferred_pages": 1,
+    "supports_no_photo": true,
+    "supports_rtl": true,
+    "art_density": "medium",
+    "palette": [
+      "#FAF3E6",
+      "#853D46",
+      "#303D62",
+      "#AF823D"
+    ],
+    "layout_id": "rail",
+    "artwork_pack_id": "patola-band",
+    "art_placement": "rail",
+    "recommended_for": [
+      "A strong portrait and a practical family/professional record"
+    ],
+    "intent": "A strong portrait and a practical family/professional record",
+    "tone": "Textile richness with restraint",
+    "grid": "A 10mm left textile strip gives structure to a wide neutral body; name and portrait share the upper content area, with full-width modular records below.",
+    "section_priority": [
+      "personal",
+      "education",
+      "career",
+      "family",
+      "culture",
+      "astrology",
+      "about",
+      "partner",
+      "custom",
+      "contact"
+    ],
+    "right_sections": [],
+    "default_sacred_art": "none",
+    "supported_sacred_art": [
+      "none"
+    ],
+    "assets": [
+      "patola-band"
+    ],
+    "safe_zones": {
+      "header_art_zone": "Natural measured header; arch minimum 90mm; sacred artwork 32×36mm; never behind body text",
+      "body_safe_zone": "18mm inline margins, below measured header, 19mm clear at foot",
+      "photo_zone": "vertical frame in first header; contain-fit approved image",
+      "footer_art_zone": "Reserved outer edge or below reading area, first page only",
+      "page_2_continuation_zone": "Compact running name/rule; 23mm bottom margin; no repeated large artwork"
+    },
+    "caption": "Textile richness with restraint",
+    "color": "#853D46",
+    "text_accent": "#853D46"
+  },
+  {
+    "id": "craft-paithani-peacock",
+    "slug": "paithani-peacock",
+    "name": "Paithani Peacock",
+    "hi": "Paithani Peacock",
+    "number": 10,
+    "batch": 2,
+    "family": "Regional",
+    "category": [
+      "Regional"
+    ],
+    "cultural_tags": [
+      "Maharashtra"
+    ],
+    "religious_style": null,
+    "region": [
+      "Maharashtra"
+    ],
+    "photo_mode": "vertical",
+    "preferred_pages": 1,
+    "supports_no_photo": true,
+    "supports_rtl": true,
+    "art_density": "medium",
+    "palette": [
+      "#FAF4E8",
+      "#29584D",
+      "#63384E",
+      "#AD8A50"
+    ],
+    "layout_id": "editorial",
+    "artwork_pack_id": "paithani-peacock",
+    "art_placement": "footer-corner",
+    "recommended_for": [
+      "A personal and family introduction with Maharashtrian textile influence"
+    ],
+    "intent": "A personal and family introduction with Maharashtrian textile influence",
+    "tone": "Regal but quiet",
+    "grid": "Name at left, portrait at right, and personal/birth details leading the spread. A small bottom-right peacock is reserved outside the body safe area.",
+    "section_priority": [
+      "personal",
+      "astrology",
+      "education",
+      "career",
+      "family",
+      "about",
+      "culture",
+      "partner",
+      "custom",
+      "contact"
+    ],
+    "right_sections": [
+      "about",
+      "family",
+      "partner",
+      "custom"
+    ],
+    "default_sacred_art": "none",
+    "supported_sacred_art": [
+      "none"
+    ],
+    "assets": [
+      "paithani-peacock"
+    ],
+    "safe_zones": {
+      "header_art_zone": "Natural measured header; arch minimum 90mm; sacred artwork 32×36mm; never behind body text",
+      "body_safe_zone": "18mm inline margins, below measured header, 42mm clear at foot",
+      "photo_zone": "vertical frame in first header; contain-fit approved image",
+      "footer_art_zone": "Reserved outer edge or below reading area, first page only",
+      "page_2_continuation_zone": "Compact running name/rule; 23mm bottom margin; no repeated large artwork"
+    },
+    "caption": "Regal but quiet",
+    "color": "#29584D",
+    "text_accent": "#29584D"
+  },
+  {
+    "id": "craft-rajasthani-miniature",
+    "slug": "rajasthani-miniature",
+    "name": "Rajasthani Miniature",
+    "hi": "Rajasthani Miniature",
+    "number": 11,
+    "batch": 2,
+    "family": "Regional",
+    "category": [
+      "Regional"
+    ],
+    "cultural_tags": [
+      "Rajasthan"
+    ],
+    "religious_style": null,
+    "region": [
+      "Rajasthan"
+    ],
+    "photo_mode": "arched",
+    "preferred_pages": 1,
+    "supports_no_photo": true,
+    "supports_rtl": true,
+    "art_density": "medium",
+    "palette": [
+      "#FAF0E1",
+      "#516956",
+      "#B77774",
+      "#3F587D"
+    ],
+    "layout_id": "pavilion",
+    "artwork_pack_id": "miniature-pavilion",
+    "art_placement": "pavilion",
+    "recommended_for": [
+      "An orderly introduction framed by small-scale architecture"
+    ],
+    "intent": "An orderly introduction framed by small-scale architecture",
+    "tone": "Intimate heritage",
+    "grid": "A small pavilion illustration tops a centered name and optional arched portrait. Full-width sections create a deliberate vertical reading order.",
+    "section_priority": [
+      "personal",
+      "family",
+      "education",
+      "career",
+      "about",
+      "culture",
+      "astrology",
+      "partner",
+      "custom",
+      "contact"
+    ],
+    "right_sections": [],
+    "default_sacred_art": "none",
+    "supported_sacred_art": [
+      "none"
+    ],
+    "assets": [
+      "miniature-pavilion"
+    ],
+    "safe_zones": {
+      "header_art_zone": "Natural measured header; arch minimum 90mm; sacred artwork 32×36mm; never behind body text",
+      "body_safe_zone": "18mm inline margins, below measured header, 19mm clear at foot",
+      "photo_zone": "arched frame in first header; contain-fit approved image",
+      "footer_art_zone": "Reserved outer edge or below reading area, first page only",
+      "page_2_continuation_zone": "Compact running name/rule; 23mm bottom margin; no repeated large artwork"
+    },
+    "caption": "Intimate heritage",
+    "color": "#516956",
+    "text_accent": "#516956"
+  },
+  {
+    "id": "craft-braj-krishna",
+    "slug": "braj-krishna",
+    "name": "Braj Krishna",
+    "hi": "Braj Krishna",
+    "number": 12,
+    "batch": 3,
+    "family": "Traditional / Cultural",
+    "category": [
+      "Traditional / Cultural"
+    ],
+    "cultural_tags": [
+      "Braj"
+    ],
+    "religious_style": "braj-krishna",
+    "region": [
+      "Braj"
+    ],
+    "photo_mode": "square",
+    "preferred_pages": 1,
+    "supports_no_photo": true,
+    "supports_rtl": true,
+    "art_density": "medium",
+    "palette": [
+      "#FAF5E9",
+      "#3E6183",
+      "#B27589",
+      "#A58A55"
+    ],
+    "layout_id": "devotional",
+    "artwork_pack_id": "braj-lotus",
+    "art_placement": "devotional",
+    "recommended_for": [
+      "Explicitly chosen Braj/Krishna expression with a clear personal record"
+    ],
+    "intent": "Explicitly chosen Braj/Krishna expression with a clear personal record",
+    "tone": "Serene devotional warmth",
+    "grid": "A small centered Krishna artwork, then name and right portrait; personal and career details lead, followed by family and About. Artwork is opt-in and never inferred from place or identity.",
+    "section_priority": [
+      "personal",
+      "career",
+      "education",
+      "family",
+      "about",
+      "culture",
+      "astrology",
+      "partner",
+      "custom",
+      "contact"
+    ],
+    "right_sections": [],
+    "default_sacred_art": "krishna",
+    "supported_sacred_art": [
+      "none",
+      "krishna"
+    ],
+    "assets": [
+      "braj-lotus",
+      "krishna"
+    ],
+    "safe_zones": {
+      "header_art_zone": "Natural measured header; arch minimum 90mm; sacred artwork 32×36mm; never behind body text",
+      "body_safe_zone": "18mm inline margins, below measured header, 19mm clear at foot",
+      "photo_zone": "square frame in first header; contain-fit approved image",
+      "footer_art_zone": "Reserved outer edge or below reading area, first page only",
+      "page_2_continuation_zone": "Compact running name/rule; 23mm bottom margin; no repeated large artwork"
+    },
+    "caption": "Serene devotional warmth",
+    "color": "#3E6183",
+    "text_accent": "#3E6183"
+  },
+  {
+    "id": "craft-ganesha-ivory",
+    "slug": "ganesha-ivory",
+    "name": "Ganesha Ivory",
+    "hi": "Ganesha Ivory",
+    "number": 13,
+    "batch": 3,
+    "family": "Traditional / Cultural",
+    "category": [
+      "Traditional / Cultural"
+    ],
+    "cultural_tags": [],
+    "religious_style": "ganesha-ivory",
+    "region": [],
+    "photo_mode": "circle",
+    "preferred_pages": 1,
+    "supports_no_photo": true,
+    "supports_rtl": true,
+    "art_density": "medium",
+    "palette": [
+      "#FBF5E8",
+      "#9A672E",
+      "#763446",
+      "#B39564"
+    ],
+    "layout_id": "devotional",
+    "artwork_pack_id": "none",
+    "art_placement": "devotional",
+    "recommended_for": [
+      "An explicitly devotional introduction with optional birth details prominent"
+    ],
+    "intent": "An explicitly devotional introduction with optional birth details prominent",
+    "tone": "A dignified beginning",
+    "grid": "A small centered Ganesha illustration, centered name and right portrait. Present birth/astrology sections move up; missing sections leave no placeholders.",
+    "section_priority": [
+      "personal",
+      "astrology",
+      "culture",
+      "education",
+      "career",
+      "family",
+      "about",
+      "partner",
+      "custom",
+      "contact"
+    ],
+    "right_sections": [],
+    "default_sacred_art": "ganesha",
+    "supported_sacred_art": [
+      "none",
+      "ganesha"
+    ],
+    "assets": [
+      "ganesha"
+    ],
+    "safe_zones": {
+      "header_art_zone": "Natural measured header; arch minimum 90mm; sacred artwork 32×36mm; never behind body text",
+      "body_safe_zone": "18mm inline margins, below measured header, 19mm clear at foot",
+      "photo_zone": "circle frame in first header; contain-fit approved image",
+      "footer_art_zone": "Reserved outer edge or below reading area, first page only",
+      "page_2_continuation_zone": "Compact running name/rule; 23mm bottom margin; no repeated large artwork"
+    },
+    "caption": "A dignified beginning",
+    "color": "#9A672E",
+    "text_accent": "#8E5E2A"
+  },
+  {
+    "id": "craft-rama-heritage",
+    "slug": "rama-heritage",
+    "name": "Rama Heritage",
+    "hi": "Rama Heritage",
+    "number": 14,
+    "batch": 3,
+    "family": "Traditional / Cultural",
+    "category": [
+      "Traditional / Cultural"
+    ],
+    "cultural_tags": [],
+    "religious_style": "rama-heritage",
+    "region": [],
+    "photo_mode": "vertical",
+    "preferred_pages": 1,
+    "supports_no_photo": true,
+    "supports_rtl": true,
+    "art_density": "medium",
+    "palette": [
+      "#F7EFDF",
+      "#536448",
+      "#9C6740",
+      "#713B3E"
+    ],
+    "layout_id": "devotional-aside",
+    "artwork_pack_id": "none",
+    "art_placement": "devotional-aside",
+    "recommended_for": [
+      "An explicitly selected Rama-devotional introduction"
+    ],
+    "intent": "An explicitly selected Rama-devotional introduction",
+    "tone": "Dignified and grounded",
+    "grid": "Rama occupies a protected top-left header slot; name and portrait sit beside it. Wide, ordered sections deliberately differ from the centered devotional layouts.",
+    "section_priority": [
+      "personal",
+      "education",
+      "career",
+      "family",
+      "about",
+      "culture",
+      "astrology",
+      "partner",
+      "custom",
+      "contact"
+    ],
+    "right_sections": [],
+    "default_sacred_art": "rama",
+    "supported_sacred_art": [
+      "none",
+      "rama"
+    ],
+    "assets": [
+      "rama"
+    ],
+    "safe_zones": {
+      "header_art_zone": "Natural measured header; arch minimum 90mm; sacred artwork 32×36mm; never behind body text",
+      "body_safe_zone": "18mm inline margins, below measured header, 19mm clear at foot",
+      "photo_zone": "vertical frame in first header; contain-fit approved image",
+      "footer_art_zone": "Reserved outer edge or below reading area, first page only",
+      "page_2_continuation_zone": "Compact running name/rule; 23mm bottom margin; no repeated large artwork"
+    },
+    "caption": "Dignified and grounded",
+    "color": "#536448",
+    "text_accent": "#536448"
+  },
+  {
+    "id": "craft-sikh-phulkari",
+    "slug": "sikh-phulkari",
+    "name": "Sikh Phulkari",
+    "hi": "Sikh Phulkari",
+    "number": 15,
+    "batch": 3,
+    "family": "Traditional / Cultural",
+    "category": [
+      "Traditional / Cultural"
+    ],
+    "cultural_tags": [
+      "Punjab"
+    ],
+    "religious_style": "sikh-phulkari",
+    "region": [
+      "Punjab"
+    ],
+    "photo_mode": "square",
+    "preferred_pages": 1,
+    "supports_no_photo": true,
+    "supports_rtl": true,
+    "art_density": "medium",
+    "palette": [
+      "#FBF5E9",
+      "#69364E",
+      "#AE873D",
+      "#A45E7B"
+    ],
+    "layout_id": "centered",
+    "artwork_pack_id": "phulkari-band",
+    "art_placement": "footer-band",
+    "recommended_for": [
+      "A Punjabi/Sikh expression with sacred symbols chosen separately"
+    ],
+    "intent": "A Punjabi/Sikh expression with sacred symbols chosen separately",
+    "tone": "Warm textile geometry",
+    "grid": "Centered name with optional verified Ik Onkar or Khanda above it, photo at right, and a balanced grid. A narrow Phulkari-inspired strip closes the first sheet.",
+    "section_priority": [
+      "personal",
+      "education",
+      "career",
+      "family",
+      "about",
+      "culture",
+      "partner",
+      "astrology",
+      "custom",
+      "contact"
+    ],
+    "right_sections": [],
+    "default_sacred_art": "none",
+    "supported_sacred_art": [
+      "none",
+      "ik-onkar",
+      "khanda"
+    ],
+    "assets": [
+      "phulkari-band"
+    ],
+    "safe_zones": {
+      "header_art_zone": "Natural measured header; arch minimum 90mm; sacred artwork 32×36mm; never behind body text",
+      "body_safe_zone": "18mm inline margins, below measured header, 25mm clear at foot",
+      "photo_zone": "square frame in first header; contain-fit approved image",
+      "footer_art_zone": "Reserved outer edge or below reading area, first page only",
+      "page_2_continuation_zone": "Compact running name/rule; 23mm bottom margin; no repeated large artwork"
+    },
+    "caption": "Warm textile geometry",
+    "color": "#69364E",
+    "text_accent": "#69364E"
+  },
+  {
+    "id": "craft-nikah-nocturne",
+    "slug": "nikah-nocturne",
+    "name": "Nikah Nocturne",
+    "hi": "Nikah Nocturne",
+    "number": 16,
+    "batch": 3,
+    "family": "Traditional / Cultural",
+    "category": [
+      "Traditional / Cultural"
+    ],
+    "cultural_tags": [],
+    "religious_style": "nikah-nocturne",
+    "region": [],
+    "photo_mode": "no-photo",
+    "preferred_pages": 1,
+    "supports_no_photo": true,
+    "supports_rtl": true,
+    "art_density": "medium",
+    "palette": [
+      "#F8F4E9",
+      "#254A47",
+      "#2C405E",
+      "#AA8C54"
+    ],
+    "layout_id": "arch",
+    "artwork_pack_id": "nikah-arch",
+    "art_placement": "arch",
+    "recommended_for": [
+      "A non-figurative marriage introduction, with an optional portrait and RTL-ready layout"
+    ],
+    "intent": "A non-figurative marriage introduction, with an optional portrait and RTL-ready layout",
+    "tone": "Quiet architectural depth",
+    "grid": "An open geometric arch frames a typography-led name; optional portrait joins the header without leaving a gap when absent. Body is high-contrast on ivory, with logical RTL-safe alignment.",
+    "section_priority": [
+      "personal",
+      "family",
+      "education",
+      "career",
+      "about",
+      "partner",
+      "culture",
+      "astrology",
+      "custom",
+      "contact"
+    ],
+    "right_sections": [],
+    "default_sacred_art": "none",
+    "supported_sacred_art": [
+      "none"
+    ],
+    "assets": [
+      "nikah-arch"
+    ],
+    "safe_zones": {
+      "header_art_zone": "Natural measured header; arch minimum 90mm; sacred artwork 32×36mm; never behind body text",
+      "body_safe_zone": "18mm inline margins, below measured header, 19mm clear at foot",
+      "photo_zone": "no-photo frame in first header; contain-fit approved image",
+      "footer_art_zone": "Reserved outer edge or below reading area, first page only",
+      "page_2_continuation_zone": "Compact running name/rule; 23mm bottom margin; no repeated large artwork"
+    },
+    "caption": "Quiet architectural depth",
+    "color": "#254A47",
+    "text_accent": "#254A47"
+  },
+  {
+    "id": "craft-christian-cathedral-ivory",
+    "slug": "christian-cathedral-ivory",
+    "name": "Christian Cathedral Ivory",
+    "hi": "Christian Cathedral Ivory",
+    "number": 17,
+    "batch": 3,
+    "family": "Traditional / Cultural",
+    "category": [
+      "Traditional / Cultural"
+    ],
+    "cultural_tags": [],
+    "religious_style": "christian-cathedral-ivory",
+    "region": [],
+    "photo_mode": "arched",
+    "preferred_pages": 1,
+    "supports_no_photo": true,
+    "supports_rtl": true,
+    "art_density": "medium",
+    "palette": [
+      "#FAF7EC",
+      "#577064",
+      "#713C4B",
+      "#AD9565"
+    ],
+    "layout_id": "cathedral",
+    "artwork_pack_id": "cathedral-window",
+    "art_placement": "cathedral",
+    "recommended_for": [
+      "A values-led introduction without an astrology assumption"
+    ],
+    "intent": "A values-led introduction without an astrology assumption",
+    "tone": "Light-filled and thoughtful",
+    "grid": "Tall architectural name/portrait framing, then full-width About and family-led detail. An optional verified cross remains independent of the generated botanical window geometry.",
+    "section_priority": [
+      "about",
+      "family",
+      "personal",
+      "education",
+      "career",
+      "partner",
+      "culture",
+      "astrology",
+      "custom",
+      "contact"
+    ],
+    "right_sections": [],
+    "default_sacred_art": "none",
+    "supported_sacred_art": [
+      "none",
+      "cross"
+    ],
+    "assets": [
+      "cathedral-window"
+    ],
+    "safe_zones": {
+      "header_art_zone": "Natural measured header; arch minimum 90mm; sacred artwork 32×36mm; never behind body text",
+      "body_safe_zone": "18mm inline margins, below measured header, 19mm clear at foot",
+      "photo_zone": "arched frame in first header; contain-fit approved image",
+      "footer_art_zone": "Reserved outer edge or below reading area, first page only",
+      "page_2_continuation_zone": "Compact running name/rule; 23mm bottom margin; no repeated large artwork"
+    },
+    "caption": "Light-filled and thoughtful",
+    "color": "#577064",
+    "text_accent": "#577064"
+  },
+  {
+    "id": "craft-jain-ahimsa",
+    "slug": "jain-ahimsa",
+    "name": "Jain Ahimsa",
+    "hi": "Jain Ahimsa",
+    "number": 18,
+    "batch": 3,
+    "family": "Traditional / Cultural",
+    "category": [
+      "Traditional / Cultural"
+    ],
+    "cultural_tags": [],
+    "religious_style": "jain-ahimsa",
+    "region": [],
+    "photo_mode": "medallion",
+    "preferred_pages": 1,
+    "supports_no_photo": true,
+    "supports_rtl": true,
+    "art_density": "medium",
+    "palette": [
+      "#FCF7ED",
+      "#925037",
+      "#763A38",
+      "#61725A"
+    ],
+    "layout_id": "centered",
+    "artwork_pack_id": "ahimsa-geometry",
+    "art_placement": "emblem",
+    "recommended_for": [
+      "A symmetrical introduction that gives space to stated values and lifestyle"
+    ],
+    "intent": "A symmetrical introduction that gives space to stated values and lifestyle",
+    "tone": "Clean and restrained",
+    "grid": "A small non-symbolic architectural lotus ornament above the centered name. A medallion portrait and orderly paired sections; custom lifestyle details may appear prominently. No unverified Jain sacred mark is supplied.",
+    "section_priority": [
+      "personal",
+      "about",
+      "custom",
+      "family",
+      "education",
+      "career",
+      "partner",
+      "culture",
+      "astrology",
+      "contact"
+    ],
+    "right_sections": [],
+    "default_sacred_art": "none",
+    "supported_sacred_art": [
+      "none"
+    ],
+    "assets": [
+      "ahimsa-geometry"
+    ],
+    "safe_zones": {
+      "header_art_zone": "Natural measured header; arch minimum 90mm; sacred artwork 32×36mm; never behind body text",
+      "body_safe_zone": "18mm inline margins, below measured header, 19mm clear at foot",
+      "photo_zone": "medallion frame in first header; contain-fit approved image",
+      "footer_art_zone": "Reserved outer edge or below reading area, first page only",
+      "page_2_continuation_zone": "Compact running name/rule; 23mm bottom margin; no repeated large artwork"
+    },
+    "caption": "Clean and restrained",
+    "color": "#925037",
+    "text_accent": "#925037"
+  },
+  {
+    "id": "craft-dhamma-lotus",
+    "slug": "dhamma-lotus",
+    "name": "Dhamma Lotus",
+    "hi": "Dhamma Lotus",
+    "number": 19,
+    "batch": 3,
+    "family": "Traditional / Cultural",
+    "category": [
+      "Traditional / Cultural"
+    ],
+    "cultural_tags": [],
+    "religious_style": "dhamma-lotus",
+    "region": [],
+    "photo_mode": "medallion",
+    "preferred_pages": 1,
+    "supports_no_photo": true,
+    "supports_rtl": true,
+    "art_density": "medium",
+    "palette": [
+      "#FAF5E9",
+      "#384E70",
+      "#A57B36",
+      "#BE8991"
+    ],
+    "layout_id": "narrative",
+    "artwork_pack_id": "dhamma-lotus",
+    "art_placement": "small",
+    "recommended_for": [
+      "An education-led introduction with room for values"
+    ],
+    "intent": "An education-led introduction with room for values",
+    "tone": "Reflective and dignified",
+    "grid": "Large calm margins, small portrait and a strong education/career opening. An optional verified eight-spoked Wheel of Dharma is separate from the lotus artwork.",
+    "section_priority": [
+      "education",
+      "career",
+      "about",
+      "personal",
+      "family",
+      "partner",
+      "custom",
+      "culture",
+      "astrology",
+      "contact"
+    ],
+    "right_sections": [],
+    "default_sacred_art": "none",
+    "supported_sacred_art": [
+      "none",
+      "dhamma-wheel"
+    ],
+    "assets": [
+      "dhamma-lotus"
+    ],
+    "safe_zones": {
+      "header_art_zone": "Natural measured header; arch minimum 90mm; sacred artwork 32×36mm; never behind body text",
+      "body_safe_zone": "24mm inline margins, below measured header, 19mm clear at foot",
+      "photo_zone": "medallion frame in first header; contain-fit approved image",
+      "footer_art_zone": "Reserved outer edge or below reading area, first page only",
+      "page_2_continuation_zone": "Compact running name/rule; 23mm bottom margin; no repeated large artwork"
+    },
+    "caption": "Reflective and dignified",
+    "color": "#384E70",
+    "text_accent": "#384E70"
+  },
+  {
+    "id": "craft-ambedkarite-blue",
+    "slug": "ambedkarite-blue",
+    "name": "Ambedkarite Blue",
+    "hi": "Ambedkarite Blue",
+    "number": 20,
+    "batch": 3,
+    "family": "Traditional / Cultural",
+    "category": [
+      "Traditional / Cultural"
+    ],
+    "cultural_tags": [],
+    "religious_style": "ambedkarite-blue",
+    "region": [],
+    "photo_mode": "square",
+    "preferred_pages": 1,
+    "supports_no_photo": true,
+    "supports_rtl": true,
+    "art_density": "medium",
+    "palette": [
+      "#F8F4E9",
+      "#25548D",
+      "#2D343F",
+      "#A48755"
+    ],
+    "layout_id": "academic",
+    "artwork_pack_id": "none",
+    "art_placement": "academic",
+    "recommended_for": [
+      "An equality-oriented introduction highlighting education and profession"
+    ],
+    "intent": "An equality-oriented introduction highlighting education and profession",
+    "tone": "Intellectual and dignified",
+    "grid": "Education and career span the page before compact personal and family detail. A small optional editorial Ambedkar portrait sits at top-right; the user portrait sits at left. Optional जय भीम is real Devanagari text.",
+    "section_priority": [
+      "education",
+      "career",
+      "personal",
+      "about",
+      "family",
+      "partner",
+      "custom",
+      "culture",
+      "astrology",
+      "contact"
+    ],
+    "right_sections": [],
+    "default_sacred_art": "ambedkar",
+    "supported_sacred_art": [
+      "none",
+      "ambedkar"
+    ],
+    "assets": [
+      "ambedkar"
+    ],
+    "safe_zones": {
+      "header_art_zone": "Natural measured header; arch minimum 90mm; sacred artwork 32×36mm; never behind body text",
+      "body_safe_zone": "18mm inline margins, below measured header, 19mm clear at foot",
+      "photo_zone": "square frame in first header; contain-fit approved image",
+      "footer_art_zone": "Reserved outer edge or below reading area, first page only",
+      "page_2_continuation_zone": "Compact running name/rule; 23mm bottom margin; no repeated large artwork"
+    },
+    "caption": "Intellectual and dignified",
+    "color": "#25548D",
+    "text_accent": "#25548D"
+  }
+]

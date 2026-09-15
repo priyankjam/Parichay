@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 2,
+  "forWhom": "myself",
+  "gender": "",
+  "language": "en",
+  "template": "editorial",
+  "sections": {
+    "personal": {
+      "name": "Aarav Mehta",
+      "age": "29",
+      "height": "178 cm",
+      "city": "Bengaluru"
+    },
+    "education": [
+      {
+        "degree": "M.Des, Interaction Design"
+      }
+    ],
+    "career": [
+      {
+        "role": "Product Designer"
+      }
+    ],
+    "family": {
+      "father": "Rajesh Mehta · Architect",
+      "mother": "Neeta Mehta · Teacher"
+    },
+    "culture": {},
+    "astrology": {},
+    "about": {},
+    "partner": {},
+    "contact": {
+      "email": "aarav@example.com"
+    }
+  },
+  "hiddenSections": [],
+  "hiddenFields": [],
+  "customSections": [],
+  "photos": [],
+  "presentation": {
+    "sacred_art": "default",
+    "direction": "auto",
+    "salutation": false
+  }
+}

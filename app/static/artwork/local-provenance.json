@@ -1,0 +1,47 @@
+[
+  {
+    "template": "figma-peach-floral",
+    "source": "biodata template/Boi data templates/Basic/Basic flower 4/Basic - Flower - 4-1.png",
+    "sha256": "7c8bd9e61aab2b02102d9d71563361ea31a775a0d94d1045859bca8de52b2249"
+  },
+  {
+    "template": "figma-lavender-floral",
+    "source": "biodata template/Boi data templates/Basic/Basic flower 3/Basic - Flower - 3-1.png",
+    "sha256": "9eef4e089a4d0758f000b8942898c8a4c3c3a7d82e2da57fcd080af0adf96159"
+  },
+  {
+    "template": "figma-blue-botanical",
+    "source": "biodata template/Boi data templates/Basic/Basic flower 6/Basic - Flower - 6-1.png",
+    "sha256": "bdb38cc13648c0a5a1395546690ee6ea1751ff57401ac5ca5d881f2480d9e0ed"
+  },
+  {
+    "template": "figma-amber-botanical",
+    "source": "biodata template/Boi data templates/Basic/Basic flower 6/Basic - Flower - 6-1.png",
+    "sha256": "bdb38cc13648c0a5a1395546690ee6ea1751ff57401ac5ca5d881f2480d9e0ed"
+  },
+  {
+    "template": "figma-floral-wreath",
+    "source": "biodata template/Boi data templates/Basic/Basic 1/Basic Template - Flower -  1-1.png",
+    "sha256": "60f9b38dbd66e124d362c7858ee1b3d029c03dca18396b712381127c7f7ad5fb"
+  },
+  {
+    "template": "figma-garden-corners",
+    "source": "biodata template/Boi data templates/Basic/Basic 2/Basic Template - Flower -  2-1.png",
+    "sha256": "b261228c61932f49279bb42dbeb952e3ad58abfcc9e3fe9a42a363a4c03dc5ce"
+  },
+  {
+    "template": "figma-ganesha-ivory",
+    "source": "biodata template/Boi data templates/Hindu tradition/Hindu traditional 2/Hindu Traditional 2-1.png",
+    "sha256": "c11e1c681b1b99ead40b20efcca5b99a3edd02bb3d18391ea392d35efa74ec23"
+  },
+  {
+    "template": "figma-ganesha-rose",
+    "source": "biodata template/Boi data templates/Hindu tradition/Hindu Traditional 3/Hindu Traditional 3-1.png",
+    "sha256": "8847ef5fb3b61c79638dbed345b991603a4f21efc25037ebb967a0a0703ef346"
+  },
+  {
+    "template": "figma-ganesha-festive",
+    "source": "app/static/artwork/sources/festive-frame-free.png",
+    "sha256": "4896908849f7abbd8d1b625ad76cf3a5d210dd26d7f8e93172eb7d956946d527"
+  }
+]

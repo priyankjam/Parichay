@@ -1,0 +1,45 @@
+/* PAPER & PLUM — product UI only. Document colors live in document stylesheets. */
+@font-face{font-family:'Parichay Sans';src:url('../fonts/DMSans.woff2') format('woff2');font-weight:100 900;font-display:swap}
+@font-face{font-family:'Parichay Serif';src:url('../fonts/DMSerifDisplay.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Noto Devanagari';src:url('../fonts/NotoSansDevanagari.woff2') format('woff2');font-weight:100 900;font-display:swap}
+:root{
+ /* Surfaces */
+ --paper:#FAF7F2;--surface:#FFFFFF;--surface-subtle:#F4EFE8;--surface-selected:#F7EEF2;--surface-preview:#EEE9E3;
+ /* Brand and text */
+ --plum-900:#4A1F34;--plum-800:#5B2741;--plum-700:#6B2F4A;--plum-100:#F7EEF2;
+ --ink:#1F1A1D;--ink-secondary:#655D61;--ink-tertiary:#80767B;
+ --border:#E3DDD8;--border-strong:#CEC5BF;--control-border:#96858D;
+ --terracotta:#C66A4A;--sage:#4F6B61;--brass:#B58A50;
+ /* Semantics: functional text always uses a contrast-safe foreground. */
+ --action:var(--plum-800);--action-hover:var(--plum-700);--action-pressed:var(--plum-900);--on-action:var(--surface);
+ --success:var(--sage);--success-surface:#EEF4F0;--warning:#795018;--warning-surface:#FFF3DF;
+ --danger:#A32D38;--danger-surface:#FCEEF0;--info:#315771;--info-surface:#EDF3F7;
+ --focus:var(--plum-700);--focus-halo:#E8D6DF;--disabled:#655D61;--disabled-surface:#EDE8E3;
+ --overlay:rgba(31,26,29,.56);
+ /* Type: separate script fonts, never an assumed all-script Latin font. */
+ --sans:'Parichay Sans','Noto Devanagari','Noto Sans Bengali','Noto Sans Gujarati','Noto Sans Gurmukhi','Noto Sans Oriya','Noto Sans Tamil','Noto Sans Telugu','Noto Sans Kannada','Noto Sans Malayalam',system-ui,sans-serif;
+ --serif:'Parichay Serif','Noto Devanagari',Georgia,serif;
+ --type-display-xl:clamp(2.5rem,4.6vw,4rem);--type-display-lg:clamp(2.125rem,3.4vw,3rem);
+ --type-h1:clamp(1.875rem,2.5vw,2.5rem);--type-h2:clamp(1.5rem,2vw,2rem);--type-h3:1.25rem;
+ --type-body-lg:1.125rem;--type-body:1rem;--type-body-sm:.875rem;--type-caption:.75rem;--type-label:.875rem;
+ --leading-display:1.12;--leading-heading:1.3;--leading-body:1.65;--leading-script:1.75;
+ --tracking-display:-.035em;--tracking-heading:-.025em;--tracking-label:.1em;
+ /* Space: 4, 8, 12, 16, 20, 24, 32, 40, 48, 64, 80, 96 */
+ --space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:20px;--space-6:24px;
+ --space-8:32px;--space-10:40px;--space-12:48px;--space-16:64px;--space-20:80px;--space-24:96px;
+ /* Shape */
+ --radius-xs:6px;--radius-sm:8px;--radius-control:10px;--radius-md:12px;--radius-lg:16px;--radius-xl:20px;--radius-full:999px;
+ --border-width:1px;--focus-width:3px;
+ --shadow-paper:0 4px 16px rgba(42,31,36,.08),0 1px 2px rgba(42,31,36,.05);
+ --shadow-floating:0 8px 30px rgba(42,31,36,.10);
+ --shadow-dialog:0 24px 80px rgba(42,31,36,.18);
+ /* Motion */
+ --duration-fast:150ms;--duration-normal:200ms;--ease-out:cubic-bezier(.2,.7,.3,1);
+ /* Layout and stacking; media queries mirror breakpoint values. */
+ --marketing-width:1240px;--form-width:720px;--workspace-width:1920px;--touch-size:48px;--icon-size:20px;
+ --breakpoint-compact:600px;--breakpoint-studio:1100px;--breakpoint-studio-height:700px;
+ --z-sticky:10;--z-dock:20;--z-header:30;--z-toast:40;--z-skip:50;
+}
+:root:lang(hi),:root:lang(mr){--sans:'Noto Devanagari','Parichay Sans',system-ui,sans-serif;--leading-body:var(--leading-script);--tracking-heading:0;--tracking-display:0}
+:root:lang(ur){--sans:'Noto Nastaliq Urdu','Noto Naskh Arabic',Tahoma,serif;--leading-body:1.9;--tracking-heading:0}
+@media(prefers-reduced-motion:reduce){:root{--duration-fast:0ms;--duration-normal:0ms}}

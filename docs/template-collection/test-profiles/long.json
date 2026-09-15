@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 2,
+  "forWhom": "myself",
+  "gender": "",
+  "language": "en",
+  "template": "editorial",
+  "sections": {
+    "personal": {
+      "name": "Aarav Mehta",
+      "age": "29",
+      "height": "178 cm",
+      "city": "Bengaluru, India",
+      "nativePlace": "Ahmedabad",
+      "motherTongue": "Gujarati",
+      "maritalStatus": "Never married",
+      "nationality": "Indian"
+    },
+    "education": [
+      {
+        "degree": "M.Des, Interaction Design",
+        "institution": "National Institute of Design",
+        "year": "2019"
+      },
+      {
+        "degree": "B.Des, Communication Design",
+        "institution": "Srishti Institute",
+        "year": "2017"
+      },
+      {
+        "degree": "M.Des, Interaction Design",
+        "institution": "National Institute of Design",
+        "year": "2019"
+      },
+      {
+        "degree": "B.Des, Communication Design",
+        "institution": "Srishti Institute",
+        "year": "2017"
+      },
+      {
+        "degree": "M.Des, Interaction Design",
+        "institution": "National Institute of Design",
+        "year": "2019"
+      },
+      {
+        "degree": "B.Des, Communication Design",
+        "institution": "Srishti Institute",
+        "year": "2017"
+      }
+    ],
+    "career": [
+      {
+        "role": "Design role 1",
+        "company": "Independent studio",
+        "description": "I work with a thoughtful team to build useful products."
+      },
+      {
+        "role": "Design role 2",
+        "company": "Independent studio",
+        "description": "I work with a thoughtful team to build useful products."
+      },
+      {
+        "role": "Design role 3",
+        "company": "Independent studio",
+        "description": "I work with a thoughtful team to build useful products."
+      },
+      {
+        "role": "Design role 4",
+        "company": "Independent studio",
+        "description": "I work with a thoughtful team to build useful products."
+      },
+      {
+        "role": "Design role 5",
+        "company": "Independent studio",
+        "description": "I work with a thoughtful team to build useful products."
+      }
+    ],
+    "family": {
+      "father": "Rajesh Mehta · Architect",
+      "mother": "Neeta Mehta · Teacher",
+      "siblings": "Sibling 1: A postgraduate student who enjoys music and the outdoors.\nSibling 2: A postgraduate student who enjoys music and the outdoors.\nSibling 3: A postgraduate student who enjoys music and the outdoors.\nSibling 4: A postgraduate student who enjoys music and the outdoors.\nSibling 5: A postgraduate student who enjoys music and the outdoors.\nSibling 6: A postgraduate student who enjoys music and the outdoors.\nSibling 7: A postgraduate student who enjoys music and the outdoors.\nSibling 8: A postgraduate student who enjoys music and the outdoors."
+    },
+    "culture": {
+      "religion": "Included only by choice",
+      "community": "Optional community",
+      "gotra": "Optional detail"
+    },
+    "astrology": {
+      "birthDate": "1996-06-16",
+      "birthTime": "10:30",
+      "birthPlace": "Bengaluru"
+    },
+    "about": {
+      "introduction": "I value kindness, curiosity and an equal partnership. I enjoy reading, photography and long walks, and make time for the people around me.\n\nI value kindness, curiosity and an equal partnership. I enjoy reading, photography and long walks, and make time for the people around me.\n\nI value kindness, curiosity and an equal partnership. I enjoy reading, photography and long walks, and make time for the people around me.\n\nI value kindness, curiosity and an equal partnership. I enjoy reading, photography and long walks, and make time for the people around me.\n\nI value kindness, curiosity and an equal partnership. I enjoy reading, photography and long walks, and make time for the people around me.\n\nI value kindness, curiosity and an equal partnership. I enjoy reading, photography and long walks, and make time for the people around me.\n\nI value kindness, curiosity and an equal partnership. I enjoy reading, photography and long walks, and make time for the people around me.\n\nI value kindness, curiosity and an equal partnership. I enjoy reading, photography and long walks, and make time for the people around me.\n\nI value kindness, curiosity and an equal partnership. I enjoy reading, photography and long walks, and make time for the people around me.\n\nI value kindness, curiosity and an equal partnership. I enjoy reading, photography and long walks, and make time for the people around me.\n\nI value kindness, curiosity and an equal partnership. I enjoy reading, photography and long walks, and make time for the people around me.\n\nI value kindness, curiosity and an equal partnership. I enjoy reading, photography and long walks, and make time for the people around me.\n\nI value kindness, curiosity and an equal partnership. I enjoy reading, photography and long walks, and make time for the people around me.\n\nI value kindness, curiosity and an equal partnership. I enjoy reading, photography and long walks, and make time for the people around me.\n\nI value kindness, curiosity and an equal partnership. I enjoy reading, photography and long walks, and make time for the people around me.\n\nI value kindness, curiosity and an equal partnership. I enjoy reading, photography and long walks, and make time for the people around me.\n\nI value kindness, curiosity and an equal partnership. I enjoy reading, photography and long walks, and make time for the people around me.\n\nI value kindness, curiosity and an equal partnership. I enjoy reading, photography and long walks, and make time for the people around me.\n\nI value kindness, curiosity and an equal partnership. I enjoy reading, photography and long walks, and make time for the people around me.\n\nI value kindness, curiosity and an equal partnership. I enjoy reading, photography and long walks, and make time for the people around me.\n\nI value kindness, curiosity and an equal partnership. I enjoy reading, photography and long walks, and make time for the people around me.\n\nI value kindness, curiosity and an equal partnership. I enjoy reading, photography and long walks, and make time for the people around me.\n\nI value kindness, curiosity and an equal partnership. I enjoy reading, photography and long walks, and make time for the people around me.\n\nI value kindness, curiosity and an equal partnership. I enjoy reading, photography and long walks, and make time for the people around me.\n\nI value kindness, curiosity and an equal partnership. I enjoy reading, photography and long walks, and make time for the people around me.\n\nI value kindness, curiosity and an equal partnership. I enjoy reading, photography and long walks, and make time for the people around me.\n\nI value kindness, curiosity and an equal partnership. I enjoy reading, photography and long walks, and make time for the people around me.\n\nI value kindness, curiosity and an equal partnership. I enjoy reading, photography and long walks, and make time for the people around me.",
+      "interests": "Photography · Hiking · Indian classical music · Coffee"
+    },
+    "partner": {
+      "preferences": "Someone kind and curious, who values an equal partnership and finds joy in the everyday."
+    },
+    "contact": {
+      "name": "Aarav Mehta",
+      "email": "aarav@example.com"
+    }
+  },
+  "hiddenSections": [],
+  "hiddenFields": [],
+  "customSections": [
+    {
+      "id": "custom-values",
+      "title": "Values and everyday life",
+      "fields": [
+        {
+          "label": "A shared life",
+          "value": "We make decisions together and respect one another. We make decisions together and respect one another. We make decisions together and respect one another. We make decisions together and respect one another. We make decisions together and respect one another. We make decisions together and respect one another. We make decisions together and respect one another. We make decisions together and respect one another. We make decisions together and respect one another. We make decisions together and respect one another. We make decisions together and respect one another. We make decisions together and respect one another. We make decisions together and respect one another. We make decisions together and respect one another. We make decisions together and respect one another. We make decisions together and respect one another. We make decisions together and respect one another. We make decisions together and respect one another. "
+        }
+      ]
+    }
+  ],
+  "photos": [
+    "@demo-portrait.jpg",
+    "@demo-portrait.jpg",
+    "@demo-portrait.jpg"
+  ],
+  "presentation": {
+    "sacred_art": "default",
+    "direction": "auto",
+    "salutation": false
+  }
+}

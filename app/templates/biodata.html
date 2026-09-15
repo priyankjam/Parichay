@@ -1,0 +1,20 @@
+{% macro section_markup(section) -%}
+<section class="doc-section" data-section="{{ section.key }}"><h2>{{ section.title }}</h2>
+  {% for group in section.groups %}<div class="doc-group">{% for row in group %}
+    {% if row.prose %}<div class="doc-prose"><span class="doc-prose-label">{{ row.label }}</span><p>{{ row.value }}</p></div>
+    {% else %}<div class="doc-row"><span class="doc-label">{{ row.label }}</span><span class="doc-value">{{ row.value }}</span></div>{% endif %}
+  {% endfor %}</div>{% endfor %}
+</section>
+{%- endmacro %}
+{% macro portrait() -%}<img class="doc-portrait" src="{{ doc.photos[0] }}" alt="{{ 'प्रोफ़ाइल फ़ोटो' if doc.language == 'hi' else 'Profile photo' }}">{%- endmacro %}
+<article class="biodata theme-{{ doc.template }}{% if doc.illustrated %} illustrated{% endif %}" lang="{{ doc.language }}">
+  <header class="doc-header">
+    <div class="doc-heading"><p class="doc-eyebrow">{{ doc.eyebrow }}</p>{% if doc.name %}<h1>{{ doc.name }}</h1>{% endif %}<div class="doc-rule"></div></div>
+    {% if doc.photos and (not doc.illustrated or not doc.sections) %}{{ portrait() }}{% endif %}
+  </header>
+  <div class="doc-sections">{% for section in doc.sections %}
+    {% if loop.first and doc.illustrated and doc.photos %}<div class="doc-opening">{{ section_markup(section) }}{{ portrait() }}</div>
+    {% else %}{{ section_markup(section) }}{% endif %}
+  {% endfor %}</div>
+  {% if doc.photos|length > 1 %}<section class="doc-gallery">{% for photo in doc.photos[1:] %}<img src="{{ photo }}" alt="{{ 'अतिरिक्त फ़ोटो' if doc.language == 'hi' else 'Additional photo' }} {{ loop.index }}">{% endfor %}</section>{% endif %}
+</article>

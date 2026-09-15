@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 2,
+  "forWhom": "myself",
+  "gender": "",
+  "language": "hi",
+  "template": "editorial",
+  "sections": {
+    "personal": {
+      "name": "आरव मेहता",
+      "age": "29",
+      "height": "178 cm",
+      "city": "Bengaluru, India",
+      "nativePlace": "Ahmedabad",
+      "motherTongue": "Gujarati",
+      "maritalStatus": "Never married",
+      "nationality": "Indian"
+    },
+    "education": [
+      {
+        "degree": "M.Des, Interaction Design",
+        "institution": "National Institute of Design",
+        "year": "2019"
+      },
+      {
+        "degree": "B.Des, Communication Design",
+        "institution": "Srishti Institute",
+        "year": "2017"
+      }
+    ],
+    "career": [
+      {
+        "role": "Product Designer",
+        "company": "Independent design studio",
+        "location": "Bengaluru"
+      }
+    ],
+    "family": {
+      "father": "Rajesh Mehta · Architect",
+      "mother": "Neeta Mehta · Teacher",
+      "siblings": "One younger sister, pursuing her postgraduate studies."
+    },
+    "culture": {},
+    "astrology": {},
+    "about": {
+      "introduction": "A designer by profession and a curious soul at heart. I find joy in slow Sunday mornings, a good book, and discovering a new trail. I believe in building a life filled with kindness, laughter and a little adventure.",
+      "interests": "Photography · Hiking · Indian classical music · Coffee"
+    },
+    "partner": {
+      "preferences": "Someone kind and curious, who values an equal partnership and finds joy in the everyday."
+    },
+    "contact": {
+      "name": "Aarav Mehta",
+      "email": "aarav@example.com"
+    }
+  },
+  "hiddenSections": [],
+  "hiddenFields": [],
+  "customSections": [
+    {
+      "id": "custom-languages",
+      "title": "अपनी भाषा में",
+      "fields": [
+        {
+          "label": "hi",
+          "value": "आरव मेहता · शिक्षा और परिवार · समानता और सम्मान"
+        },
+        {
+          "label": "mr",
+          "value": "आनंद पाटील · शिक्षण आणि कुटुंब · समानता"
+        },
+        {
+          "label": "gu",
+          "value": "આરવ મહેતા · શિક્ષણ અને પરિવાર"
+        },
+        {
+          "label": "pa",
+          "value": "ਅਮਨਦੀਪ ਸਿੰਘ · ਸਿੱਖਿਆ ਅਤੇ ਪਰਿਵਾਰ"
+        },
+        {
+          "label": "bn",
+          "value": "অর্ণব সেন · শিক্ষা এবং পরিবার"
+        },
+        {
+          "label": "ta",
+          "value": "அருண் குமார் · கல்வி மற்றும் குடும்பம்"
+        },
+        {
+          "label": "te",
+          "value": "అరవింద్ కుమార్ · విద్య మరియు కుటుంబం"
+        },
+        {
+          "label": "kn",
+          "value": "ಅರುಣ್ ಕುಮಾರ್ · ಶಿಕ್ಷಣ ಮತ್ತು ಕುಟುಂಬ"
+        },
+        {
+          "label": "ml",
+          "value": "അരുൺ കുമാർ · വിദ്യാഭ്യാസവും കുടുംബവും"
+        },
+        {
+          "label": "ur",
+          "value": "احمد علی · تعلیم اور خاندان · احترام اور برابری"
+        }
+      ]
+    }
+  ],
+  "photos": [
+    "@demo-portrait.jpg"
+  ],
+  "presentation": {
+    "sacred_art": "default",
+    "direction": "auto",
+    "salutation": false
+  }
+}

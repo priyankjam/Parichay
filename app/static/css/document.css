@@ -1,0 +1,38 @@
+/* Document tokens are independent of the product UI. Shared by preview and PDF. */
+.biodata{--doc-accent:#2f4945;--doc-soft:#eef2ef;--doc-paper:#fff;--doc-ink:#28312f;box-sizing:border-box;width:100%;padding:48px 52px 42px;background:var(--doc-paper);color:var(--doc-ink);font:14px/1.65 'Parichay Sans','Noto Devanagari',sans-serif;overflow-wrap:anywhere;word-break:normal}
+.biodata *{box-sizing:border-box}
+.doc-header{display:flex;align-items:center;justify-content:space-between;gap:26px;border-bottom:1px solid #d6ddd8;padding-bottom:28px;margin-bottom:27px;break-inside:avoid}
+.doc-heading{min-width:0;flex:1}.doc-eyebrow{font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:var(--doc-accent);margin:0 0 10px}.biodata h1{font:normal 42px/1.15 'Parichay Serif','Noto Devanagari',serif;letter-spacing:-.6px;color:var(--doc-accent);margin:0;overflow-wrap:anywhere}.doc-portrait{width:100px;height:128px;object-fit:cover;flex-shrink:0}.doc-rule{height:2px;width:38px;background:var(--doc-accent);margin-top:20px}
+.doc-section{margin:0 0 24px}.biodata h2{font:600 10px/1.6 'Parichay Sans','Noto Devanagari',sans-serif;text-transform:uppercase;letter-spacing:1.8px;color:var(--doc-accent);margin:0 0 12px;break-after:avoid}.doc-group{margin:0 0 14px}.doc-group:last-child{margin-bottom:0}.doc-row{display:grid;grid-template-columns:36% 1fr;gap:16px;margin:4px 0;break-inside:avoid}.doc-label{color:#737971;font-size:12px}.doc-value{font-weight:500;white-space:pre-wrap}.doc-prose p{margin:3px 0 11px;white-space:pre-wrap;orphans:3;widows:3}.doc-prose-label{display:none}.doc-prose+.doc-prose .doc-prose-label{display:block;font-size:11px;color:var(--doc-accent);font-weight:600;margin-top:13px}.doc-gallery{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px}.doc-gallery img{width:calc(50% - 7px);height:230px;object-fit:cover;break-inside:avoid}.biodata[lang=hi]{font-family:'Noto Devanagari','Parichay Sans',sans-serif}.biodata[lang=hi] h1{font-family:'Noto Devanagari',sans-serif;font-size:35px;font-weight:500}.biodata[lang=hi] h2,.biodata[lang=hi] .doc-eyebrow{letter-spacing:0}
+.theme-professional{--doc-accent:#344e6a;--doc-soft:#edf1f6}.theme-professional .doc-header{border-bottom:4px solid var(--doc-accent)}.theme-professional h1{font:600 36px/1.2 'Parichay Sans','Noto Devanagari',sans-serif;letter-spacing:-1px}.theme-professional .doc-rule{display:none}.theme-professional h2{background:var(--doc-soft);padding:7px 11px;border-left:3px solid var(--doc-accent)}.theme-professional .doc-portrait{border-radius:50%;width:112px;height:112px}
+.theme-warm{--doc-accent:#a95739;--doc-paper:#fffaf5;--doc-soft:#f4e6d9}.theme-warm .doc-header{border-color:#dec6b2}.theme-warm .doc-portrait{border-radius:55px 55px 6px 6px}.theme-warm h2{font:normal 20px/1.3 'Parichay Serif','Noto Devanagari',serif;letter-spacing:0;text-transform:none}.theme-warm .doc-section{padding-left:17px;border-left:2px solid var(--doc-soft)}.theme-warm .doc-rule{width:60px;background:#d3a587}
+.theme-traditional{--doc-accent:#763c43;--doc-paper:#fffdf9;border:1px solid #c9b5a4;outline:1px solid #eaded1;outline-offset:-9px}.theme-traditional .doc-header{text-align:center;display:block;border-bottom:1px solid #dac5b4}.theme-traditional .doc-rule{margin:20px auto 0}.theme-traditional .doc-portrait{margin-top:20px;border:4px solid #fff;outline:1px solid #d6c3b2}.theme-traditional h2{text-align:center;letter-spacing:2px;border-top:1px solid #e8ddd2;border-bottom:1px solid #e8ddd2;padding:6px}.theme-traditional .doc-eyebrow{color:#967954}
+.theme-ivory{--doc-accent:#7a6848;--doc-paper:#fbf8ee}.theme-ivory .doc-header{padding-bottom:32px;border-bottom:1px solid #c3b898}.theme-ivory h1{font-size:46px}.theme-ivory .doc-eyebrow{letter-spacing:3px}.theme-ivory .doc-rule{display:none}.theme-ivory h2{letter-spacing:2.4px;font-size:10px}.theme-ivory .doc-section{padding-bottom:8px;border-bottom:1px solid #e5dfcf}.theme-ivory .doc-portrait{padding:5px;border:1px solid #c3b898}
+/* Family has three named prose fields; their labels must always remain visible. */
+.doc-section[data-section="family"] .doc-prose-label{display:block;font-size:12px;color:var(--doc-accent);font-weight:600;margin-top:10px}
+.theme-traditional .doc-section{margin-bottom:17px}.theme-traditional h2{padding:4px}.theme-traditional .doc-header{margin-bottom:20px;padding-bottom:20px}
+/* Zero external print margin: the paper colour and frame reach every page edge. */
+@page{size:A4;margin:0}
+.export-document{--page-paper:#fff}
+.export-document[data-theme="warm"]{--page-paper:#fffaf5}
+.export-document[data-theme="traditional"]{--page-paper:#fffdf9}
+.export-document[data-theme="ivory"]{--page-paper:#fbf8ee}
+@media print{
+ html,body{margin:0;padding:0;background:transparent}
+ .export-document::before{content:"";position:fixed;inset:0;background:var(--page-paper);z-index:-1}
+ .biodata{padding:11mm 13mm;width:auto;min-height:0;font-size:10.5pt;background:transparent;box-decoration-break:clone;-webkit-box-decoration-break:clone;print-color-adjust:exact;-webkit-print-color-adjust:exact}
+ .biodata h1{font-size:32pt}.doc-row{grid-template-columns:34% 1fr}.doc-label{font-size:9pt}
+ .doc-header{padding-bottom:20px;margin-bottom:22px;break-inside:avoid}
+ .doc-section{margin-bottom:22px;break-inside:avoid-page;page-break-inside:avoid}
+ .biodata h2{break-after:avoid}.doc-group{orphans:3;widows:3}
+ .doc-section[data-section="education"] .doc-group,.doc-section[data-section="career"] .doc-group,.doc-section[data-section="family"] .doc-group{break-inside:avoid}
+ /* A section longer than the printable height cannot fit intact. Start it fresh,
+    then allow readable continuation instead of shrinking or clipping content. */
+ .doc-section.oversized-section{break-before:page;break-inside:auto;page-break-inside:auto}
+ .theme-traditional{border:0;outline:0}
+ .export-document[data-theme="traditional"]::after{content:"";position:fixed;inset:4mm;border:1px solid #c9b5a4;outline:1px solid #eaded1;outline-offset:3px;pointer-events:none}
+ .theme-traditional .doc-section{margin-bottom:14px}.theme-traditional .doc-header{margin-bottom:18px;padding-bottom:16px}
+ .doc-gallery{display:block;break-inside:avoid-page}
+ .doc-gallery img{display:inline-block;width:46%;margin:0 2% 16px 0;height:230px;break-inside:avoid}
+ .theme-ivory h1{font-size:35pt}.theme-ivory .doc-section{margin-bottom:14px}.theme-ivory .doc-header{margin-bottom:18px;padding-bottom:20px}
+}

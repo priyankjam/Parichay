@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "forWhom": "myself",
+  "gender": "",
+  "language": "en",
+  "template": "editorial",
+  "sections": {
+    "personal": {
+      "name": "Aarav Mehta",
+      "age": "29",
+      "height": "178 cm",
+      "city": "Bengaluru, India",
+      "nativePlace": "Ahmedabad",
+      "motherTongue": "Gujarati",
+      "maritalStatus": "Never married",
+      "nationality": "Indian"
+    },
+    "education": [
+      {
+        "degree": "M.Des, Interaction Design",
+        "institution": "National Institute of Design",
+        "year": "2019"
+      },
+      {
+        "degree": "B.Des, Communication Design",
+        "institution": "Srishti Institute",
+        "year": "2017"
+      }
+    ],
+    "career": [
+      {
+        "role": "Product Designer",
+        "company": "Independent design studio",
+        "location": "Bengaluru"
+      }
+    ],
+    "family": {
+      "father": "Rajesh Mehta · Architect",
+      "mother": "Neeta Mehta · Teacher",
+      "siblings": "One younger sister, pursuing her postgraduate studies."
+    },
+    "culture": {},
+    "astrology": {},
+    "about": {
+      "introduction": "A designer by profession and a curious soul at heart. I find joy in slow Sunday mornings, a good book, and discovering a new trail. I believe in building a life filled with kindness, laughter and a little adventure.",
+      "interests": "Photography · Hiking · Indian classical music · Coffee"
+    },
+    "partner": {
+      "preferences": "Someone kind and curious, who values an equal partnership and finds joy in the everyday."
+    },
+    "contact": {
+      "name": "Aarav Mehta",
+      "email": "aarav@example.com"
+    }
+  },
+  "hiddenSections": [
+    "family",
+    "culture",
+    "about",
+    "astrology",
+    "photos"
+  ],
+  "hiddenFields": [],
+  "customSections": [],
+  "photos": [
+    "@demo-portrait.jpg"
+  ],
+  "presentation": {
+    "sacred_art": "default",
+    "direction": "auto",
+    "salutation": false
+  }
+}
