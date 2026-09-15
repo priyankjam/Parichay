@@ -2,9 +2,9 @@
 
 ## New collection: shared layouts and artwork packs
 
-The twenty `craft-*` designs use `collection.json`, `layouts.json` and `artwork-packs.json`. Extend these registries instead of adding a separate Jinja document for each design. `app/services/collection.py` arranges normalized semantic sections; `collection-document.html`, `collection-document.css` and `collection-paginator.js` render all collection designs through the existing isolated export pipeline.
+The thirty `craft-*` versions use `collection.json`, `layouts.json` and `artwork-packs.json`, with alternate cards declared in `variants.json`. Extend these registries instead of adding a separate Jinja document for each design. `app/services/collection.py` arranges normalized semantic sections; `collection-document.html`, `collection-document.css` and `collection-paginator.js` render all collection designs through the existing isolated export pipeline.
 
-Start with a spec and protected art/body/photo zones. Reuse a layout preset, define section priorities and a compatible sacred-art whitelist, then supply inspected, optimized artwork. Never derive a design choice from personal identity fields. Keep None supported. Embedded font paths and artwork paths come from trusted metadata only.
+Start with a spec and protected art/body/photo zones. Reuse a layout preset, define section priorities and a compatible sacred-art whitelist, then supply inspected, optimized artwork. Never derive a design choice from personal identity fields. Expose plain versions as separate cards. Each card has fixed artwork and left-to-right layout. Embedded font paths and artwork paths come from trusted metadata only.
 
 Generation masters live outside static serving. Versioned artwork and gallery paths receive immutable caching: introduce a new directory version when publishing changed assets, and update `document-studio.js` to that gallery version. Regenerate thumbnails using `scripts/build_collection_gallery.py`; no separately mocked preview layouts.
 

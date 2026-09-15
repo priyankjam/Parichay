@@ -4,6 +4,14 @@ import sys
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 
+PAGINATION_SCRIPT = '''() => {
+    const style = getComputedStyle(document.querySelector('.biodata'));
+    const usableHeight = 297 * 96 / 25.4 - parseFloat(style.paddingTop) - parseFloat(style.paddingBottom);
+    document.querySelectorAll('.doc-section').forEach(section => {
+        if (section.getBoundingClientRect().height > usableHeight)
+            section.classList.add('oversized-section');
+    });
+}'''
 
 def main():
     job = json.load(sys.stdin)
@@ -23,14 +31,7 @@ def main():
                 paginator = Path(__file__).resolve().parents[1] / 'static/js/collection-paginator.js'
                 page.evaluate(paginator.read_text())
             else:
-                page.evaluate('''() => {
-                    const style = getComputedStyle(document.querySelector('.biodata'));
-                    const usableHeight = 297 * 96 / 25.4 - parseFloat(style.paddingTop) - parseFloat(style.paddingBottom);
-                    document.querySelectorAll('.doc-section').forEach(section => {
-                        if (section.getBoundingClientRect().height > usableHeight)
-                            section.classList.add('oversized-section');
-                    });
-                }''')
+                page.evaluate(PAGINATION_SCRIPT)
             output = page.pdf(format='A4', print_background=True, prefer_css_page_size=True, tagged=True,
                               margin={'top': '0', 'right': '0', 'bottom': '0', 'left': '0'})
             sys.stdout.buffer.write(output)

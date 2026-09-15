@@ -39,7 +39,7 @@ class Profile:
             if raw.get(key) not in allowed:
                 raise ValidationError(f'Please choose a valid {key}.')
             p[key] = raw[key]
-        from .collection import SACRED_ART
+        from .collection import SACRED_ART, migrate_template_choice
         presentation = raw.get('presentation', {})
         if not isinstance(presentation, dict):
             raise ValidationError('Invalid design options.')
@@ -48,7 +48,8 @@ class Profile:
         salutation = presentation.get('salutation', False)
         if sacred not in ['default', *SACRED_ART] or direction not in ('auto', 'ltr', 'rtl') or not isinstance(salutation, bool):
             raise ValidationError('Please choose valid design options.')
-        p['presentation'] = dict(sacred_art=sacred, direction=direction, salutation=salutation)
+        p['template'] = migrate_template_choice(p['template'], presentation)
+        p['presentation'] = dict(sacred_art='default', direction='ltr', salutation=False)
         sections = raw.get('sections', {})
         if not isinstance(sections, dict):
             raise ValidationError('Invalid sections in this draft.')

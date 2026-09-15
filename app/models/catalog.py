@@ -60,7 +60,7 @@ def empty_profile():
     return dict(schemaVersion=2, forWhom='myself', gender='', language='en', template='editorial',
                 sections={s['key']: ([{}] if s.get('repeat') else {}) for s in SECTIONS},
                 hiddenSections=[], hiddenFields=[], customSections=[], photos=[],
-                presentation=dict(sacred_art='default', direction='auto', salutation=False))
+                presentation=dict(sacred_art='default', direction='ltr', salutation=False))
 
 
 def demo_profile(include_photo=False):

@@ -4,7 +4,7 @@ from pathlib import Path
 import pytest
 from app.models.catalog import empty_profile, TEMPLATES
 from app.models.profile import Profile, ValidationError
-from app.models.collection import COLLECTION, resolve_presentation
+from app.models.collection import COLLECTION, BY_ID, BASE_COLLECTION, resolve_presentation, migrate_template_choice
 from app.services.collection import arrange_sections, SCRIPT_FONTS
 from app.services.rendering import build_document_html
 
@@ -16,7 +16,7 @@ def test_layout_registry_is_independent_and_unique():
     for d in COLLECTION:
         assert d['supports_no_photo'] and d['default_sacred_art'] in d['supported_sacred_art']
         assert not any(k in d for k in ('allowed_caste','target_caste','auto_religion'))
-        assert (Path('docs/template-collection/specs')/f'{d["number"]:02d}-{d["slug"]}.md').exists()
+        assert (Path('docs/template-collection/specs')/f'{d["number"]:02d}-{d["spec_slug"]}.md').exists()
         for asset in d['assets']:
             assert Path(f'app/static/artwork/collection-v1/{asset}-pdf.webp').exists()
 
@@ -29,13 +29,27 @@ def test_identity_does_not_select_design_or_header():
     assert resolve_presentation(COLLECTION[0],parsed['presentation'])['id']=='none'
 
 
-def test_explicit_header_none_and_compatible_choices():
+def test_each_card_has_one_fixed_version_and_ltr_layout():
+    assert len(COLLECTION) == 30 and len(TEMPLATES) == 49
     for d in COLLECTION:
-        assert resolve_presentation(d,{'sacred_art':'none'})['id']=='none'
-        for value in d['supported_sacred_art']:
-            assert resolve_presentation(d,{'sacred_art':value})['id']==value
-        if 'cross' not in d['supported_sacred_art']:
-            assert resolve_presentation(d,{'sacred_art':'cross'})['id']==d['default_sacred_art']
+        result=resolve_presentation(d,{'sacred_art':'cross','direction':'rtl','salutation':True})
+        assert result['id']==d['variant_sacred_art']
+        assert result['salutation']==d['variant_salutation']
+        assert result['direction']=='ltr'
+        assert d['supported_sacred_art']==[d['variant_sacred_art']]
+    combinations={(d['base_template_id'],d['variant_sacred_art'],d['variant_salutation']) for d in COLLECTION}
+    assert len(combinations)==len(COLLECTION)
+
+
+def test_old_artwork_choices_migrate_without_losing_the_design():
+    for base in BASE_COLLECTION:
+        for art in base['supported_sacred_art']:
+            for salutation in ([False, True] if base['id']=='craft-ambedkarite-blue' else [False]):
+                p=empty_profile();p['template']=base['id'];p['presentation']={'sacred_art':art,'direction':'rtl','salutation':salutation}
+                normalized=Profile.parse(p).data;design=BY_ID[normalized['template']]
+                assert design['variant_sacred_art']==art and design['variant_salutation']==salutation
+                assert normalized['presentation']==dict(sacred_art='default',direction='ltr',salutation=False)
+                assert Profile.parse(normalized).data==normalized
 
 
 @pytest.mark.parametrize('presentation',[None,[],{'direction':'sideways'},{'sacred_art':'../../secret'},{'salutation':'yes'}])
@@ -45,7 +59,7 @@ def test_rejects_invalid_presentation(presentation):
 
 
 def test_old_backups_get_safe_defaults():
-    p=empty_profile();p.pop('presentation');assert Profile.parse(p).data['presentation']==dict(sacred_art='default',direction='auto',salutation=False)
+    p=empty_profile();p.pop('presentation');assert Profile.parse(p).data['presentation']==dict(sacred_art='default',direction='ltr',salutation=False)
 
 
 def test_hidden_header_metadata_and_html_escaping(app):

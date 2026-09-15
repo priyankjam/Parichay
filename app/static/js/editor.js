@@ -122,18 +122,10 @@ function designCategory(item){
  if(item.category?.includes('Traditional / Cultural'))return 'cultural';
  return 'originals';
 }
-function designOptions(){
- const design=config.templates.find(d=>d.id===profile.template);if(!design?.layout_id)return '';
- const p=profile.presentation||{},choices=design.supported_sacred_art||['none'];
- const names={'none':['None','कोई नहीं'],'krishna':['Krishna','कृष्ण'],'ganesha':['Ganesha','गणेश'],'rama':['Rama','राम'],'ambedkar':['Dr. B. R. Ambedkar','डॉ. भीमराव आंबेडकर'],'ik-onkar':['Ik Onkar','इक ओंकार'],'khanda':['Khanda','खंडा'],'cross':['Christian cross','ईसाई क्रॉस'],'dhamma-wheel':['Wheel of Dharma','धम्म चक्र']};
- const choice=choices.includes(p.sacred_art)?p.sacred_art:design.default_sacred_art,hi=profile.language==='hi';
- return `<details class="collection-options"><summary>${hi?'इस डिज़ाइन के विकल्प':'Personalize this design'}</summary><div class="collection-option-fields">${choices.length>1?`<label>${hi?'सांस्कृतिक चित्र या प्रतीक':'Cultural artwork or symbol'}<select data-presentation="sacred_art">${choices.map(c=>`<option value="${c}" ${c===choice?'selected':''}>${names[c]?.[hi?1:0]||c}</option>`).join('')}</select></label>`:''}<label>${hi?'पढ़ने की दिशा':'Reading direction'}<select data-presentation="direction">${[['auto','Automatic','स्वचालित'],['ltr','Left to right','बाएँ से दाएँ'],['rtl','Right to left · Urdu','दाएँ से बाएँ · उर्दू']].map(([v,en,h])=>`<option value="${v}" ${(p.direction||'auto')===v?'selected':''}>${hi?h:en}</option>`).join('')}</select></label>${design.id==='craft-ambedkarite-blue'?`<label class="collection-salutation"><input type="checkbox" data-presentation="salutation" ${p.salutation?'checked':''}> ${hi?'जय भीम शीर्षक जोड़ें':'Include “जय भीम” heading'}</label>`:''}</div></details>`;
-}
-function updateDesignOptions(){const box=document.getElementById('design-options');if(box)box.innerHTML=designOptions();}
 function designChoices(){
  const groups=['all','contemporary','regional','cultural','originals'];
  const designs=config.templates.filter(d=>step===9&&spotlight||designFilter==='all'||designCategory(d)===designFilter);
- return `<div class="design-library"><div class="design-filters" role="group" aria-label="${t('designCategories')}">${groups.map(id=>`<button class="design-filter" data-design-filter="${id}" aria-pressed="${designFilter===id}">${t('category_'+id)}</button>`).join('')}</div><div id="design-options">${designOptions()}</div><p class="library-caption">${t(hasContent()?'yourDetailsInDesigns':'sampleDesigns')}</p><div class="design-grid">${designs.map(item=>`<button class="design-card ${profile.template===item.id?'selected':''}" data-template="${item.id}" aria-pressed="${profile.template===item.id}"><div class="design-thumbnail" data-thumbnail="${item.id}" data-state="loading" aria-hidden="true"><img alt="" width="300" height="424" hidden><span class="thumbnail-note">${t('previewLoading')}</span></div><div class="design-card-title"><strong>${esc(profile.language==='hi'?item.hi:item.name)}</strong></div><div class="design-card-meta"><small>${t('category_'+designCategory(item))}</small><span class="selected-label" ${profile.template===item.id?'':'hidden'}>${icon('check')} ${t('selectedDesign')}</span></div></button>`).join('')}</div></div>`;
+ return `<div class="design-library"><div class="design-filters" role="group" aria-label="${t('designCategories')}">${groups.map(id=>`<button class="design-filter" data-design-filter="${id}" aria-pressed="${designFilter===id}">${t('category_'+id)}</button>`).join('')}</div><p class="library-caption">${t(hasContent()?'yourDetailsInDesigns':'sampleDesigns')}</p><div class="design-grid">${designs.map(item=>`<button class="design-card ${profile.template===item.id?'selected':''}" data-template="${item.id}" aria-pressed="${profile.template===item.id}"><div class="design-thumbnail" data-thumbnail="${item.id}" data-state="loading" aria-hidden="true"><img alt="" width="300" height="424" hidden><span class="thumbnail-note">${t('previewLoading')}</span></div><div class="design-card-title"><strong>${esc(profile.language==='hi'?item.hi:item.name)}</strong></div><div class="design-card-meta"><small>${t('category_'+designCategory(item))}</small><span class="selected-label" ${profile.template===item.id?'':'hidden'}>${icon('check')} ${t('selectedDesign')}</span></div></button>`).join('')}</div></div>`;
 }
 function fieldVisibility(id,name){
  if(mobile?.active)return '';
@@ -410,7 +402,6 @@ $('step-content').addEventListener('keydown',event=>{
 $('step-content').addEventListener('focusout',event=>{if(event.target.dataset.field)showFieldError(event.target);});
 $('step-content').addEventListener('change',event=>{
  const el=event.target;
- if(el.dataset.presentation){const key=el.dataset.presentation;profile.presentation[key]=key==='salutation'?el.checked:el.value;change();renderPreview();}
  if(el.dataset.hide){toggleList('hiddenSections',el.dataset.hide,el.checked);const note=el.closest('[data-section]')?.querySelector('.section-hidden-note');if(note)note.hidden=!el.checked;renderPreview();}
  if(el.id==='export-consent'){document.querySelectorAll('[data-export]').forEach(b=>b.disabled=!el.checked||exporting);syncMobileAction();}
 });
@@ -433,7 +424,7 @@ document.addEventListener('click',async event=>{
  }
  if(b.dataset.hobby){const chosen=selectedHobbies(profile.sections.about.interests),value=b.dataset.hobby;if(chosen.includes(value))updateHobbies(chosen.filter(v=>v!==value),value);else if(chosen.length<5)updateHobbies([...chosen,value],value);}
  if(b.id==='add-hobby')addCustomHobby();
- if(b.dataset.template){const next=config.templates.find(d=>d.id===b.dataset.template);const choice=profile.presentation.sacred_art;if(!['none','default'].includes(choice)&&!next?.supported_sacred_art?.includes(choice))profile.presentation.sacred_art='default';if(b.dataset.template!=='craft-ambedkarite-blue')profile.presentation.salutation=false;profile.template=b.dataset.template;change();updateDesignOptions();document.querySelectorAll('[data-template]').forEach(card=>{const selected=card.dataset.template===profile.template;card.classList.toggle('selected',selected);card.setAttribute('aria-pressed',String(selected));card.querySelector('.selected-label').hidden=!selected;});renderPreview();centerSelectedDesign();}
+ if(b.dataset.template){profile.presentation={sacred_art:'default',direction:'ltr',salutation:false};profile.template=b.dataset.template;change();document.querySelectorAll('[data-template]').forEach(card=>{const selected=card.dataset.template===profile.template;card.classList.toggle('selected',selected);card.setAttribute('aria-pressed',String(selected));card.querySelector('.selected-label').hidden=!selected;});renderPreview();centerSelectedDesign();}
  if(b.dataset.language){profile.language=b.dataset.language;change();renderStep();}
  if(b.hasAttribute('data-open-preview'))togglePreview();
  if(b.dataset.fieldVisibility){
@@ -577,7 +568,14 @@ function validateBackup(raw){
  if(!raw||raw.schemaVersion!==2||!['en','hi'].includes(raw.language)||!config.templates.some(x=>x.id===raw.template)||!['myself','son','daughter','sibling','relative','client','other'].includes(raw.forWhom))throw new Error(t('invalidBackup'));
  const p=clone(config.empty);if(!['','male','female'].includes(raw.gender??''))throw new Error(t('invalidBackup'));p.gender=raw.gender??'';p.language=raw.language;p.template=raw.template;p.forWhom=raw.forWhom;
  const settings=raw.presentation||{};if(typeof settings!=='object'||Array.isArray(settings)||!['default','none','krishna','ganesha','rama','ambedkar','ik-onkar','khanda','cross','dhamma-wheel'].includes(settings.sacred_art??'default')||!['auto','ltr','rtl'].includes(settings.direction??'auto')||typeof (settings.salutation??false)!=='boolean')throw new Error(t('invalidBackup'));
- p.presentation={sacred_art:settings.sacred_art??'default',direction:settings.direction??'auto',salutation:settings.salutation??false};
+ const design=config.templates.find(d=>d.id===p.template);
+ if(design?.base_template_id===p.template){
+  const candidates=config.templates.filter(d=>d.base_template_id===p.template);
+  const choice=candidates.some(d=>d.variant_sacred_art===settings.sacred_art)?settings.sacred_art:design.variant_sacred_art;
+  const salutation=p.template==='craft-ambedkarite-blue'&&Boolean(settings.salutation);
+  p.template=candidates.find(d=>d.variant_sacred_art===choice&&d.variant_salutation===salutation)?.id||p.template;
+ }
+ p.presentation={sacred_art:'default',direction:'ltr',salutation:false};
  const text=(s,limit)=>{if(typeof s!=='string'||s.length>limit)throw new Error(t('invalidBackup'));return s;};
  for(const spec of config.sections){const input=raw.sections?.[spec.key];const list=spec.repeat?input:[input];if(!Array.isArray(list)||list.length>12)throw new Error(t('invalidBackup'));const values=list.map(row=>{if(!row||typeof row!=='object'||Array.isArray(row))throw new Error(t('invalidBackup'));return Object.fromEntries(spec.fields.map(f=>[f.key,text(row[f.key]??'',f.limit)]));});p.sections[spec.key]=spec.repeat?values:values[0];}
  for(const key of ['hiddenFields','hiddenSections']){if(!Array.isArray(raw[key])||raw[key].length>300)throw new Error(t('invalidBackup'));p[key]=raw[key].map(x=>text(x,120));}

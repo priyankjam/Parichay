@@ -12,7 +12,7 @@ from app.services.rendering import build_document_html
 from playwright.sync_api import sync_playwright
 import pypdfium2 as pdfium
 parser=argparse.ArgumentParser();parser.add_argument('--batch',type=int);parser.add_argument('--template');args=parser.parse_args()
-app=create_app({'TESTING':True,'RATELIMIT_ENABLED':False});out=Path('app/static/artwork/collection-gallery-v1');out.mkdir(exist_ok=True)
+app=create_app({'TESTING':True,'RATELIMIT_ENABLED':False});out=Path('app/static/artwork/collection-gallery-v2');out.mkdir(exist_ok=True)
 with app.app_context(),sync_playwright() as pw:
  browser=pw.chromium.launch(headless=True,executable_path=app.config['CHROMIUM_EXECUTABLE'],chromium_sandbox=True)
  context=browser.new_context(java_script_enabled=False);context.route('**/*',lambda r:r.abort());page=context.new_page();page.emulate_media(media='print');paginator=Path('app/static/js/collection-paginator.js').read_text()

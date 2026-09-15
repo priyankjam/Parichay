@@ -1,0 +1,12 @@
+[
+  {"base":"craft-braj-krishna","id":"craft-braj-lotus","name":"Braj Lotus","hi":"ब्रज कमल","sacred_art":"none"},
+  {"base":"craft-ganesha-ivory","id":"craft-ivory-saffron","name":"Ivory & Saffron","hi":"आइवरी और केसर","sacred_art":"none"},
+  {"base":"craft-rama-heritage","id":"craft-heritage-parchment","name":"Heritage Parchment","hi":"हेरिटेज पार्चमेंट","sacred_art":"none"},
+  {"base":"craft-sikh-phulkari","id":"craft-phulkari-ik-onkar","name":"Phulkari · Ik Onkar","hi":"फुलकारी · इक ओंकार","sacred_art":"ik-onkar"},
+  {"base":"craft-sikh-phulkari","id":"craft-phulkari-khanda","name":"Phulkari · Khanda","hi":"फुलकारी · खंडा","sacred_art":"khanda"},
+  {"base":"craft-christian-cathedral-ivory","id":"craft-cathedral-cross","name":"Cathedral · Cross","hi":"कैथेड्रल · क्रॉस","sacred_art":"cross"},
+  {"base":"craft-dhamma-lotus","id":"craft-dhamma-wheel","name":"Dhamma · Wheel","hi":"धम्म · चक्र","sacred_art":"dhamma-wheel"},
+  {"base":"craft-ambedkarite-blue","id":"craft-equality-blue","name":"Equality Blue","hi":"इक्वैलिटी ब्लू","sacred_art":"none"},
+  {"base":"craft-ambedkarite-blue","id":"craft-ambedkarite-jai-bhim","name":"Ambedkarite Blue · Jai Bhim","hi":"आंबेडकराइट ब्लू · जय भीम","sacred_art":"ambedkar","salutation":true},
+  {"base":"craft-ambedkarite-blue","id":"craft-equality-jai-bhim","name":"Equality Blue · Jai Bhim","hi":"इक्वैलिटी ब्लू · जय भीम","sacred_art":"none","salutation":true}
+]

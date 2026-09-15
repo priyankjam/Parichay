@@ -35,7 +35,7 @@ def create_app(test_config=None):
             "object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'"
         )
         response.headers['X-Robots-Tag'] = 'noindex, nofollow'
-        if request.path.startswith(('/static/artwork/collection-v1/', '/static/artwork/collection-gallery-v1/')):
+        if request.path.startswith(('/static/artwork/collection-v1/', '/static/artwork/collection-gallery-v1/', '/static/artwork/collection-gallery-v2/')):
             response.headers['Cache-Control'] = 'public, max-age=31536000, immutable'
         elif request.path.startswith('/static/fonts/'):
             response.headers['Cache-Control'] = 'public, max-age=86400'

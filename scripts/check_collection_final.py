@@ -18,7 +18,7 @@ with a.app_context(),sync_playwright() as pw:
    if row['template']==d['id'] and row['case']=='rtl':row.update(bytes=len(pdf),pages=geo['pages'])
   report_path.write_text(json.dumps(r,indent=2));reports.append({'template':d['id'],'rtl':True})
  for case in ['short','medium','no-photo']:
-  raw=fixtures()[case];raw['template']='craft-christian-cathedral-ivory';raw['presentation']['sacred_art']='cross';p.set_content(build_document_html(Profile.parse(raw).document()),wait_until='load');p.evaluate('document.fonts.ready');p.evaluate(paginator)
+  raw=fixtures()[case];raw['template']='craft-cathedral-cross';p.set_content(build_document_html(Profile.parse(raw).document()),wait_until='load');p.evaluate('document.fonts.ready');p.evaluate(paginator)
   assert p.evaluate('''()=>{const s=document.querySelector('.sacred-art').getBoundingClientRect(),n=document.querySelector('.craft-heading').getBoundingClientRect();return s.bottom<n.top}''')
   pdf=p.pdf(format='A4',print_background=True,prefer_css_page_size=True,tagged=True,margin={k:'0' for k in ['top','right','bottom','left']})
   with pdfium.PdfDocument(pdf) as source:source[0].render(scale=1.1).to_pil().save(out/'edge-checks'/f'cathedral-cross-{case}.png')
