@@ -98,7 +98,8 @@ def export_document(document, kind):
     try:
         html = build_document_html(document)
         worker = Path(__file__).with_name('render_worker.py')
-        job = json.dumps(dict(html=html, executable=current_app.config['CHROMIUM_EXECUTABLE']))
+        job = json.dumps(dict(html=html, executable=current_app.config['CHROMIUM_EXECUTABLE'],
+                              sandbox=current_app.config.get('CHROMIUM_SANDBOX', True)))
         try:
             process = subprocess.Popen([worker_python(), str(worker)], stdin=subprocess.PIPE,
                                        stdout=subprocess.PIPE, stderr=subprocess.PIPE,

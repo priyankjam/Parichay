@@ -29,6 +29,7 @@ APP_ENV=production
 SECRET_KEY=replace-with-a-new-random-secret
 TRUSTED_HOSTS=priyankjam.pythonanywhere.com
 CHROMIUM_EXECUTABLE=/usr/bin/chromium
+CHROMIUM_SANDBOX=false
 RENDER_PYTHON_EXECUTABLE=/home/priyankjam/.virtualenvs/myenv/bin/python
 EXPORT_TIMEOUT_SECONDS=40
 RATELIMIT_STORAGE_URI=memory://
@@ -63,18 +64,24 @@ read when the application starts.
 
 ## Preview and export are a separate hosting compatibility check
 
-The errors supplied occur before rendering. Fixing startup does not prove PDF,
-PNG or live preview compatibility. These features run Chromium in an isolated
-subprocess. PythonAnywhere documents using its preinstalled `/usr/bin/chromium`
-instead of `playwright install`, and its example uses `--no-sandbox`.
+The supplied direct preview test reached Chromium and failed with
+`browser_sandbox_or_permissions`. PythonAnywhere documents using its preinstalled
+`/usr/bin/chromium` instead of `playwright install`, with `--no-sandbox`.
+Set `CHROMIUM_SANDBOX=false` in this host's `.env` to use that launch mode, then
+reload the web app. Playwright adds `--no-sandbox` when `chromium_sandbox=False`.
 
-Parichay currently requires Chromium sandboxing for user-supplied documents.
-Setting the executable path alone may therefore not make rendering work on
-PythonAnywhere. Confirm sandbox support with the host; if unsupported, run the
-app on a host supporting sandboxed Chromium or design an isolated rendering
-service before launching. The startup fix intentionally does not disable this
-security boundary. The worker uses the explicit virtualenv interpreter above,
-avoiding the embedded uWSGI executable. Renderer errors are logged as safe
+This explicitly removes Chromium's own process sandbox, reducing defense in
+depth against browser vulnerabilities. The renderer still blocks page network
+requests, disables page JavaScript and service workers, uses generated escaped
+HTML and normalized images, and enforces a subprocess timeout. Those safeguards
+are not a replacement for OS-level browser isolation. Use a separate isolated
+rendering environment if Chromium's sandbox is required by your deployment.
+The default remains enabled on all hosts; only the exact environment value
+`false` disables it. Profile data cannot change this setting, and failed launches
+never automatically retry without a sandbox.
+
+The worker uses the explicit virtualenv interpreter above, avoiding the embedded
+uWSGI executable. Renderer errors are logged as safe
 categories such as `browser_missing`, `renderer_dependency`, or
 `browser_sandbox_or_permissions`; document contents are never logged.
 

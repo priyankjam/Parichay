@@ -1,4 +1,4 @@
-"""One subprocess per export; browser/network/storage isolation is deliberately explicit."""
+"""One subprocess per export; launch policy comes only from server configuration."""
 import json
 import sys
 from pathlib import Path
@@ -13,11 +13,16 @@ PAGINATION_SCRIPT = '''() => {
     });
 }'''
 
+def launch_options(job):
+    # Missing/invalid values retain Chromium's sandbox. Never retry without it.
+    return dict(headless=True, executable_path=job.get('executable'),
+                chromium_sandbox=job.get('sandbox') is not False)
+
+
 def main():
     job = json.load(sys.stdin)
     with sync_playwright() as playwright:
-        browser = playwright.chromium.launch(headless=True, executable_path=job.get('executable'),
-                                             chromium_sandbox=True)
+        browser = playwright.chromium.launch(**launch_options(job))
         try:
             context = browser.new_context(java_script_enabled=False, service_workers='block')
             context.route('**/*', lambda route: route.abort())
