@@ -35,6 +35,10 @@ Page navigation, zoom, mobile download review and the text alternative all use
 the same current result. Selecting a new template returns to page one; edits
 preserve the page where possible. No form or draft data is changed by selection.
 
+Refreshing the editor returns to the first step and closes transient views while
+preserving all saved profile details. Normal return visits and Back/Forward still
+use the existing navigation state. Refresh never deletes the local draft.
+
 ## Privacy, caching and failure behavior
 
 Included details are temporarily processed by Flask to build preview markup.

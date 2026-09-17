@@ -594,10 +594,15 @@ async function initialize(){
  if(config.templates.some(d=>!d.retired&&d.id===preferredDesign))profile.template=preferredDesign;
  const preferredLanguage=new URLSearchParams(location.search).get('lang');
  if(['en','hi'].includes(preferredLanguage))profile.language=preferredLanguage;
- const sectionHash=location.hash.match(/^#section-(\d+)$/);if(sectionHash)step=normalizeStep(Number(sectionHash[1]));
+ // Refresh restarts the flow, not the draft. Normal return visits and browser
+ // Back/Forward still retain their existing navigation behavior.
+ const reloading=performance.getEntriesByType('navigation')[0]?.type==='reload';
+ const sectionHash=location.hash.match(/^#section-(\d+)$/);
+ if(reloading)step=0;else if(sectionHash)step=normalizeStep(Number(sectionHash[1]));
  const entryURL=new URL(location.href);entryURL.searchParams.delete('design');entryURL.searchParams.delete('lang');entryURL.hash=`section-${step}`;
  history.replaceState({section:step,...(isMobileProduct()?{mobileDepth:0}:{})},'',entryURL.pathname+entryURL.search+entryURL.hash);
  restoring=false;renderStep();
+ if(reloading)window.scrollTo(0,0);
  if(failedStorage)toast(t('savedError'));
  if(recoveryBlocked){
   openInfo(`<h2>${profile.language==='hi'?'ड्राफ़्ट बहाल नहीं हो सका':'Your saved draft needs attention'}</h2><p>${profile.language==='hi'?'पुराने ड्राफ़्ट को बदला नहीं गया है। पहले उसकी प्रति डाउनलोड करें।':'Your existing draft has not been overwritten. Download a recovery copy before starting again.'}</p><div class="dialog-actions"><button id="recover-copy" class="button secondary">${t('backup')}</button><button id="recover-reset" class="button primary">${profile.language==='hi'?'नया ड्राफ़्ट शुरू करें':'Start a new draft'}</button></div>`);

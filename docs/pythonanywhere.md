@@ -73,6 +73,16 @@ new JavaScript. No `.env` change is needed for this live-preview path.
 PDF/JPG/PNG downloads and the legacy `POST /api/preview` route still need the
 server renderer. A working live preview does not prove downloads are configured.
 
+## HTTPS preview requests
+
+Keep `Referrer-Policy: same-origin`. Flask-WTF's strict HTTPS CSRF check needs a
+same-origin `Referer` as well as the session cookie and CSRF token. The former
+`no-referrer` policy prevented browsers from sending it, causing preview POSTs
+to return 400 on HTTPS even though HTTP local testing worked. Do not disable
+CSRF or `WTF_CSRF_SSL_STRICT`. The same-origin policy sends no referrer to external
+sites. Reload the web app after updating, then refresh the editor to receive the
+new response header.
+
 ## Server export compatibility
 
 The supplied direct preview test reached Chromium and failed with
