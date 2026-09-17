@@ -27,7 +27,10 @@ def main():
             page.set_default_timeout(20000)
             page.set_content(job['html'], wait_until='load')
             page.evaluate('document.fonts.ready')
-            if page.locator('.craft-document').count():
+            if page.locator('.repaired-document').count():
+                paginator = Path(__file__).resolve().parents[1] / 'static/js/repaired-paginator.js'
+                page.evaluate(paginator.read_text())
+            elif page.locator('.craft-document').count():
                 paginator = Path(__file__).resolve().parents[1] / 'static/js/collection-paginator.js'
                 page.evaluate(paginator.read_text())
             else:

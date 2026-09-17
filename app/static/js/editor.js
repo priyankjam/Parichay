@@ -124,8 +124,8 @@ function designCategory(item){
 }
 function designChoices(){
  const groups=['all','contemporary','regional','cultural','originals'];
- const designs=config.templates.filter(d=>step===9&&spotlight||designFilter==='all'||designCategory(d)===designFilter);
- return `<div class="design-library"><div class="design-filters" role="group" aria-label="${t('designCategories')}">${groups.map(id=>`<button class="design-filter" data-design-filter="${id}" aria-pressed="${designFilter===id}">${t('category_'+id)}</button>`).join('')}</div><p class="library-caption">${t(hasContent()?'yourDetailsInDesigns':'sampleDesigns')}</p><div class="design-grid">${designs.map(item=>`<button class="design-card ${profile.template===item.id?'selected':''}" data-template="${item.id}" aria-pressed="${profile.template===item.id}"><div class="design-thumbnail" data-thumbnail="${item.id}" data-state="loading" aria-hidden="true"><img alt="" width="300" height="424" hidden><span class="thumbnail-note">${t('previewLoading')}</span></div><div class="design-card-title"><strong>${esc(profile.language==='hi'?item.hi:item.name)}</strong></div><div class="design-card-meta"><small>${t('category_'+designCategory(item))}</small><span class="selected-label" ${profile.template===item.id?'':'hidden'}>${icon('check')} ${t('selectedDesign')}</span></div></button>`).join('')}</div></div>`;
+ const designs=config.templates.filter(d=>!d.retired&&(step===9&&spotlight||designFilter==='all'||designCategory(d)===designFilter));
+ return `<div class="design-library"><div class="design-filters" role="group" aria-label="${t('designCategories')}">${groups.map(id=>`<button class="design-filter" data-design-filter="${id}" aria-pressed="${designFilter===id}">${t('category_'+id)}</button>`).join('')}</div><p class="library-caption">${t(hasContent()?'yourDetailsInDesigns':'sampleDesigns')}</p><div class="design-grid">${designs.map(item=>`<button class="design-card ${profile.template===item.id?'selected':''}" data-template="${item.id}" aria-pressed="${profile.template===item.id}"><div class="design-thumbnail" data-thumbnail="${item.id}" data-state="loading" aria-hidden="true"><img alt="" width="300" height="424" hidden><span class="thumbnail-note">${t('previewLoading')}</span></div><div class="design-card-title"><strong>${esc(profile.language==='hi'?item.hi:item.name)}</strong></div><div class="design-card-meta"><small>${esc(item.designSubtitle||t('category_'+designCategory(item)))}</small><span class="selected-label" ${profile.template===item.id?'':'hidden'}>${icon('check')} ${t('selectedDesign')}</span></div></button>`).join('')}</div></div>`;
 }
 function fieldVisibility(id,name){
  if(mobile?.active)return '';
@@ -181,7 +181,7 @@ function photosEditor(){return `<label class="hide-section"><input type="checkbo
 function exportEditor(){
  const doc=buildDocument(profile),theme=config.templates.find(x=>x.id===profile.template);
  const option=kind=>`<button class="export-option" data-export="${kind}" disabled><span class="file-icon">${icon('file')}<span>${kind.toUpperCase()}</span></span><span><strong>${t(kind)}</strong><small>${t(kind+'Note')}</small></span><span class="arrow">${icon('download')}</span></button>`;
- return `<section class="export-review"><h2>${t('reviewDetails')}</h2><p>${esc(profile.language==='hi'?theme.hi:theme.name)} · ${profile.language==='hi'?'हिन्दी':'English'}</p><ul class="review-list">${[...(doc.name&&!doc.sections.some(x=>x.key==='personal')?[{key:'personal',title:t('details')}]:[]),...doc.sections,...(doc.photos.length?[{key:'photos',title:t('photos')+' · '+doc.photos.length}]:[])].map(section=>`<li><span>${esc(section.title)}</span><button class="text-button" data-step="${sectionSteps[section.key]??7}">${t('editSection')}<span class="sr-only"> ${esc(section.title)}</span> ${icon('arrow-right')}</button></li>`).join('')}</ul>${!doc.name&&!doc.sections.length?`<p class="muted-note">${t('noExportDetails')}</p><button class="button secondary" data-step="3">${t('startDetails')}</button>`:''}<button class="button secondary" data-open-preview>${t('reviewPreview')} ${icon('eye')}</button></section><div class="disclosure">${t('disclosure')}</div><label class="consent-row"><input type="checkbox" id="export-consent">${t('consent')}</label><p class="format-label">${t('recommendedPDF')}</p>${option('pdf')}${disclosure('image-formats',t('imageFormats'),option('jpg')+option('png'))}<div id="export-status" role="status" aria-live="polite"></div><div id="export-result" tabindex="-1" hidden><div class="message success" role="status">${t('downloadReady')}</div><p id="download-filename" class="download-filename"></p><div class="dialog-actions"><button id="download-again" class="button secondary">${t('downloadAgain')}</button><button id="share-file" class="button primary">${t('share')}</button></div><div id="share-help" class="help-card share-help" tabindex="-1" hidden><div><h3>${t('shareHelpTitle')}</h3><ol><li>${t('shareHelpOne')}</li><li>${t('shareHelpTwo')}</li><li>${t('shareHelpThree')}</li></ol><p>${t('shareImageHelp')}</p></div></div></div><p class="muted-note">${t('shareHint')}</p><p class="muted-note">${t('multiPage')}</p><button class="text-button" data-step="9">${icon('arrow-left')} ${t('changeDesign')}</button>`;
+ return `<section class="export-review"><h2>${t('reviewDetails')}</h2><p>${esc(profile.language==='hi'?theme.hi:theme.name)} · ${profile.language==='hi'?'हिन्दी':'English'}</p><ul class="review-list">${[...(doc.name&&!doc.sections.some(x=>x.key==='personal')?[{key:'personal',title:t('details')}]:[]),...doc.sections,...(doc.photos.length?[{key:'photos',title:t('photos')+' · '+doc.photos.length}]:[])].map(section=>`<li><span>${esc(section.title)}</span><button class="text-button" data-step="${sectionSteps[section.key]??7}">${t('editSection')}<span class="sr-only"> ${esc(section.title)}</span> ${icon('arrow-right')}</button></li>`).join('')}</ul>${!doc.name&&!doc.sections.length?`<p class="muted-note">${t('noExportDetails')}</p><button class="button secondary" data-step="3">${t('startDetails')}</button>`:''}<button class="button secondary" data-open-preview>${t('reviewPreview')} ${icon('eye')}</button></section><div class="disclosure">${t('disclosure')}</div><label class="consent-row"><input type="checkbox" id="export-consent">${t('consent')}</label><p class="format-label">${t('recommendedPDF')}</p>${option('pdf')}${profile.template==='figma-ganesha-maroon'?`<button class="export-option" data-export="pdf" data-paper="light" disabled>${icon('file')}<span><strong>${profile.language==='hi'?'हल्के कागज़ पर PDF':'Light-paper PDF'}</strong><small>${profile.language==='hi'?'आइवरी कागज़, मैरून लिखावट':'Ivory paper with maroon text. Uses less ink.'}</small></span></button>`:''}${disclosure('image-formats',t('imageFormats'),option('jpg')+option('png'))}<div id="export-status" role="status" aria-live="polite"></div><div id="export-result" tabindex="-1" hidden><div class="message success" role="status">${t('downloadReady')}</div><p id="download-filename" class="download-filename"></p><div class="dialog-actions"><button id="download-again" class="button secondary">${t('downloadAgain')}</button><button id="share-file" class="button primary">${t('share')}</button></div><div id="share-help" class="help-card share-help" tabindex="-1" hidden><div><h3>${t('shareHelpTitle')}</h3><ol><li>${t('shareHelpOne')}</li><li>${t('shareHelpTwo')}</li><li>${t('shareHelpThree')}</li></ol><p>${t('shareImageHelp')}</p></div></div></div><p class="muted-note">${t('shareHint')}</p><p class="muted-note">${t('multiPage')}</p><button class="text-button" data-step="9">${icon('arrow-left')} ${t('changeDesign')}</button>`;
 }
 function placePreview(){
  const slot=step===9&&spotlight?$('spotlight-stage'):null;
@@ -190,7 +190,7 @@ function placePreview(){
 function centerSelectedDesign(){
  if(step!==9||!spotlight)return;
  const rail=document.querySelector('.design-grid'),card=rail?.querySelector('.selected');
- if(card)rail.scrollTo({left:card.offsetLeft-rail.offsetLeft-(rail.clientWidth-card.clientWidth)/2,behavior:'instant'});
+ if(card){const vertical=getComputedStyle(rail).display==='grid';rail.scrollTo(vertical?{top:card.offsetTop-rail.offsetTop-(rail.clientHeight-card.clientHeight)/2,behavior:'instant'}:{left:card.offsetLeft-rail.offsetLeft-(rail.clientWidth-card.clientWidth)/2,behavior:'instant'});}
 }
 function renderStep(focus=false){
  if(mobile?.active){
@@ -265,7 +265,7 @@ function scalePreview(){
  let second=$('spotlight-next-page');
  if(!second){second=document.createElement('img');second.id='spotlight-next-page';second.hidden=true;scroll.append(second);}
  const result=studio?.cache.get(studio.selected);
- const spread=spotlight&&step===9&&!modal&&scroll.clientWidth>=720&&result?.pdf&&studio.page+1<result.pageCount;
+ const spread=spotlight&&step===9&&!modal&&scroll.clientWidth>=580&&result?.pdf&&studio.page+1<result.pageCount;
  second.hidden=!spread;
  const count=spread?2:1;
  let width=previewZoom&&modal?794:mobile?.active&&modal?Math.min(794,Math.max(1,scroll.clientWidth-16)):Math.min(794,Math.max(1,(scroll.clientWidth-16-(spread?24:0))/count),Math.max(1,scroll.clientHeight-16)*210/297);
@@ -388,9 +388,9 @@ $('step-content').addEventListener('input',event=>{
  if(el.dataset.custom){const [id,i,key]=el.dataset.custom.split(':');profile.customSections.find(s=>s.id===id).fields[Number(i)][key]=el.value;change();}
 });
 $('step-content').addEventListener('keydown',event=>{
- if(spotlight&&step===9&&event.target.matches('[data-template]')&&['ArrowLeft','ArrowRight','Home','End'].includes(event.key)){
+ if(spotlight&&step===9&&event.target.matches('[data-template]')&&['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home','End'].includes(event.key)){
   event.preventDefault();const cards=[...document.querySelectorAll('[data-template]')],i=cards.indexOf(event.target);
-  const next=event.key==='Home'?0:event.key==='End'?cards.length-1:Math.max(0,Math.min(cards.length-1,i+(event.key==='ArrowRight'?1:-1)));
+  const next=event.key==='Home'?0:event.key==='End'?cards.length-1:Math.max(0,Math.min(cards.length-1,i+({ArrowRight:1,ArrowLeft:-1,ArrowDown:2,ArrowUp:-2}[event.key]||0)));
   cards[next].focus({preventScroll:true});cards[next].scrollIntoView({block:'nearest',inline:'center',behavior:'instant'});return;
  }
  if(event.key==='Enter'&&event.target.id==='custom-hobby'&&!event.isComposing){event.preventDefault();addCustomHobby();return;}
@@ -454,7 +454,7 @@ document.addEventListener('click',async event=>{
  if(b.dataset.crop!==undefined)openCrop(profile.photos[Number(b.dataset.crop)],Number(b.dataset.crop));
  if(b.dataset.removePhoto!==undefined)removeSafely(true,()=>{profile.photos.splice(Number(b.dataset.removePhoto),1);change();renderStep();$('add-photo')?.focus();});
  if(b.dataset.mainPhoto!==undefined){profile.photos.unshift(profile.photos.splice(Number(b.dataset.mainPhoto),1)[0]);change();renderStep();}
- if(b.dataset.export)await exportFile(b.dataset.export);
+ if(b.dataset.export)await exportFile(b.dataset.export,b.dataset.paper);
  if(b.id==='download-again'&&savedFile)downloadBlob(savedFile,savedFile.name);
  if(b.id==='share-file'&&savedFile){try{if(navigator.canShare?.({files:[savedFile]}))await navigator.share({files:[savedFile],title:'Biodata'});else showShareHelp();}catch(e){if(e.name!=='AbortError')showShareHelp();}}
 });
@@ -496,24 +496,24 @@ document.addEventListener('visibilitychange',()=>{if(document.visibilityState===
 
 function showShareHelp(){if(mobile?.active){mobile.shareHelp();return;}const help=$('share-help');help.hidden=false;help.focus({preventScroll:true});help.scrollIntoView({block:'center',behavior:'instant'});}
 
-async function exportFile(kind){
+async function exportFile(kind,paper='original'){
  if(exporting||!$('export-consent')?.checked)return;
  if(!validateForExport())return;
  exporting=true;exportingRevision=revision;$('export-result').hidden=true;document.querySelectorAll('[data-export]').forEach(b=>b.disabled=true);$('export-status').textContent=t('loading');$('step-content').setAttribute('aria-busy','true');syncMobileAction();error('');$('export-status').scrollIntoView({block:'nearest',behavior:'instant'});
  const abort=new AbortController(),timer=setTimeout(()=>abort.abort(),60000);
  try{
-  let blob=kind==='pdf'?studio.pdf(exportPayload()):null,ext=kind;
+  let blob=kind==='pdf'&&paper==='original'?studio.pdf(exportPayload()):null,ext=kind;
   if(!blob){
-   const response=await fetch('/api/export/'+kind,{method:'POST',headers:{'Content-Type':'application/json','X-CSRFToken':document.querySelector('meta[name="csrf-token"]').content},body:JSON.stringify(exportPayload()),signal:abort.signal});
+   const response=await fetch('/api/export/'+kind+'?paper='+encodeURIComponent(paper),{method:'POST',headers:{'Content-Type':'application/json','X-CSRFToken':document.querySelector('meta[name="csrf-token"]').content},body:JSON.stringify(exportPayload()),signal:abort.signal});
    if(!response.ok){const payload=await response.json().catch(()=>({error:t('errorNetwork')}));throw new Error(payload.error);}
    blob=await response.blob();ext=response.headers.get('Content-Type').includes('zip')?'zip':kind;
   }
   const name=buildDocument(profile).name.normalize('NFC').replace(/[^\p{L}\p{M}\p{N}-]+/gu,'-').replace(/^-|-$/g,'').slice(0,60);
-  const file=new File([blob],`parichay${name?'-'+name:''}-biodata.${ext}`,{type:blob.type});
+  const file=new File([blob],`parichay${name?'-'+name:''}-biodata${paper==='light'?'-light-paper':''}.${ext}`,{type:blob.type});
   downloadBlob(file,file.name);
   if(revision===exportingRevision&&step===10){savedFile=file;$('export-result').hidden=false;$('download-filename').textContent=file.name;$('export-status').textContent='';$('export-result').focus({preventScroll:true});$('export-result').scrollIntoView({block:'center',behavior:'instant'});mobile?.active&&mobile.completedDownload();}
   else toast(t('downloadReady'));
- }catch(e){if(step===10){error(e.name==='TypeError'||e.name==='AbortError'?t('errorNetwork'):e.message);if($('export-status'))$('export-status').textContent='';const retry=document.createElement('button');retry.className='button secondary';retry.dataset.export=kind;retry.textContent=t('tryAgain');$('form-error').append(retry);$('form-error').tabIndex=-1;$('form-error').focus({preventScroll:true});$('form-error').scrollIntoView({block:'center',behavior:'instant'});}else toast(t('errorNetwork'));}
+ }catch(e){if(step===10){error(e.name==='TypeError'||e.name==='AbortError'?t('errorNetwork'):e.message);if($('export-status'))$('export-status').textContent='';const retry=document.createElement('button');retry.className='button secondary';retry.dataset.export=kind;retry.dataset.paper=paper;retry.textContent=t('tryAgain');$('form-error').append(retry);$('form-error').tabIndex=-1;$('form-error').focus({preventScroll:true});$('form-error').scrollIntoView({block:'center',behavior:'instant'});}else toast(t('errorNetwork'));}
  finally{clearTimeout(timer);exporting=false;$('step-content').removeAttribute('aria-busy');syncMobileAction();document.querySelectorAll('[data-export]').forEach(b=>b.disabled=!$('export-consent')?.checked);}
 }
 
@@ -591,7 +591,7 @@ async function initialize(){
  try{store=await openDraftStore();const saved=await store.get();if(saved){mobile?.restore(saved.mobile);profile=validateBackup(saved.profile);step=Number.isInteger(saved.step)?normalizeStep(saved.step):0;visited=new Set(Array.isArray(saved.visited)?saved.visited.filter(i=>Number.isInteger(i)&&i>=0&&i<=10).map(normalizeStep):[0]);}}
  catch{failedStorage=true;recoveryBlocked=Boolean(store);}
  const preferredDesign=new URLSearchParams(location.search).get('design');
- if(config.templates.some(d=>d.id===preferredDesign))profile.template=preferredDesign;
+ if(config.templates.some(d=>!d.retired&&d.id===preferredDesign))profile.template=preferredDesign;
  const preferredLanguage=new URLSearchParams(location.search).get('lang');
  if(['en','hi'].includes(preferredLanguage))profile.language=preferredLanguage;
  const sectionHash=location.hash.match(/^#section-(\d+)$/);if(sectionHash)step=normalizeStep(Number(sectionHash[1]));
@@ -610,7 +610,7 @@ mobile=createMobileProduct({
  config,profile:()=>profile,step:()=>step,savedFile:()=>savedFile,exporting:()=>exporting,
  status:()=>$('save-status').dataset.state||'ready',previewResult:()=>studio?.cache.get(studio.selected),previewZoom:()=>previewZoom,
  document:()=>buildDocument(profile),hasContent,sectionHasDetails,stepHasDetails:i=>stepHasDetails(i)||i===7&&profile.customSections.some(s=>s.fields.some(f=>f.value)),change,save,goTo,render:renderStep,renderPreview,
- designChoices,hobbiesMarkup,validateCurrent,openPreview,closePreview,openCrop,exportFile,reindexHidden,
+ designChoices,hobbiesMarkup,customEditor,validateCurrent,openPreview,closePreview,openCrop,exportFile,reindexHidden,
  clearFile:()=>{savedFile=null;},confirmRemove:action=>removeSafely(true,action),
  replacePhoto:index=>{replacementPhoto=index;$('photo-input').value='';$('photo-input').click();},
  removePhoto:index=>removeSafely(true,()=>{profile.photos.splice(index,1);change();renderStep();}),

@@ -2,7 +2,7 @@ from flask import Flask, jsonify, request, render_template
 from flask_wtf.csrf import CSRFProtect, CSRFError
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
-from werkzeug.exceptions import HTTPException
+from werkzeug.exceptions import HTTPException, SecurityError
 from .config import Config
 
 csrf = CSRFProtect()
@@ -35,7 +35,7 @@ def create_app(test_config=None):
             "object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'"
         )
         response.headers['X-Robots-Tag'] = 'noindex, nofollow'
-        if request.path.startswith(('/static/artwork/collection-v1/', '/static/artwork/collection-gallery-v1/', '/static/artwork/collection-gallery-v2/')):
+        if request.path.startswith(('/static/artwork/collection-v1/', '/static/artwork/collection-gallery-v1/', '/static/artwork/collection-gallery-v2/', '/static/artwork/repair-gallery-v2/')):
             response.headers['Cache-Control'] = 'public, max-age=31536000, immutable'
         elif request.path.startswith('/static/fonts/'):
             response.headers['Cache-Control'] = 'public, max-age=86400'
@@ -53,6 +53,10 @@ def create_app(test_config=None):
 
     @app.errorhandler(HTTPException)
     def http_error(error):
+        # Host validation runs before Flask can build URLs. Rendering the normal
+        # error template here would fail again when it calls url_for().
+        if isinstance(error, SecurityError):
+            return jsonify(error='Invalid request host.'), 400
         messages = {413: 'This file is too large. Use photos under 8 MB each.',
                     429: 'Please wait a minute before trying again.',
                     404: 'This page could not be found.'}

@@ -1,6 +1,6 @@
 # Parichay
 
-A Flask marriage biodata editor for India. Guest creation, locally saved drafts, English/Hindi, 49 document designs, and real PDF/JPG/PNG export. No signup, public profile URLs, profile database or analytics trackers.
+A Flask marriage biodata editor for India. Guest creation, locally saved drafts, English/Hindi, 47 available document designs, and real PDF/JPG/PNG export. No signup, public profile URLs, profile database or analytics trackers.
 
 ## Run locally
 
@@ -35,7 +35,7 @@ The product UI uses **Paper & Plum**: warm paper surfaces, plum actions, editori
 - Optional contact, culture, astrology, income and partner groups open on demand. Personal details use meaningful groups; About focuses on your introduction. Custom sections live in Design.
 - Collapsible education/career entries have named summaries and move controls. Removing filled entries, photos or custom content asks for confirmation. Reordering preserves hidden-field flags.
 - Inline validation links export errors back to the relevant field. Export review lists included sections, design, language and photos; PDF is the primary format. Progress counts sections containing details, not mandatory completion.
-- Forty-nine selectable designs: the original five, fourteen illustrated designs, and thirty contemporary, regional and cultural versions across twenty layout/artwork concepts. Shared category filters and full-bleed thumbnails in both design steps, gender-aware sample portraits, and instant template switching. Template selection never sets cultural information.
+- Forty-seven selectable designs across the original, illustrated, contemporary, regional and cultural collections; two retired designs remain compatible with saved drafts. Shared category filters and full-bleed thumbnails in both design steps, gender-aware sample portraits, and instant template switching. Template selection never sets cultural information.
 - Repeatable education and career entries; three consistent optional family inputs for father, mother and siblings; expanded optional culture/astrology sections and optional contact/partner information. Interests offer translated choices and up to five selections.
 - Per-field inclusion and section hiding; custom sections and custom fields.
 - Five photos, local crop/zoom/position/rotation, primary-photo selection, image validation and compression. No appearance manipulation.
@@ -74,7 +74,7 @@ There is deliberately **no SQLAlchemy/SQLite profile table** in this guest relea
 
 Repeatable lists support 12 entries each. Custom sections: eight; fields per custom section: twelve. Five photos, each source up to 8 MB/24 megapixels; accepted formats JPEG/PNG/WebP. Text total: 40,000 characters. Exports are limited to 20 pages. These limits bound computation rather than silently truncate user data. Age or birth date, if supplied, must represent an adult; no exact date of birth is required.
 
-The design studio renders the actual PDF into fixed-ratio A4 sheets. Thumbnail, selected-page preview and full preview come from the same Chromium/Jinja export engine, and PDF download reuses the exact previewed bytes when the data matches. The original themes share document markup and base CSS; the new collection has a shared semantic builder, eleven reusable layout presets, separate artwork packs, a fixed cultural-header choice for each separately selectable version and a measured paginator. There is no independent client-side visual document layout. The client review-list helper still uses the shared field registry. PDF page backgrounds are full bleed with a readable internal text inset. Entire sections move to the next page when they fit there. A section longer than a page starts on a fresh page and continues without clipping; headings and short rows remain together.
+The design studio renders the actual PDF into fixed-ratio A4 sheets. Thumbnail, selected-page preview and full preview come from the same Chromium/Jinja export engine, and PDF download reuses the exact previewed bytes when the data matches. All 49 saved template IDs now use the shared semantic builder in `services/repaired_documents.py`, explicit compositions in `biodata_templates/repair.json`, and `repaired-paginator.js`. The field registry still owns profile labels and values. Short education/career/family records stay together; oversized content continues at measured record, row and Unicode grapheme boundaries. There is no independent client-side print layout or text autoscaling. Page backgrounds are full bleed with readable internal text insets.
 
 ### Routes
 
@@ -103,6 +103,9 @@ Uploads are decoded by Pillow, bounded, resized, re-encoded and stripped of EXIF
 Files already sent cannot be revoked. Link sharing, PIN controls and public hosting are intentionally not simulated. Downloading a PDF is not proof of delivery through WhatsApp. Language selection changes labels, not names or personal prose. Hindi copy should receive native-speaker editorial review before a national release.
 
 ## Production deployment
+
+For PythonAnywhere WSGI setup, domain configuration, and Chromium compatibility,
+see [the PythonAnywhere guide](docs/pythonanywhere.md).
 
 Use Linux, a non-root process, Chromium's sandbox, a reverse proxy with HTTPS, and a persistent high-entropy `SECRET_KEY`. Set `APP_ENV=production` and `TRUSTED_HOSTS` to the real hostname(s). Never expose Flask's development server to the internet.
 
@@ -204,12 +207,27 @@ python scripts/capture_unique_template_samples.py
 
 Artwork and gallery paths are versioned and immutable-cacheable. Bump their version when publishing changed assets. Fonts and all art are local; no image-generation API is called at runtime. Approved photo crops are contained within frames; optional browser-native face detection assists manual cropping when available, with no network request.
 
-The new paginator keeps fitting sections whole, splits oversized text at semantic boundaries and measured Unicode grapheme boundaries, and uses typography-only continuation headers. It rejects unresolved overflow rather than clipping. Minimum body text is 10.5pt. Print asset resolution is chosen for the actual physical placement to keep transparent illustrations from inflating PDFs. Color/grayscale checks are digital proofs, not physical printer or community-member certification.
+The current paginator keeps fitting sections whole, splits oversized text at semantic boundaries and measured Unicode grapheme boundaries, and uses compact continuation headers. It rejects unresolved overflow rather than clipping. Body text is at least 11pt (11.5pt on the dark designs); labels are 9.5pt and footers 9pt. Color/grayscale checks are digital proofs, not physical printer or community-member certification.
 
 ### Standalone designs and full-page sample screenshots
 
 The design picker contains no personalization panel or reading-direction selector. Each artwork/symbol/heading combination is a separate card, including the plain versions and both Jai Bhim variations. All documents use left-to-right page layout; existing drafts with old artwork preferences migrate to the equivalent card without changing profile content.
 
-The twenty base concepts remain in `collection.json`; ten lightweight alternate-version definitions live in `variants.json`. They inherit the same eleven layout presets and artwork packs. A version owns its header art and salutation, so its thumbnail, live preview and PDF remain consistent.
+The twenty base concepts remain in `collection.json`; ten alternate-version definitions live in `variants.json`. The 49-template print revision defines their final compositions in `repair.json`. A version owns its header art and salutation, so its thumbnail, live preview and PDF remain consistent. Gallery subtitles identify variant families and distinguish Ganesha Ivory — Illustrated from Ganesha Ivory — Gold linework.
 
-Run `python scripts/capture_unique_template_samples.py` to create `output/unique-template-samples/`. It contains all 49 designs with filled fictional English male/female profiles, every full A4 page as a 1200-pixel-wide PNG, complete PDFs, an overview image and a browsable `index.html`. Generated screenshots stay local and are excluded from Git.
+Run `python scripts/capture_unique_template_samples.py` to create `output/unique-template-samples/`. It contains all 47 available designs with filled fictional English male/female profiles, every full A4 page as a 1200-pixel-wide PNG, complete PDFs, an overview image and a browsable `index.html`. Generated screenshots stay local and are excluded from Git.
+
+### 49-template audit revision
+
+The exact audit fixture is `scripts/review_fixture.py`. The review pack lives in `output/template-repair/index.html`; its before PDFs are frozen inputs and must not be overwritten. Once that local pack exists, double-click `Open Template Review.html` to review it offline without a running server. Generated review files are not included in a fresh clone. `docs/template-repair/completion-checklist.md` contains the 49-row implementation checklist, and `asset-manifest.json` records artwork replacements and unverified provenance. All 47 active revised sample exports use two pages, with every source value retained. No source profile strings were shortened. Nikah Nocturne and Christian Cathedral Ivory are retired from new selection; all 49 original IDs still restore existing private drafts without changing their selected design.
+
+```sh
+python scripts/export_repaired_review.py
+python scripts/check_repaired_documents.py
+python scripts/measure_repaired_print.py
+python scripts/build_repaired_gallery.py
+python scripts/build_template_review_pack.py
+RUN_EXPORT_TESTS=1 python -m pytest -q
+```
+
+The gallery uses `artwork/repair-gallery-v2/` (188 active male/female English/Hindi samples, plus 8 compatibility samples). Template 48 supports an explicitly selected `?paper=light` export treatment; this does not change the saved design. The final review documents distinguish completed engineering checks from pending independent iconography, language and artwork-rights review.

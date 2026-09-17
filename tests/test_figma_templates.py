@@ -56,4 +56,4 @@ def test_illustrated_image_exports_keep_background(client, kind):
         assert image.format == ('PNG' if kind == 'png' else 'JPEG')
         assert image.width > 1000 and image.height > image.width
         red, green, blue = image.convert('RGB').getpixel((image.width//2, image.height//2))
-        assert red > green * 2 and red > blue * 2, 'The maroon artwork must survive image export'
+        assert all(abs(a-b)<=3 for a,b in zip((red,green,blue),(71,27,40))), 'The new flat maroon text field must survive image export'

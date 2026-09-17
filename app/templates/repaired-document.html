@@ -1,0 +1,17 @@
+<!doctype html><html lang="{{ doc.language }}"><head><meta charset="utf-8"><title>{{ doc.name or 'Marriage biodata' }}</title><style>{{ css|safe }}</style></head><body>
+{% macro section(s) %}<section class="r-section" data-section="{{ s.key }}" data-number="{{ s.number }}"><h2>{{ s.title }}</h2><div class="r-groups">{% for group in s.groups %}<div class="r-group" data-record="{{ s.key }}-{{ loop.index }}">{% for r in group %}<div class="r-row{% if r.stack %} prose{% endif %}" data-key="{{ r.key }}" data-row-id="{{ r.render_id }}"><div class="r-label" dir="auto">{{ r.label }}</div><div class="r-value" dir="auto">{{ r.value }}</div></div>{% endfor %}</div>{% endfor %}</div></section>{% endmacro %}
+{% macro emblem() %}{% if sacred.id != 'none' %}<div class="r-sacred" data-sacred="{{ sacred.id }}">{% if sacred.src %}<img src="{{ sacred.src }}" alt="{{ sacred.label }}">{% else %}<span style="font-family:'{{ sacred.font }}'" aria-label="{{ sacred.label }}">{{ sacred.symbol }}</span>{% endif %}</div>{% endif %}{% endmacro %}
+{% macro footer() %}<footer class="r-footer"><span class="r-footer-name" dir="auto">{{ doc.name }}</span><span class="r-page-number"></span></footer>{% endmacro %}
+<main class="repaired-document craft-document r-{{ design.style }} h-{{ design.header }} layout-{{ design.layout }}{% if not doc.photos %} no-photo{% endif %}" data-template="{{ doc.template }}" data-continued="{{ doc.continued }}" data-page-word="{{ doc.page_word }}" dir="ltr">
+<article class="r-page first-page">
+{% if art %}<img class="r-art" src="{{ art }}" alt="" aria-hidden="true">{% endif %}
+<header class="r-header">
+{% if sacred.invocation %}<div class="r-devotion">{{ emblem() }}<p lang="sa">{{ sacred.invocation }}</p></div>{% else %}{{ emblem() }}{% endif %}
+<div class="r-identity">
+<div class="r-heading">{% if sacred.salutation %}<p class="r-greeting" lang="hi">जय भीम</p>{% endif %}{% if doc.name %}<h1 dir="auto">{{ doc.name }}</h1>{% endif %}{% if doc.subtitle %}<p class="r-subtitle" dir="auto">{{ doc.subtitle }}</p>{% endif %}</div>
+{% if doc.photos %}<figure class="r-portrait"><img src="{{ doc.photos[0] }}" alt="{{ 'प्रोफ़ाइल फ़ोटो' if doc.language=='hi' else 'Profile photo' }}"></figure>{% endif %}
+</div></header><div class="r-body"><div class="r-lead"></div><div class="r-lanes"></div></div>{{ footer() }}</article>
+<template id="r-continuation"><article class="r-page continuation"><header class="r-running"><span dir="auto">{{ doc.name }}</span><span>{{ doc.continued }}</span></header><div class="r-body"><div class="r-lead"></div><div class="r-lanes"></div></div>{{ footer() }}</article></template>
+<div class="r-source" hidden><div class="r-lead-source">{% for s in doc.lead %}{{ section(s) }}{% endfor %}</div>{% for lane in doc.lanes %}<div class="r-lane-source">{% for s in lane %}{{ section(s) }}{% endfor %}</div>{% endfor %}
+{% if doc.photos|length>1 %}<div class="r-photo-source">{% for photo in doc.photos[1:] %}<section class="r-section r-gallery" data-section="photos"><h2>{{ 'एक और झलक' if doc.language=='hi' else 'Another glimpse' }}</h2><img src="{{ photo }}" alt="{{ 'अतिरिक्त फ़ोटो' if doc.language=='hi' else 'Additional photo' }} {{ loop.index }}"></section>{% endfor %}</div>{% endif %}</div>
+</main></body></html>

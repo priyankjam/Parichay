@@ -1,0 +1,394 @@
+[
+  {
+    "number": 1,
+    "id": "craft-editorial-ivory",
+    "Distinct target identity": "Asymmetric editorial spread: a substantial portrait and name above a facts column and a wider narrative column.",
+    "Exact layout and typography changes": "Use a 38 × 51 mm portrait, 32 pt name, 11 pt body and 12.5 pt section headings. Use a 72 mm facts column, 8 mm gutter and remaining width for narrative. Render custom prompts above answers when the label would wrap beyond two lines. Keep education and career together; use fewer rules around narrative sections.",
+    "Artwork decision": "Keep the unillustrated paper treatment; no new AI art. Distinguish from 31 with unequal columns and a serif-led identity block.",
+    "Pagination and continuation": "Rebalance p2 by moving family and partner preferences together after education/career on p1, subject to measured fit. Do not preserve the current p1 packing merely to retain its page break."
+  },
+  {
+    "number": 2,
+    "id": "craft-modern-mono",
+    "Distinct target identity": "Monochrome professional dossier with a large left portrait and a section-name rail.",
+    "Exact layout and typography changes": "Retain the large portrait, targeting 45 × 60 mm. Use a 30 mm section rail, 5 mm gap and 139 mm content area within an 18 mm page inset. Use 11 pt values, 9.5–10 pt labels and 10 pt rail headings. Stack long labels over values instead of forcing three narrow columns.",
+    "Artwork decision": "Keep solid black rules and white paper; no AI image or decorative photo ring. Make this the only rail-led monochrome design.",
+    "Pagination and continuation": "Keep education/career/personal details on p1 and personal narrative/family/preferences/contact on p2 if they fit at the new sizes. Give the continuation heading the same sans-serif voice."
+  },
+  {
+    "number": 3,
+    "id": "craft-sage-botanical",
+    "Distinct target identity": "Botanical essay: wide introduction followed by an asymmetric facts-and-family grid.",
+    "Exact layout and typography changes": "Use a 36 × 48 mm rectangular portrait, a 30 pt serif name and 11 pt body. Retain the full-width introduction. Put education and career in one reading group, rather than breaking them across pages. Reserve a 12 mm outer decorative lane and keep the body clear of it.",
+    "Artwork decision": "Keep the supplied branch drawing, whose silhouette is clean, but use one 32–40 mm tall branch beside the opening identity block. Remove the miniature bottom-left duplicate. Repeat only a small leaf-shaped divider on p2, outside text.",
+    "Pagination and continuation": "Reflow into a balanced two-page essay; move family/preferences/custom content to p2 as needed. Avoid a long nearly empty second sheet."
+  },
+  {
+    "number": 4,
+    "id": "craft-terracotta-arch",
+    "Distinct target identity": "Architectural portrait cover within a compact terracotta arch, followed by a warm two-column document.",
+    "Exact layout and typography changes": "Replace the oversized frame with a 58 mm wide × 65 mm high line arch, sized in layout rather than by stretching a raster. Put a 36 × 48 mm portrait inside it, and the 30 pt name immediately beneath or alongside the arch. Cap the complete opening header at 78 mm; use 11 pt body and 8 mm column gutter.",
+    "Artwork decision": "Rebuild the simple terracotta arch as a crisp vector with a consistent 0.8–1 pt stroke. The supplied raster is unnecessary for this simple shape. Keep warm clay/cream without adding more icons.",
+    "Pagination and continuation": "Keep the observed birth/family/custom/contact continuation grouping only if balanced after enlargement. Use a short clay rule on p2; never repeat the tall arch."
+  },
+  {
+    "number": 5,
+    "id": "craft-midnight-art-deco",
+    "Distinct target identity": "Navy architectural masthead with geometric stepped rules and a generous portrait.",
+    "Exact layout and typography changes": "Use a 30–35 mm deep navy masthead with an ivory 30 pt name, and a 36 × 48 mm rectangular portrait overlapping only the masthead's reserved photo area. Keep the body on light paper at 11 pt. Use 12.5 pt headings and 8 mm column gutter.",
+    "Artwork decision": "Replace the tiny raster corner with vector stepped corner lines and one 0.75 pt gold accent. Remove the photo ring. Use geometry to distinguish this from the simple navy section bars in 32.",
+    "Pagination and continuation": "Redistribute the short final-page content into a deliberate two-page composition; do not shrink type to force one page. Continue navy section markers on p2 without another full masthead."
+  },
+  {
+    "number": 6,
+    "id": "craft-paper-and-ink",
+    "Distinct target identity": "Literary letter with a prominent introductory paragraph and a narrow facts sidebar.",
+    "Exact layout and typography changes": "Use a 36 × 48 mm portrait, 32 pt serif name, regular 12 pt introduction with 16 pt leading, and 11 pt body. Replace the full-width stacked facts with a 52 mm sidebar plus 8 mm gutter and 114 mm narrative region. Avoid bold body paragraphs.",
+    "Artwork decision": "The supplied leaf is legible as an asset but misplaced. Move a 22–28 mm tall version beside the opening title or remove it; never reserve a blank vertical band for it. Keep ink/cream and literary typography.",
+    "Pagination and continuation": "Target two pages for this exact sample. Move education/career into usable p1 space and bring the p3 sections onto p2. Use normal content flow rather than fixed section quotas."
+  },
+  {
+    "number": 7,
+    "id": "craft-southern-kolam",
+    "Distinct target identity": "Restrained geometric border document with paired traditional fact groups.",
+    "Exact layout and typography changes": "Use a 36 × 48 mm portrait, 30 pt name and 11 pt body. Establish a 6 mm decorative perimeter outside 18 mm text insets. Pair personal/birth details in one column and education/career in the other, then family/narrative across usable space.",
+    "Artwork decision": "Redraw the supplied loop motif as clean continuous vector geometry, 22–26 mm wide at two opposite corners. Do not assert regional authenticity from the filename alone. Keep corners away from footers by at least 5 mm.",
+    "Pagination and continuation": "Eliminate the token continuation page by testing measured one-page flow at readable sizes; if it does not fit, produce two balanced pages with family/preferences/custom/contact together."
+  },
+  {
+    "number": 8,
+    "id": "craft-bengal-alpana",
+    "Distinct target identity": "Centered red linework medallion above a symmetrical identity header and alternating section bands.",
+    "Exact layout and typography changes": "Use one 24 mm medallion in a compact 30 mm identity strip, a 36 × 48 mm portrait without a ring, and 30 pt name. Use 11 pt body and 12.5 pt red headings. Build alternating full-width and paired sections rather than copying 05's column structure.",
+    "Artwork decision": "Keep the red floral linework if its fine detail survives print; simplify it to fewer, stronger strokes if it breaks up. Use one small matching separator on p2. The files alone do not verify that the rosette is specifically Alpana.",
+    "Pagination and continuation": "Keep career with education. Reserve p2 for family, narrative, preferences, custom section and contact, with natural flow and consistent spacing."
+  },
+  {
+    "number": 9,
+    "id": "craft-gujarat-patola",
+    "Distinct target identity": "Textile-led vertical border with a right-aligned identity block and a structured single-column body.",
+    "Exact layout and typography changes": "Inset an 8 mm textile strip 8 mm from the left edge; start content at x=24 mm and end at x=192 mm. Use a 38 × 51 mm photo and a right-aligned 30 pt name with a shared right edge. Use 11 pt values and 10 pt labels.",
+    "Artwork decision": "Use the supplied textile motif as a repeat tile rather than a page-sized transparent image. Preserve aspect ratio and consistent repeat scale. Use only a 20 mm tall strip segment on continuation pages.",
+    "Pagination and continuation": "Retain the broadly sensible p1 facts/education/career and p2 family/personal narrative split, but enlarge labels and balance section gaps. Keep textile outside the text area."
+  },
+  {
+    "number": 10,
+    "id": "craft-paithani-peacock",
+    "Distinct target identity": "Peacock-led stationery with a horizontal textile signature beneath the identity block.",
+    "Exact layout and typography changes": "Use a 38 × 51 mm portrait, 30 pt name and 11 pt body. Give the education/career group a coherent position. Replace equal-width ruled boxes with a 62 mm facts column and wider narrative column.",
+    "Artwork decision": "Relocate the supplied peacock to a reserved 25 × 32 mm header-side area or redraw it as a simplified woven-style silhouette on a 10 mm high header band. Remove the footer bird. Do not call it verified Paithani craftsmanship based solely on its name.",
+    "Pagination and continuation": "Move family/preferences/custom content onto p2 and career alongside education on p1 to rebalance. Retain a slim green-and-maroon rule on p2."
+  },
+  {
+    "number": 11,
+    "id": "craft-rajasthani-miniature",
+    "Distinct target identity": "Landscape miniature vignette above a balanced heritage document.",
+    "Exact layout and typography changes": "Use a 55 × 28 mm pavilion vignette as the left part of a 65 mm header, a 36 × 48 mm portrait at right, and a 30 pt name between/below them as space permits. Use two body columns with an 8 mm gutter and 11 pt text.",
+    "Artwork decision": "Keep the supplied pavilion's general silhouette; simplify tiny balustrades/foliage if they disappear. Crop transparent padding, not the structure. Do not enlarge it into a full-page palace background.",
+    "Pagination and continuation": "Target two pages. Put personal, education and career on p1; family, narrative, birth details, preferences, custom content and contact on p2. Rebalance if the actual font metrics require it."
+  },
+  {
+    "number": 12,
+    "id": "craft-braj-krishna",
+    "Distinct target identity": "Devotional header with an intentional illustration zone and a clear professional identity block.",
+    "Exact layout and typography changes": "Place the complete figure in a reserved 25 × 38 mm top-left area, with 6 mm clear space around it. Use a 36 × 48 mm user portrait at right and a 30 pt name as the dominant text. Keep the opening header within 62 mm and body at 11 pt.",
+    "Artwork decision": "The extracted figure is recognizable and not proven malformed by this audit. Retain only after checking hands, flute and edges at final print size; replace with a simpler respectful illustration of the same subject if detail fails. Remove the miniature footer plant. Never put body text across the figure.",
+    "Pagination and continuation": "Keep education/career adjacent. Use p2 for narrative/family/preferences/custom/contact with birth details placed by available space, without deleting user-entered fields."
+  },
+  {
+    "number": 13,
+    "id": "craft-braj-lotus",
+    "Distinct target identity": "Light lotus stationery with a wide personal narrative opening and narrow factual side column.",
+    "Exact layout and typography changes": "Use a 36 × 48 mm portrait beside a left-aligned 30 pt name. Place a full-width introduction before a 58 mm facts column and a wider education/career/family column. Use 11 pt body with 14.5 pt leading.",
+    "Artwork decision": "Enlarge the supplied lotus-and-leaf drawing to 30–35 mm tall in an outer header margin. Remove the footer speck. Preserve fine stems at print size or redraw as restrained linework. Keep this explicitly botanical, with no automatically added deity.",
+    "Pagination and continuation": "Try one-page flow for the sample using the compact header; retain two pages only if readable fit requires it, then balance the content. Distinguish structurally from 12, not merely by removing Krishna."
+  },
+  {
+    "number": 14,
+    "id": "craft-ganesha-ivory",
+    "Distinct target identity": "Illustrated Ganesha masthead with warm ivory, generous portrait and a clear facts grid.",
+    "Exact layout and typography changes": "Use a 36 × 48 mm portrait, remove the ring, and align the 30 pt name with the portrait. Reserve a separate 24–28 mm square Ganesha zone above the name, with 6 mm clear space. Limit header height to 70 mm. Use 11 pt body and labels no smaller than 9.5 pt.",
+    "Artwork decision": "Keep or simplify the supplied full-color Ganesha illustration after detail review; no anatomical defect is asserted from these files. Keep all sacred art outside body text. This should stay illustrative, unlike the linework-led 46.",
+    "Pagination and continuation": "Keep personal/education/career/birth facts on p1 if they fit; use p2 for family and narrative. Avoid making the portrait smaller to accommodate the icon."
+  },
+  {
+    "number": 15,
+    "id": "craft-ivory-saffron",
+    "Distinct target identity": "Contemporary saffron-accented fact sheet with a strong vertical color rail.",
+    "Exact layout and typography changes": "Use a 38 × 51 mm rectangle, a 30 pt sans-serif name and a 4 mm saffron rail along the inside left of the header. Use 11 pt body, 12.5 pt headings and one wide main column with a compact two-column personal-facts block.",
+    "Artwork decision": "Remove the photo ring. No AI art is needed; use flat saffron geometry and a neutral paper background. Do not add religious symbols to create differentiation.",
+    "Pagination and continuation": "Reflow the short spill sections; aim for a compact readable page or a balanced two-page version, never a near-empty second page caused by fixed section assignments."
+  },
+  {
+    "number": 16,
+    "id": "craft-rama-heritage",
+    "Distinct target identity": "Devotional side illustration with a calm single-column biographical layout.",
+    "Exact layout and typography changes": "Use a 36 × 48 mm portrait, 30 pt name and a dedicated 24 × 40 mm figure box. Keep 6 mm between figure and text. Use 11 pt body, 10 pt labels and a 40 mm field-label column; let narrative span the full body width.",
+    "Artwork decision": "Keep the supplied Rama illustration only if bow, hands, feet and outline remain clear. No specific anatomical error is established. Prefer a simpler illustration of the same subject if replacement is necessary. Never crop the figure to force alignment.",
+    "Pagination and continuation": "Retain two pages with education/career on p1 and family/narrative/preferences on p2. Add a quiet olive continuation rule, without repeating the complete figure."
+  },
+  {
+    "number": 17,
+    "id": "craft-heritage-parchment",
+    "Distinct target identity": "Archival biography with numbered sections and a warm parchment tone.",
+    "Exact layout and typography changes": "Use a 38 × 51 mm left portrait, a 30 pt serif name at right and numbered 01–06 section markers in a 12 mm rail. Use 11 pt body, 12.5 pt headings, and compact education entries with degree/institution/year grouped together.",
+    "Artwork decision": "No new AI artwork. Keep a nearly flat warm background and fine olive rules; avoid faux stains or added sacred imagery. Differentiate through archival typography and numbering.",
+    "Pagination and continuation": "Retain two pages but remove excessive gaps between short rows. Continue the section numbering and include the person's name and page count on p2."
+  },
+  {
+    "number": 18,
+    "id": "craft-sikh-phulkari",
+    "Distinct target identity": "Textile yoke across the header with a strong centered identity and paired body columns.",
+    "Exact layout and typography changes": "Move an 8 mm high textile band into the header, inset 18 mm on both sides. Use a 36 × 48 mm portrait, 30 pt name and 11 pt body. Keep a 6 mm gap between pattern and identity; use 8 mm between columns.",
+    "Artwork decision": "Reuse the supplied repeat after cropping transparent padding and checking join seams. Do not stretch its embroidery stitches. Use a small matching separator on p2. The file does not establish traditional authenticity.",
+    "Pagination and continuation": "Keep education/career together and rebalance p2 with family/narrative/preferences. No automatic addition of symbols; this base should work without one."
+  },
+  {
+    "number": 19,
+    "id": "craft-phulkari-ik-onkar",
+    "Distinct target identity": "Compact invocation line above an asymmetrical textile header, with family narrative given more space.",
+    "Exact layout and typography changes": "Use a compact invocation row no taller than 14 mm, with an optically sized 10–12 mm glyph and 5 mm clear space. Put a 36 × 48 mm portrait at upper-left and a 30 pt name at right. Use a 64 mm facts column and a wider family/narrative column at 11 pt.",
+    "Artwork decision": "Render Ik Onkar from a verified vector or supported text glyph; do not regenerate the sacred glyph with AI. Move the existing embroidery from the extreme bottom to a reserved header underline. The current glyph is not declared incorrect by this audit.",
+    "Pagination and continuation": "Rebalance the two pages after removing the large header spacer. Keep this ID available, even if the gallery groups it as a Phulkari option."
+  },
+  {
+    "number": 20,
+    "id": "craft-phulkari-khanda",
+    "Distinct target identity": "Symmetrical formal Phulkari composition with a centered identity and a compact emblem.",
+    "Exact layout and typography changes": "Use a 12–14 mm verified Khanda vector above a centered 30 pt name. Place a 36 × 48 mm photo to the right of a compact identity block, not under a tall blank zone. Use equal columns with wide section-title bands for a deliberately formal counterpart to 19.",
+    "Artwork decision": "Keep one 8 mm textile header band and remove the edge-hugging footer strip. Render the emblem as a vector and test its inner detail at print size; do not AI-generate it.",
+    "Pagination and continuation": "Use a two-page layout with p1 factual groups and p2 family/narrative/preferences/contact. Group related gallery variants transparently, while preserving distinct geometry if displayed as separate designs."
+  },
+  {
+    "number": 21,
+    "id": "craft-nikah-nocturne",
+    "Distinct target identity": "Emerald arch-led portrait document with a restrained geometric continuation.",
+    "Exact layout and typography changes": "Reduce the arch to a 65 × 68 mm reserved unit, fit a 36 × 48 mm portrait, and move the 30 pt name beneath/alongside rather than trapping all identity text inside the ornament. Use 11 pt body, 12.5 pt emerald headings and 8 mm column gutter.",
+    "Artwork decision": "Simplify the supplied emerald-and-gold arch or rebuild it as a vector. Preserve its proportions; avoid nonuniform image stretching. Do not add unverified calligraphy. Keep body paper light and use emerald at the masthead.",
+    "Pagination and continuation": "Rebalance family/narrative/preferences on p2. Preserve supplied birth data; do not infer whether to include astrology from the template name. Use a small geometric rule on p2."
+  },
+  {
+    "number": 22,
+    "id": "craft-christian-cathedral-ivory",
+    "Distinct target identity": "Tall lancet portrait panel paired with an introductory essay and a compact facts grid.",
+    "Exact layout and typography changes": "Use a 40 × 54 mm portrait within a 44 × 62 mm lancet panel, remove the circle, and set a 30 pt name alongside. Put personal/education/career in a compact grid below. Use 11 pt body and 12.5 pt headings.",
+    "Artwork decision": "Keep a simplified version of the supplied lancet frame, preserving its pointed geometry. Restrict colored ornament to the narrow frame. Do not treat its style as evidence of a specific denomination.",
+    "Pagination and continuation": "Target two pages for the sample. Pull factual content into p1's unused space and merge p3 into p2. Continue one narrow lancet-line accent instead of another full frame."
+  },
+  {
+    "number": 23,
+    "id": "craft-cathedral-cross",
+    "Distinct target identity": "Cross-led formal letterhead with a rectangular portrait and a wide biography column.",
+    "Exact layout and typography changes": "Make the cross a 10–12 mm vector in a compact centered letterhead; use a 36 × 48 mm rectangular photo at right and a 30 pt name at left. Use a 50 mm facts sidebar plus a 116 mm narrative region separated by 8 mm. Use 11 pt body.",
+    "Artwork decision": "Remove the large photo arch here, using only a restrained pointed-arch divider. Keep the cross separate from body copy with 5 mm clear space. Do not use AI to draw the cross.",
+    "Pagination and continuation": "Target two pages. This should be structurally different from 22 if retained as a standalone gallery tile; otherwise label it clearly as that template's cross variant."
+  },
+  {
+    "number": 24,
+    "id": "craft-jain-ahimsa",
+    "Distinct target identity": "Restrained lotus stationery with a compact emblem and a generous personal introduction.",
+    "Exact layout and typography changes": "Use a 36 × 48 mm portrait, 30 pt name and 11 pt body. Move the custom section after the narrative/preferences group. Keep education with career. Use a 24 × 18 mm crest in a compact header row, not a separate tall band.",
+    "Artwork decision": "Prefer simplified lotus linework derived from the supplied crest. Do not substitute a purported Jain sacred symbol without a verified asset. If a user chooses a verified Ahimsa emblem, provide it as an explicit option with clear space.",
+    "Pagination and continuation": "Balance two pages with a coherent reading sequence. Do not auto-delete birth details or change profile content based on the design label."
+  },
+  {
+    "number": 25,
+    "id": "craft-dhamma-lotus",
+    "Distinct target identity": "Calm lotus-led biographical essay with education and career in a compact opening summary.",
+    "Exact layout and typography changes": "Use a 36 × 48 mm portrait, 30 pt name, 11 pt body and a regular-weight 12 pt intro. Use a 52 mm education/career sidebar and a wider main essay column. Let the narrative begin on p1 rather than deferring all of it.",
+    "Artwork decision": "Use the supplied lotus at 28–32 mm tall beside the introductory heading, with the stem visible. Remove the photo ring. Do not add religious text or extra symbols automatically.",
+    "Pagination and continuation": "Target two pages. Merge the p3 fields into p2, using normal flow. Keep a modest lotus-colored separator on continuation rather than an empty art spacer."
+  },
+  {
+    "number": 26,
+    "id": "craft-dhamma-wheel",
+    "Distinct target identity": "Wheel-centered formal letterhead with balanced factual and personal sections.",
+    "Exact layout and typography changes": "Use a 14–16 mm verified wheel centered in a 22 mm top band, a 36 × 48 mm photo and a 30 pt name underneath in a compact horizontal identity row. Use equal columns at 11 pt body; full-width narrative can follow the factual rows.",
+    "Artwork decision": "Remove the floating lotus from the header or use it only as a small noncompeting divider. Use a verified vector wheel with checked spoke geometry; no generated symbol. Distinguish this formal composition from 25's essay layout.",
+    "Pagination and continuation": "Target two pages with no birth/contact-only third page. Keep all optional fields data-driven."
+  },
+  {
+    "number": 27,
+    "id": "craft-ambedkarite-blue",
+    "Distinct target identity": "Education-led editorial profile with a prominent user portrait and a secondary commemorative portrait.",
+    "Exact layout and typography changes": "Make the user photo 38 × 51 mm and the commemorative portrait 22 × 27 mm in a reserved upper-right box. Use a 30 pt name and 13 pt headings consistently on both pages, with 11 pt body. Retain education/career first without imposing that order on other templates.",
+    "Artwork decision": "The extracted Ambedkar portrait is recognizable; the PDFs cannot verify historical likeness or asset provenance. Keep provisionally or replace with a verified, appropriately licensed illustration of the same person if needed. Never put body copy over it.",
+    "Pagination and continuation": "Retain two pages but make heading treatment identical across them. Keep family/personal narrative together on p2 and include a clear continuation identity."
+  },
+  {
+    "number": 28,
+    "id": "craft-equality-blue",
+    "Distinct target identity": "Contemporary civic editorial design with a blue sidebar and strong typography.",
+    "Exact layout and typography changes": "Use a 40 × 53 mm portrait in a 52 mm blue-accented left sidebar. Put a 30 pt sans-serif name and education/career in the wide main column. Use 11 pt body and uniform 13 pt headings. Continue only a 3 mm blue rail on p2.",
+    "Artwork decision": "No AI portrait or religious imagery. Use type, a blue line and white space to create identity. Avoid decorative pseudo-seals or invented constitutional quotations.",
+    "Pagination and continuation": "Rebalance two pages with personal facts in the sidebar and narrative/family/preferences in the continuation. This must differ visibly from 27 in grayscale silhouette."
+  },
+  {
+    "number": 29,
+    "id": "craft-ambedkarite-jai-bhim",
+    "Distinct target identity": "Commemorative blue letterhead with an intentional greeting and a wide narrative-led body.",
+    "Exact layout and typography changes": "Use a 12 pt verified greeting as a compact line within the identity block, a 38 × 51 mm user photo and a secondary 22 × 27 mm commemorative portrait. Use a 30 pt name, consistent 13 pt headings and 11 pt body. Use full-width education/career followed by paired personal/family groups.",
+    "Artwork decision": "Keep the portrait subject and greeting intentional and user-selected. Render the greeting as actual Unicode text with an embedded Devanagari font, never as part of generated artwork. Apply the same likeness/provenance check as 27.",
+    "Pagination and continuation": "Balance two pages and keep the greeting from creating a new empty tier. Label the relationship to 27 in the gallery; do not market a greeting toggle as a radically different design without the layout change."
+  },
+  {
+    "number": 30,
+    "id": "craft-equality-jai-bhim",
+    "Distinct target identity": "Type-led blue greeting banner with a large rectangular portrait and broad stacked sections.",
+    "Exact layout and typography changes": "Use a 14 mm high pale-blue greeting banner with 12 pt actual text, then a 40 × 53 mm right portrait and 30 pt name at left. Use broad stacked sections with 13 pt headings and 11 pt body, instead of 28's sidebar.",
+    "Artwork decision": "No AI art needed. Render the greeting with a supported embedded font and keep it visually subordinate to the user's name. Preserve identity choice independently of caste or other entered fields.",
+    "Pagination and continuation": "Use two balanced pages, carrying a short blue rule and name onto p2. Group this transparently with Equality Blue if it remains a greeting variant."
+  },
+  {
+    "number": 31,
+    "id": "editorial",
+    "Distinct target identity": "Pure typographic one-column introduction with a compact paired-facts block.",
+    "Exact layout and typography changes": "Use a 36 × 48 mm portrait, 32 pt serif name, 10 pt section labels and 11 pt body. Restore an optional profession/city subline from existing profile fields. Compress personal facts into two paired columns before a single-column narrative flow. Use a shared continuation header/footer.",
+    "Artwork decision": "Keep white paper and one short black rule. No background texture or AI imagery. Distinguish from 01 through single-column reading and minimal decoration.",
+    "Pagination and continuation": "Retain readable two-page flow if needed; balance after the facts block is compacted. Keep contact last, after the custom section, instead of interrupting the personal narrative."
+  },
+  {
+    "number": 32,
+    "id": "professional",
+    "Distinct target identity": "Contemporary sans-serif profile with a clean portrait and subdued section panels.",
+    "Exact layout and typography changes": "Use a 38 × 51 mm rounded rectangle or a 40 mm circle with adjustable crop and headroom. Raise bar labels to 10.5–11 pt, values to 11 pt and name to 30 pt. Keep bars 7–8 mm high with 2 mm internal padding; omit bars around short subgroups.",
+    "Artwork decision": "Retain a flat blue-gray palette; no AI art or gold portrait border. Avoid copying the rail layout of 02.",
+    "Pagination and continuation": "Keep two pages, preserve logical section groups, and add a 10 pt running name plus 9 pt page number. Show career/education near the identity block if the data supports it."
+  },
+  {
+    "number": 33,
+    "id": "warm",
+    "Distinct target identity": "Warm terracotta biography with serif section titles and short vertical section markers.",
+    "Exact layout and typography changes": "Use a 36 × 48 mm photo with a modest arch-top crop that preserves headroom. Keep 14 pt serif headings, 30 pt name and 11 pt body. Use a 42 mm label column, not the large default gap. Shorten section markers to the height of their content.",
+    "Artwork decision": "Keep clay rules and warm white paper, with no extra religious or wedding clip art. Make this a single-column warm letter, distinct from 04's large architectural portrait unit.",
+    "Pagination and continuation": "Balance the two pages, add running identity/page numbers, and place custom narrative before contact. Remove unused vertical space through flow changes, not smaller text."
+  },
+  {
+    "number": 34,
+    "id": "traditional",
+    "Distinct target identity": "Formal symmetric title and portrait above a framed document with legible section bands.",
+    "Exact layout and typography changes": "Use a 36 × 48 mm central portrait, 30 pt name, 10.5 pt section labels and 11 pt body. Keep the complete header within 76 mm. Inset the frame 9 mm and keep text at least 8 mm inside it. Use one dark maroon line and one very light inner line.",
+    "Artwork decision": "Rebuild frame and dividers as crisp vectors. No AI illustration is needed. Keep this strictly symmetric and formal to distinguish it from the illustrated Ganesha designs.",
+    "Pagination and continuation": "Rebalance two pages with factual groups on p1 and narrative/family on p2. Use a modest running name and numbered footer inside the frame."
+  },
+  {
+    "number": 35,
+    "id": "ivory",
+    "Distinct target identity": "High-contrast luxury typography with generous portrait and an understated side rule.",
+    "Exact layout and typography changes": "Use a 40 × 53 mm portrait, 32 pt serif name, 10 pt dark section labels and 11 pt values. Use a 60 mm narrow facts column and a wider main column with an 8 mm gutter. Keep gold for 0.75 pt rules rather than essential small text.",
+    "Artwork decision": "No additional AI artwork. Use a single gold side rule and nearly flat ivory paper. Avoid texture strong enough to reduce type contrast.",
+    "Pagination and continuation": "Reflow into two balanced pages at the new sizes. Give both pages a running name, page count and consistent column logic so the second page still looks premium."
+  },
+  {
+    "number": 36,
+    "id": "figma-peach-floral",
+    "Distinct target identity": "Peach botanical portrait layout with a compact top-left bouquet and a broad information area.",
+    "Exact layout and typography changes": "Retain the portrait around 41 × 55 mm. Move the name into a compact top identity block starting near y=30 mm. Use 11 pt body and 13 pt headings; standardize a 40 mm label column. Keep text clear of art with a defined polygonal safe area, not an arbitrary huge top margin.",
+    "Artwork decision": "Extract/rebuild separate peach corner elements from the supplied background. Use a 35 mm top-left bouquet and a smaller lower-right accent on p1; use only one small corner on p2. Rebuild the border as a vector.",
+    "Pagination and continuation": "Target two pages. Remove the repeated blank header reservation on p2/3 and merge p3 into p2. Add running identity/page counts. Keep the substantial photo rather than shrinking it."
+  },
+  {
+    "number": 37,
+    "id": "figma-lavender-floral",
+    "Distinct target identity": "Cool floral sidebar composition with a left-aligned name and a pale violet structural accent.",
+    "Exact layout and typography changes": "Keep a 41 × 55 mm portrait, use a 30 pt left-aligned name and 13 pt deep-plum headings over 11 pt charcoal body. Use a 54 mm personal-facts sidebar and a wide main column, rather than the centered title and full-width stacks of 36.",
+    "Artwork decision": "Use the supplied cool floral art as a narrow upper-left side accent; remove the oversized lower-right bouquet from text-bearing pages. Do not recolor 36 alone and call it a distinct layout.",
+    "Pagination and continuation": "Target two pages with a compact continuation header. Move career onto p1 where space permits, then family/narrative/preferences/custom/contact onto p2."
+  },
+  {
+    "number": 38,
+    "id": "figma-blue-botanical",
+    "Distinct target identity": "Airy blue asymmetric stationery with a large right portrait and a left-aligned information spine.",
+    "Exact layout and typography changes": "Retain the 41 × 55 mm photo, use 30 pt name, 13 pt navy headings and 11 pt body. Set consistent label widths and let full-width narrative use all safe space. Place the custom section before contact in normal flow.",
+    "Artwork decision": "Keep a simplified blue-and-white botanical corner, capped at 40 × 50 mm in the bottom-right. Use only a small branch on p2. Separate border and flowers; do not let fine gold lines pass behind text.",
+    "Pagination and continuation": "Target two pages. The sample's p3 row must move to p2 by using its large available lower area, not by reducing type or hiding the custom section."
+  },
+  {
+    "number": 39,
+    "id": "figma-amber-botanical",
+    "Distinct target identity": "Warm amber horizontal botanical header with a clear two-column body.",
+    "Exact layout and typography changes": "Use 41 × 55 mm portrait, 30 pt name, 13 pt dark-umber headings and 11 pt body. Use a wide horizontal header and equal two-column body with 8 mm gutter, instead of 38's left information spine.",
+    "Artwork decision": "Replace the shared blue background with text-free amber/ochre dried foliage confined to a 25 mm high top band, on warm white. Prefer a new botanical asset with a clean silhouette and quiet center; no blue flowers or full-page wash.",
+    "Pagination and continuation": "Target two balanced pages; move Everyday life before contact on p2. Verify the redesigned 38 and 39 remain distinguishable in grayscale through their layouts."
+  },
+  {
+    "number": 40,
+    "id": "figma-slate-classic",
+    "Distinct target identity": "Clean slate dossier with a substantial portrait and one restrained top rule.",
+    "Exact layout and typography changes": "Align the 41 × 55 mm portrait with the identity block, remove the detached eyebrow or attach it to the name, and use a 30 pt name with 11 pt body. Replace the red stripe with a 1.5 mm slate rule. Use 13 pt headings and a consistent 42 mm label column.",
+    "Artwork decision": "The full-page raster is effectively a plain sheet plus stripe; replace it with CSS/vector background and rule. No AI artwork.",
+    "Pagination and continuation": "Retain two pages, balance the groups and include continuation identity and page numbers. Keep a straightforward single-column form to distinguish it from 32's section panels."
+  },
+  {
+    "number": 41,
+    "id": "figma-blue-frame",
+    "Distinct target identity": "Architectural blue double-line frame with disciplined inset typography.",
+    "Exact layout and typography changes": "Use a 41 × 55 mm portrait aligned with a 30 pt title; use 11 pt body and 13 pt headings. Inset an outer frame 9 mm and keep text 8 mm inside. Use a 0.75 pt navy outer line and a 0.35 pt light-blue inner line.",
+    "Artwork decision": "Replace the full-page raster frame with crisp geometric blue vectors and four simple stepped corners. Avoid ornamental grayscale filigree that reads like a different design style.",
+    "Pagination and continuation": "Retain two pages with the same frame and safe inset. Add name/page count on p2 and make the label/value grid consistent across personal, education and contact sections."
+  },
+  {
+    "number": 42,
+    "id": "figma-floral-wreath",
+    "Distinct target identity": "Centered floral crest around the opening name with a calm single-column biography.",
+    "Exact layout and typography changes": "Retain a 41 × 55 mm portrait but center a 30 pt name within an open floral crest beside it. Use 11 pt body and 13 pt headings. Cap the entire header at 65 mm and the lower decorative band at 12 mm.",
+    "Artwork decision": "Replace the two edge-cut bouquets with one deliberately open, text-free semicircular floral wreath using the supplied cream/rose palette. Keep all flowers outside the name's bounding box and remove the repeated bottom bouquet.",
+    "Pagination and continuation": "Keep two balanced pages with just a small floral divider on p2. Ensure the opening silhouette is different from the corner-driven 43."
+  },
+  {
+    "number": 43,
+    "id": "figma-garden-corners",
+    "Distinct target identity": "Asymmetric garden composition with a large left portrait and a narrative opening.",
+    "Exact layout and typography changes": "Move the 41 × 55 mm portrait to the left of a 30 pt name and introductory paragraph. Use 11 pt body and 13 pt dark-green headings. Use a 6 mm clear gap from all leaf silhouettes and a balanced two-column factual area below.",
+    "Artwork decision": "Keep the supplied foliage style but reduce bottom-right art to a 30 × 45 mm corner with no leaves projecting into the body area. Use only the small top-left leaf cluster on p2.",
+    "Pagination and continuation": "Retain two pages, letting the custom section flow before contact. Add continuation identity and prevent long custom answers from entering the corner art zone."
+  },
+  {
+    "number": 44,
+    "id": "figma-blossom",
+    "Distinct target identity": "Contemporary pink botanical design with a compact horizontal title and open sans-serif body.",
+    "Exact layout and typography changes": "Keep the 41 × 55 mm photo, use a left-aligned 30 pt sans-serif name at the top of the safe area and 11 pt body. Reduce the footer meadow to 18–22 mm high, and start continuation text after a compact 14 mm running header.",
+    "Artwork decision": "Keep the brighter pink blossom style but split it into independent top-corner branches and a low footer meadow. Do not use a fixed full-page background to define all content margins.",
+    "Pagination and continuation": "Target two pages by recovering unused top/bottom space. Make this a clean left-aligned layout, distinct from 45's literary serif composition."
+  },
+  {
+    "number": 45,
+    "id": "figma-blossom-serif",
+    "Distinct target identity": "Soft floral letter with a serif name, a generous introduction and a compact facts sidebar.",
+    "Exact layout and typography changes": "Use a 32 pt upright serif name, 12 pt regular serif intro, 11 pt body and 13 pt headings. Keep a 41 × 55 mm portrait, with a 54 mm facts sidebar and wide letter-style narrative area. Reserve italics for a short optional subtitle, not the main name.",
+    "Artwork decision": "Keep the softer supplied blossom branches; remove the tall full-width meadow and use one 35 mm lower-left vignette. Keep the body zone plain. Do not add fake handwritten user text.",
+    "Pagination and continuation": "Target two pages and place the introduction on p1 rather than p3. Continue a letter-like narrative on p2 with family/preferences/custom/contact grouped coherently."
+  },
+  {
+    "number": 46,
+    "id": "figma-ganesha-ivory",
+    "Distinct target identity": "Gold linework devotional letterhead with a clear ivory body and substantial portrait.",
+    "Exact layout and typography changes": "Keep the 41 × 55 mm portrait, use a 30 pt name, 11 pt body and 13 pt dark-ochre headings. Remove every sacred-image watermark from the text zone. Use a 25–30 mm opening letterhead and an 18 mm text inset. Make all family-role labels consistent in color and weight.",
+    "Artwork decision": "Replace the composite background with a separate verified linework Ganesha emblem, actual editable invocation text, and a simplified vector gold frame inset 9 mm. Check the exact supplied invocation with a language-competent reviewer; do not claim its spelling is already verified.",
+    "Pagination and continuation": "Retain two pages, with only a compact continuation identity on p2. No repeated large invocation or deity beneath content. Keep clearly different from illustrated craft template 14, despite their duplicate display name."
+  },
+  {
+    "number": 47,
+    "id": "figma-ganesha-rose",
+    "Distinct target identity": "Rose devotional header with warm floral corners and a generous portrait.",
+    "Exact layout and typography changes": "Keep the 41 × 55 mm photo and use a 30 pt name, 11 pt body and 13 pt deep-rose headings. Use a compact 28 mm devotional header. Remove the underlying lotus from text areas and standardize family-role label styling.",
+    "Artwork decision": "Separate the rose corners, a verified linework Ganesha and actual invocation text. Limit corner clusters to 28–32 mm and use only one small floral accent on p2. No generated text.",
+    "Pagination and continuation": "Keep two pages while moving the p2 body upward under a compact running header. Differentiate from 46 using an asymmetric portrait/narrative header and rose corners instead of a gold enclosing frame."
+  },
+  {
+    "number": 48,
+    "id": "figma-ganesha-maroon",
+    "Distinct target identity": "Formal maroon-and-gold framed document with a calm high-contrast text field.",
+    "Exact layout and typography changes": "Keep the 41 × 55 mm portrait. Use 11.5 pt warm-white body, 13 pt gold headings and a 30 pt name. Flatten the central text field to near-solid maroon and keep pattern away from all copy. Check contrast on the actual composited colors, not palette swatches.",
+    "Artwork decision": "Rebuild the frame in vector; separate the verified emblem and actual invocation text. Preserve background aspect ratio. Restrict decorative mandala texture to an outer non-text corner or remove it. Offer an optional light print treatment without silently changing the selected design.",
+    "Pagination and continuation": "Target two pages and bring the one-row third page into p2. Use a compact continuation header; do not repeat the full invocation at the top of a nearly blank page."
+  },
+  {
+    "number": 49,
+    "id": "figma-ganesha-festive",
+    "Distinct target identity": "Celebratory maroon masthead with a restrained lower still-life and readable document center.",
+    "Exact layout and typography changes": "Keep a 41 × 55 mm portrait, 30 pt name, 11.5 pt warm-white body and 13 pt gold headings. Reserve a 30 mm festive header and at most a 22 mm bottom decorative strip. Keep a flat central maroon area with at least 6 mm clearance to ornament. Move all narrative above the decoration safe boundary.",
+    "Artwork decision": "Replace the full-page composite with separate assets: one restrained draped top accent, a small verified Ganesha, actual invocation text and one lower diya/floral cluster. Remove the body-area mandala and competing side ornaments. Generate only text-free decorative elements if new art is necessary.",
+    "Pagination and continuation": "Target two pages, with a much simpler continuation treatment. Reflow Everyday life into p2 and retain every field. Differentiate from 48 through a festive masthead and open body, not another near-identical gold frame."
+  }
+]

@@ -53,6 +53,10 @@ def export(kind):
         raw = request.get_json(silent=True)
         profile = Profile.parse(raw)
         document = profile.document()
+        treatment = request.args.get('paper', 'original')
+        if treatment not in ('original', 'light') or (treatment == 'light' and document['template'] != 'figma-ganesha-maroon'):
+            raise ValidationError('Choose a supported print treatment.')
+        document['print_treatment'] = treatment
         if not document['name'] and not document['sections']:
             raise ValidationError('Add at least one visible detail before exporting.')
         payload, mimetype, extension = export_document(document, kind)

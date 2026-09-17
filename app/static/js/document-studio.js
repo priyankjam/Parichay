@@ -95,7 +95,7 @@ export class DocumentStudio {
   const image=card.querySelector('img'),note=card.querySelector('.thumbnail-note');
   // Only fictional samples are public/cacheable. Personal pages stay in memory
   // and are cleared immediately when any profile value or visibility changes.
-  const sample=`/static/artwork/${card.dataset.thumbnail.startsWith('craft-')?'collection-gallery-v2':'gallery-v1'}/${this.payload?.gender==='female'?'female':'male'}-${this.payload?.language==='hi'?'hi':'en'}-${card.dataset.thumbnail}.webp`;
+  const sample=`/static/artwork/repair-gallery-v2/${this.payload?.gender==='female'?'female':'male'}-${this.payload?.language==='hi'?'hi':'en'}-${card.dataset.thumbnail}.webp`;
   const src=personalized?'data:image/webp;base64,'+result.pages[0]:sample;
   if(image.getAttribute('src')!==src)image.src=src;
   image.loading='lazy';image.decoding='async';image.hidden=false;

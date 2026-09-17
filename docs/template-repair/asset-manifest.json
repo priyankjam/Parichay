@@ -1,0 +1,593 @@
+[
+  {
+    "number": 1,
+    "id": "craft-editorial-ivory",
+    "old": [
+      "Plain layout / prior CSS"
+    ],
+    "retainedOrReplacement": [
+      "Native CSS typography, rules and paper"
+    ],
+    "status": "Native geometry/type; no new raster artwork. ",
+    "provenance": "Original native geometry written for this implementation; Noto fonts retain their bundled OFL notices"
+  },
+  {
+    "number": 2,
+    "id": "craft-modern-mono",
+    "old": [
+      "Plain layout / prior CSS"
+    ],
+    "retainedOrReplacement": [
+      "Native CSS typography, rules and paper"
+    ],
+    "status": "Native geometry/type; no new raster artwork. ",
+    "provenance": "Original native geometry written for this implementation; Noto fonts retain their bundled OFL notices"
+  },
+  {
+    "number": 3,
+    "id": "craft-sage-botanical",
+    "old": [
+      "artwork/collection-v1/sage-branch-pdf.webp"
+    ],
+    "retainedOrReplacement": [
+      "artwork/collection-v1/sage-branch-pdf.webp"
+    ],
+    "status": "Existing supplied art retained/repositioned; provenance unverified. ",
+    "provenance": "Repository-supplied asset; rights and regional authenticity not independently verified"
+  },
+  {
+    "number": 4,
+    "id": "craft-terracotta-arch",
+    "old": [
+      "artwork/collection-v1/terracotta-arch-pdf.webp"
+    ],
+    "retainedOrReplacement": [
+      "artwork/repair-v1/arch.svg"
+    ],
+    "status": "Native geometry/type; no new raster artwork. ",
+    "provenance": "Original native geometry written for this implementation; Noto fonts retain their bundled OFL notices"
+  },
+  {
+    "number": 5,
+    "id": "craft-midnight-art-deco",
+    "old": [
+      "artwork/collection-v1/deco-corner-pdf.webp"
+    ],
+    "retainedOrReplacement": [
+      "artwork/repair-v1/deco.svg"
+    ],
+    "status": "Native geometry/type; no new raster artwork. ",
+    "provenance": "Original native geometry written for this implementation; Noto fonts retain their bundled OFL notices"
+  },
+  {
+    "number": 6,
+    "id": "craft-paper-and-ink",
+    "old": [
+      "artwork/collection-v1/ink-leaf-pdf.webp"
+    ],
+    "retainedOrReplacement": [
+      "artwork/collection-v1/ink-leaf-pdf.webp"
+    ],
+    "status": "Existing supplied art retained/repositioned; provenance unverified. ",
+    "provenance": "Repository-supplied asset; rights and regional authenticity not independently verified"
+  },
+  {
+    "number": 7,
+    "id": "craft-southern-kolam",
+    "old": [
+      "artwork/collection-v1/kolam-corner-pdf.webp"
+    ],
+    "retainedOrReplacement": [
+      "artwork/repair-v1/kolam.svg"
+    ],
+    "status": "Native geometry/type; no new raster artwork. ",
+    "provenance": "Original native geometry written for this implementation; Noto fonts retain their bundled OFL notices"
+  },
+  {
+    "number": 8,
+    "id": "craft-bengal-alpana",
+    "old": [
+      "artwork/collection-v1/alpana-ornament-pdf.webp"
+    ],
+    "retainedOrReplacement": [
+      "artwork/collection-v1/alpana-ornament-pdf.webp"
+    ],
+    "status": "Existing supplied art retained/repositioned; provenance unverified. ",
+    "provenance": "Repository-supplied asset; rights and regional authenticity not independently verified"
+  },
+  {
+    "number": 9,
+    "id": "craft-gujarat-patola",
+    "old": [
+      "artwork/collection-v1/patola-band-pdf.webp"
+    ],
+    "retainedOrReplacement": [
+      "artwork/repair-v1/patola.svg"
+    ],
+    "status": "Native geometry/type; no new raster artwork. ",
+    "provenance": "Original native geometry written for this implementation; Noto fonts retain their bundled OFL notices"
+  },
+  {
+    "number": 10,
+    "id": "craft-paithani-peacock",
+    "old": [
+      "artwork/collection-v1/paithani-peacock-pdf.webp"
+    ],
+    "retainedOrReplacement": [
+      "artwork/collection-v1/paithani-peacock-pdf.webp"
+    ],
+    "status": "Existing supplied art retained/repositioned; provenance unverified. ",
+    "provenance": "Repository-supplied asset; rights and regional authenticity not independently verified"
+  },
+  {
+    "number": 11,
+    "id": "craft-rajasthani-miniature",
+    "old": [
+      "artwork/collection-v1/miniature-pavilion-pdf.webp"
+    ],
+    "retainedOrReplacement": [
+      "artwork/collection-v1/miniature-pavilion-pdf.webp"
+    ],
+    "status": "Existing supplied art retained/repositioned; provenance unverified. ",
+    "provenance": "Repository-supplied asset; rights and regional authenticity not independently verified"
+  },
+  {
+    "number": 12,
+    "id": "craft-braj-krishna",
+    "old": [
+      "artwork/collection-v1/krishna-pdf.webp"
+    ],
+    "retainedOrReplacement": [
+      "artwork/collection-v1/krishna-pdf.webp"
+    ],
+    "status": "Existing supplied art retained/repositioned; provenance unverified. Subject retained provisionally; specialist review pending. ",
+    "provenance": "Repository-supplied asset; rights and regional authenticity not independently verified"
+  },
+  {
+    "number": 13,
+    "id": "craft-braj-lotus",
+    "old": [
+      "artwork/collection-v1/braj-lotus-pdf.webp"
+    ],
+    "retainedOrReplacement": [
+      "artwork/collection-v1/braj-lotus-pdf.webp"
+    ],
+    "status": "Existing supplied art retained/repositioned; provenance unverified. ",
+    "provenance": "Repository-supplied asset; rights and regional authenticity not independently verified"
+  },
+  {
+    "number": 14,
+    "id": "craft-ganesha-ivory",
+    "old": [
+      "artwork/collection-v1/ganesha-pdf.webp"
+    ],
+    "retainedOrReplacement": [
+      "artwork/collection-v1/ganesha-pdf.webp"
+    ],
+    "status": "Existing supplied art retained/repositioned; provenance unverified. Subject retained provisionally; specialist review pending. ",
+    "provenance": "Repository-supplied asset; rights and regional authenticity not independently verified"
+  },
+  {
+    "number": 15,
+    "id": "craft-ivory-saffron",
+    "old": [
+      "Plain layout / prior CSS"
+    ],
+    "retainedOrReplacement": [
+      "Native CSS typography, rules and paper"
+    ],
+    "status": "Native geometry/type; no new raster artwork. ",
+    "provenance": "Original native geometry written for this implementation; Noto fonts retain their bundled OFL notices"
+  },
+  {
+    "number": 16,
+    "id": "craft-rama-heritage",
+    "old": [
+      "artwork/collection-v1/rama-pdf.webp"
+    ],
+    "retainedOrReplacement": [
+      "artwork/collection-v1/rama-pdf.webp"
+    ],
+    "status": "Existing supplied art retained/repositioned; provenance unverified. Subject retained provisionally; specialist review pending. ",
+    "provenance": "Repository-supplied asset; rights and regional authenticity not independently verified"
+  },
+  {
+    "number": 17,
+    "id": "craft-heritage-parchment",
+    "old": [
+      "Plain layout / prior CSS"
+    ],
+    "retainedOrReplacement": [
+      "Native CSS typography, rules and paper"
+    ],
+    "status": "Native geometry/type; no new raster artwork. ",
+    "provenance": "Original native geometry written for this implementation; Noto fonts retain their bundled OFL notices"
+  },
+  {
+    "number": 18,
+    "id": "craft-sikh-phulkari",
+    "old": [
+      "artwork/collection-v1/phulkari-band-pdf.webp"
+    ],
+    "retainedOrReplacement": [
+      "artwork/repair-v1/phulkari.svg"
+    ],
+    "status": "Native geometry/type; no new raster artwork. ",
+    "provenance": "Original native geometry written for this implementation; Noto fonts retain their bundled OFL notices"
+  },
+  {
+    "number": 19,
+    "id": "craft-phulkari-ik-onkar",
+    "old": [
+      "artwork/collection-v1/phulkari-band-pdf.webp"
+    ],
+    "retainedOrReplacement": [
+      "artwork/repair-v1/phulkari.svg",
+      "Unicode ik-onkar in embedded Noto font"
+    ],
+    "status": "Native geometry/type; no new raster artwork. ",
+    "provenance": "Original native geometry written for this implementation; Noto fonts retain their bundled OFL notices"
+  },
+  {
+    "number": 20,
+    "id": "craft-phulkari-khanda",
+    "old": [
+      "artwork/collection-v1/phulkari-band-pdf.webp"
+    ],
+    "retainedOrReplacement": [
+      "artwork/repair-v1/phulkari.svg",
+      "Unicode khanda in embedded Noto font"
+    ],
+    "status": "Native geometry/type; no new raster artwork. ",
+    "provenance": "Original native geometry written for this implementation; Noto fonts retain their bundled OFL notices"
+  },
+  {
+    "number": 21,
+    "id": "craft-nikah-nocturne",
+    "status": "Removed from selection; existing draft compatibility retained",
+    "retainedOrReplacement": []
+  },
+  {
+    "number": 22,
+    "id": "craft-christian-cathedral-ivory",
+    "status": "Removed from selection; existing draft compatibility retained",
+    "retainedOrReplacement": []
+  },
+  {
+    "number": 23,
+    "id": "craft-cathedral-cross",
+    "old": [
+      "Plain layout / prior CSS"
+    ],
+    "retainedOrReplacement": [
+      "Unicode cross in embedded Noto font"
+    ],
+    "status": "Native geometry/type; no new raster artwork. ",
+    "provenance": "Original native geometry written for this implementation; Noto fonts retain their bundled OFL notices"
+  },
+  {
+    "number": 24,
+    "id": "craft-jain-ahimsa",
+    "old": [
+      "artwork/collection-v1/ahimsa-geometry-pdf.webp"
+    ],
+    "retainedOrReplacement": [
+      "artwork/collection-v1/ahimsa-geometry-pdf.webp"
+    ],
+    "status": "Existing supplied art retained/repositioned; provenance unverified. ",
+    "provenance": "Repository-supplied asset; rights and regional authenticity not independently verified"
+  },
+  {
+    "number": 25,
+    "id": "craft-dhamma-lotus",
+    "old": [
+      "artwork/collection-v1/dhamma-lotus-pdf.webp"
+    ],
+    "retainedOrReplacement": [
+      "artwork/collection-v1/dhamma-lotus-pdf.webp"
+    ],
+    "status": "Existing supplied art retained/repositioned; provenance unverified. ",
+    "provenance": "Repository-supplied asset; rights and regional authenticity not independently verified"
+  },
+  {
+    "number": 26,
+    "id": "craft-dhamma-wheel",
+    "old": [
+      "Plain layout / prior CSS"
+    ],
+    "retainedOrReplacement": [
+      "Unicode dhamma-wheel in embedded Noto font"
+    ],
+    "status": "Native geometry/type; no new raster artwork. ",
+    "provenance": "Original native geometry written for this implementation; Noto fonts retain their bundled OFL notices"
+  },
+  {
+    "number": 27,
+    "id": "craft-ambedkarite-blue",
+    "old": [
+      "artwork/collection-v1/ambedkar-pdf.webp"
+    ],
+    "retainedOrReplacement": [
+      "artwork/collection-v1/ambedkar-pdf.webp"
+    ],
+    "status": "Existing supplied art retained/repositioned; provenance unverified. Subject retained provisionally; specialist review pending. ",
+    "provenance": "Repository-supplied asset; rights and regional authenticity not independently verified"
+  },
+  {
+    "number": 28,
+    "id": "craft-equality-blue",
+    "old": [
+      "Plain layout / prior CSS"
+    ],
+    "retainedOrReplacement": [
+      "Native CSS typography, rules and paper"
+    ],
+    "status": "Native geometry/type; no new raster artwork. ",
+    "provenance": "Original native geometry written for this implementation; Noto fonts retain their bundled OFL notices"
+  },
+  {
+    "number": 29,
+    "id": "craft-ambedkarite-jai-bhim",
+    "old": [
+      "artwork/collection-v1/ambedkar-pdf.webp"
+    ],
+    "retainedOrReplacement": [
+      "artwork/collection-v1/ambedkar-pdf.webp",
+      "Unicode greeting: जय भीम"
+    ],
+    "status": "Existing supplied art retained/repositioned; provenance unverified. Subject retained provisionally; specialist review pending. ",
+    "provenance": "Repository-supplied asset; rights and regional authenticity not independently verified"
+  },
+  {
+    "number": 30,
+    "id": "craft-equality-jai-bhim",
+    "old": [
+      "Plain layout / prior CSS"
+    ],
+    "retainedOrReplacement": [
+      "Unicode greeting: जय भीम"
+    ],
+    "status": "Native geometry/type; no new raster artwork. ",
+    "provenance": "Original native geometry written for this implementation; Noto fonts retain their bundled OFL notices"
+  },
+  {
+    "number": 31,
+    "id": "editorial",
+    "old": [
+      "Plain layout / prior CSS"
+    ],
+    "retainedOrReplacement": [
+      "Native CSS typography, rules and paper"
+    ],
+    "status": "Native geometry/type; no new raster artwork. ",
+    "provenance": "Original native geometry written for this implementation; Noto fonts retain their bundled OFL notices"
+  },
+  {
+    "number": 32,
+    "id": "professional",
+    "old": [
+      "Plain layout / prior CSS"
+    ],
+    "retainedOrReplacement": [
+      "Native CSS typography, rules and paper"
+    ],
+    "status": "Native geometry/type; no new raster artwork. ",
+    "provenance": "Original native geometry written for this implementation; Noto fonts retain their bundled OFL notices"
+  },
+  {
+    "number": 33,
+    "id": "warm",
+    "old": [
+      "Plain layout / prior CSS"
+    ],
+    "retainedOrReplacement": [
+      "Native CSS typography, rules and paper"
+    ],
+    "status": "Native geometry/type; no new raster artwork. ",
+    "provenance": "Original native geometry written for this implementation; Noto fonts retain their bundled OFL notices"
+  },
+  {
+    "number": 34,
+    "id": "traditional",
+    "old": [
+      "Plain layout / prior CSS"
+    ],
+    "retainedOrReplacement": [
+      "Native CSS typography, rules and paper"
+    ],
+    "status": "Native geometry/type; no new raster artwork. ",
+    "provenance": "Original native geometry written for this implementation; Noto fonts retain their bundled OFL notices"
+  },
+  {
+    "number": 35,
+    "id": "ivory",
+    "old": [
+      "Plain layout / prior CSS"
+    ],
+    "retainedOrReplacement": [
+      "Native CSS typography, rules and paper"
+    ],
+    "status": "Native geometry/type; no new raster artwork. ",
+    "provenance": "Original native geometry written for this implementation; Noto fonts retain their bundled OFL notices"
+  },
+  {
+    "number": 36,
+    "id": "figma-peach-floral",
+    "old": [
+      "artwork/templates/figma-peach-floral.jpg"
+    ],
+    "retainedOrReplacement": [
+      "artwork/repair-v1/peach.svg"
+    ],
+    "status": "Existing supplied art retained/repositioned; provenance unverified. ",
+    "provenance": "Repository-supplied asset; rights and regional authenticity not independently verified"
+  },
+  {
+    "number": 37,
+    "id": "figma-lavender-floral",
+    "old": [
+      "artwork/templates/figma-lavender-floral.jpg"
+    ],
+    "retainedOrReplacement": [
+      "artwork/repair-v1/lavender.svg"
+    ],
+    "status": "Existing supplied art retained/repositioned; provenance unverified. ",
+    "provenance": "Repository-supplied asset; rights and regional authenticity not independently verified"
+  },
+  {
+    "number": 38,
+    "id": "figma-blue-botanical",
+    "old": [
+      "artwork/templates/figma-blue-botanical.jpg"
+    ],
+    "retainedOrReplacement": [
+      "artwork/repair-v1/blue.svg"
+    ],
+    "status": "Existing supplied art retained/repositioned; provenance unverified. ",
+    "provenance": "Repository-supplied asset; rights and regional authenticity not independently verified"
+  },
+  {
+    "number": 39,
+    "id": "figma-amber-botanical",
+    "old": [
+      "artwork/templates/figma-amber-botanical.jpg"
+    ],
+    "retainedOrReplacement": [
+      "artwork/repair-v1/amber.svg"
+    ],
+    "status": "Native geometry/type; no new raster artwork. ",
+    "provenance": "Original native geometry written for this implementation; Noto fonts retain their bundled OFL notices"
+  },
+  {
+    "number": 40,
+    "id": "figma-slate-classic",
+    "old": [
+      "Plain layout / prior CSS"
+    ],
+    "retainedOrReplacement": [
+      "Native CSS typography, rules and paper"
+    ],
+    "status": "Native geometry/type; no new raster artwork. ",
+    "provenance": "Original native geometry written for this implementation; Noto fonts retain their bundled OFL notices"
+  },
+  {
+    "number": 41,
+    "id": "figma-blue-frame",
+    "old": [
+      "artwork/templates/figma-blue-frame.jpg"
+    ],
+    "retainedOrReplacement": [
+      "artwork/repair-v1/blue-frame.svg"
+    ],
+    "status": "Native geometry/type; no new raster artwork. ",
+    "provenance": "Original native geometry written for this implementation; Noto fonts retain their bundled OFL notices"
+  },
+  {
+    "number": 42,
+    "id": "figma-floral-wreath",
+    "old": [
+      "artwork/templates/figma-floral-wreath.jpg"
+    ],
+    "retainedOrReplacement": [
+      "artwork/repair-v1/wreath.svg"
+    ],
+    "status": "Native geometry/type; no new raster artwork. ",
+    "provenance": "Original native geometry written for this implementation; Noto fonts retain their bundled OFL notices"
+  },
+  {
+    "number": 43,
+    "id": "figma-garden-corners",
+    "old": [
+      "artwork/templates/figma-garden-corners.jpg"
+    ],
+    "retainedOrReplacement": [
+      "artwork/repair-v1/garden.svg"
+    ],
+    "status": "Existing supplied art retained/repositioned; provenance unverified. ",
+    "provenance": "Repository-supplied asset; rights and regional authenticity not independently verified"
+  },
+  {
+    "number": 44,
+    "id": "figma-blossom",
+    "old": [
+      "artwork/templates/figma-blossom.jpg"
+    ],
+    "retainedOrReplacement": [
+      "artwork/repair-v1/blossom.svg"
+    ],
+    "status": "Existing supplied art retained/repositioned; provenance unverified. ",
+    "provenance": "Repository-supplied asset; rights and regional authenticity not independently verified"
+  },
+  {
+    "number": 45,
+    "id": "figma-blossom-serif",
+    "old": [
+      "artwork/templates/figma-blossom-serif.jpg"
+    ],
+    "retainedOrReplacement": [
+      "artwork/repair-v1/blossom-soft.svg"
+    ],
+    "status": "Existing supplied art retained/repositioned; provenance unverified. ",
+    "provenance": "Repository-supplied asset; rights and regional authenticity not independently verified"
+  },
+  {
+    "number": 46,
+    "id": "figma-ganesha-ivory",
+    "old": [
+      "artwork/templates/figma-ganesha-ivory.jpg"
+    ],
+    "retainedOrReplacement": [
+      "artwork/repair-v1/gold-frame.svg",
+      "artwork/repair-v1/ganesha-line.svg",
+      "artwork/repair-v1/ganesha-line-light.svg",
+      "Unicode invocation: श्री गणेशाय नमः"
+    ],
+    "status": "Existing line emblem traced as SVG; real invocation text; independent review pending. ",
+    "provenance": "Repository-supplied asset; rights and regional authenticity not independently verified"
+  },
+  {
+    "number": 47,
+    "id": "figma-ganesha-rose",
+    "old": [
+      "artwork/templates/figma-ganesha-rose.jpg"
+    ],
+    "retainedOrReplacement": [
+      "artwork/repair-v1/rose.svg",
+      "artwork/repair-v1/ganesha-line.svg",
+      "artwork/repair-v1/ganesha-line-light.svg",
+      "Unicode invocation: श्री गणेशाय नमः"
+    ],
+    "status": "Existing line emblem traced as SVG; real invocation text; independent review pending. ",
+    "provenance": "Repository-supplied asset; rights and regional authenticity not independently verified"
+  },
+  {
+    "number": 48,
+    "id": "figma-ganesha-maroon",
+    "old": [
+      "artwork/templates/figma-ganesha-maroon.jpg"
+    ],
+    "retainedOrReplacement": [
+      "artwork/repair-v1/maroon-frame.svg",
+      "artwork/repair-v1/ganesha-line.svg",
+      "artwork/repair-v1/ganesha-line-light.svg",
+      "Unicode invocation: श्री गणेशाय नमः"
+    ],
+    "status": "Existing line emblem traced as SVG; real invocation text; independent review pending. ",
+    "provenance": "Repository-supplied asset; rights and regional authenticity not independently verified"
+  },
+  {
+    "number": 49,
+    "id": "figma-ganesha-festive",
+    "old": [
+      "artwork/templates/figma-ganesha-festive.jpg"
+    ],
+    "retainedOrReplacement": [
+      "artwork/repair-v1/festive.svg",
+      "artwork/repair-v1/ganesha-line.svg",
+      "artwork/repair-v1/ganesha-line-light.svg",
+      "Unicode invocation: श्री गणेशाय नमः"
+    ],
+    "status": "Existing line emblem traced as SVG; real invocation text; independent review pending. ",
+    "provenance": "Repository-supplied asset; rights and regional authenticity not independently verified"
+  }
+]

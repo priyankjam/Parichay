@@ -53,8 +53,15 @@ from app.models.designs import FIGMA_DESIGNS
 TEMPLATES.extend(FIGMA_DESIGNS)
 from app.models.collection import COLLECTION
 TEMPLATES.extend(COLLECTION)
+from app.models.repair import REGISTRY as REPAIR_DESIGNS
 for template in TEMPLATES:
+    repaired = REPAIR_DESIGNS[template['id']]
+    template['designSubtitle'] = repaired.get('subtitle', repaired.get('variant_family', ''))
+    template['retired'] = repaired.get('retired', False)
     template['thumbnail'] = f"/static/artwork/thumbnails/{template['id']}.webp"
+
+# Retired IDs can still restore an existing draft, but cannot be newly selected.
+AVAILABLE_TEMPLATES = [template for template in TEMPLATES if not template['retired']]
 
 def empty_profile():
     return dict(schemaVersion=2, forWhom='myself', gender='', language='en', template='editorial',

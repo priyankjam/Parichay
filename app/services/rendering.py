@@ -21,6 +21,29 @@ class ExportError(Exception):
         self.code, self.public_message = code, message
 
 
+def worker_python():
+    """Embedded WSGI runtimes may expose uWSGI itself as sys.executable."""
+    configured = current_app.config.get('RENDER_PYTHON_EXECUTABLE')
+    if configured:
+        return configured
+    candidate = Path(sys.prefix) / ('Scripts/python.exe' if os.name == 'nt' else 'bin/python')
+    return str(candidate) if candidate.is_file() else sys.executable
+
+
+def renderer_failure(stderr):
+    # Never log raw browser output: it can contain document content or paths.
+    detail = stderr.decode('utf-8', errors='replace').lower()
+    if 'no module named' in detail:
+        return 'renderer_dependency'
+    if "executable doesn't exist" in detail or 'executable doesn’t exist' in detail:
+        return 'browser_missing'
+    if 'no usable sandbox' in detail or 'operation not permitted' in detail or 'running as root without --no-sandbox' in detail:
+        return 'browser_sandbox_or_permissions'
+    if 'error while loading shared libraries' in detail:
+        return 'browser_system_dependency'
+    return 'renderer'
+
+
 def preview_document(document, thumbnail=False):
     """Rasterize the actual export, never a second HTML layout or browser screenshot.
 
@@ -65,26 +88,8 @@ def preview_document(document, thumbnail=False):
 
 
 def build_document_html(document):
-    from app.models.collection import BY_ID
-    if document['template'] in BY_ID:
-        from app.services.collection import build_collection_html
-        return build_collection_html(document)
-    static = Path(current_app.static_folder)
-    css = (static / 'css/document.css').read_text()
-    for filename, family in [('NotoSansDevanagari.ttf', 'Noto Devanagari'), ('DMSerifDisplay.ttf', 'Parichay Serif'), ('DMSans.ttf', 'Parichay Sans')]:
-        encoded = base64.b64encode((static / 'fonts' / filename).read_bytes()).decode('ascii')
-        css += f'\n@font-face{{font-family:"{family}";src:url(data:font/ttf;base64,{encoded}) format("truetype");font-weight:100 900;}}'
-    design = find_design(document['template'])
-    if design:
-        css += (static / 'css/figma-document.css').read_text() + design_css(design)
-        background = static / 'artwork/templates' / (design['id'] + '.jpg')
-        encoded_art = base64.b64encode(background.read_bytes()).decode('ascii')
-        css = css.replace(design['background'], 'data:image/jpeg;base64,' + encoded_art)
-        for family in {design['body'], design['heading'], design.get('nameFont', design['body'])}:
-            for filename, weight, style in FONT_FILES[family]:
-                font = base64.b64encode((static / 'fonts' / filename).read_bytes()).decode('ascii')
-                css += f'\n@font-face{{font-family:"{family}";src:url(data:font/ttf;base64,{font}) format("truetype");font-weight:{weight};font-style:{style};}}'
-    return render_template('document.html', doc=document, css=css)
+    from app.services.repaired_documents import build_repaired_html
+    return build_repaired_html(document)
 
 
 def export_document(document, kind):
@@ -95,10 +100,12 @@ def export_document(document, kind):
         worker = Path(__file__).with_name('render_worker.py')
         job = json.dumps(dict(html=html, executable=current_app.config['CHROMIUM_EXECUTABLE']))
         try:
-            process = subprocess.Popen([sys.executable, str(worker)], stdin=subprocess.PIPE,
+            process = subprocess.Popen([worker_python(), str(worker)], stdin=subprocess.PIPE,
                                        stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                        start_new_session=True)
-            output, _ = process.communicate(job.encode(), timeout=current_app.config['EXPORT_TIMEOUT_SECONDS'])
+            output, stderr = process.communicate(job.encode(), timeout=current_app.config['EXPORT_TIMEOUT_SECONDS'])
+        except OSError:
+            raise ExportError('renderer_worker_start') from None
         except subprocess.TimeoutExpired:
             # Terminate the browser descendants too, not just the Python wrapper.
             if os.name == 'posix':
@@ -108,7 +115,7 @@ def export_document(document, kind):
             process.communicate()
             raise ExportError('timeout') from None
         if process.returncode or not output.startswith(b'%PDF'):
-            raise ExportError('renderer')
+            raise ExportError(renderer_failure(stderr))
         pdf = output
         # Check the page limit before allocating image buffers.
         with _pdfium_lock:

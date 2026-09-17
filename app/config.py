@@ -14,5 +14,6 @@ class Config:
     RATELIMIT_STORAGE_URI = os.getenv('RATELIMIT_STORAGE_URI', 'memory://')
     RATELIMIT_HEADERS_ENABLED = True
     CHROMIUM_EXECUTABLE = os.getenv('CHROMIUM_EXECUTABLE') or None
+    RENDER_PYTHON_EXECUTABLE = os.getenv('RENDER_PYTHON_EXECUTABLE') or None
     EXPORT_TIMEOUT_SECONDS = int(os.getenv('EXPORT_TIMEOUT_SECONDS', '40'))
     TRUSTED_HOSTS = [h.strip() for h in os.getenv('TRUSTED_HOSTS', 'localhost,127.0.0.1').split(',')]
