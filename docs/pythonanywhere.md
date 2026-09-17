@@ -62,7 +62,18 @@ Enable HTTPS / Force HTTPS for the web app and click **Reload**. Do not run
 `/create` over HTTPS. Reload after changing `.env` because configuration is
 read when the application starts.
 
-## Preview and export are a separate hosting compatibility check
+## Live preview works without server Chromium
+
+The editor uses `POST /api/preview/html`. Flask validates the included details and
+returns escaped document markup; the user's browser loads local fonts and lays
+out A4 pages. This route never starts Playwright or a renderer subprocess. After
+pulling this update, reload the web app and hard-refresh the editor to load the
+new JavaScript. No `.env` change is needed for this live-preview path.
+
+PDF/JPG/PNG downloads and the legacy `POST /api/preview` route still need the
+server renderer. A working live preview does not prove downloads are configured.
+
+## Server export compatibility
 
 The supplied direct preview test reached Chromium and failed with
 `browser_sandbox_or_permissions`. PythonAnywhere documents using its preinstalled

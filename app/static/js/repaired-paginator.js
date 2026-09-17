@@ -1,5 +1,7 @@
 /* Actual loaded-font geometry. All text originates in escaped server markup. */
-() => {
+window.paginateDocument = (targetDocument) => {
+ const document=targetDocument || window.document;
+ const getComputedStyle=document.defaultView.getComputedStyle.bind(document.defaultView);
  const root=document.querySelector('.repaired-document');if(!root)return null;
  const first=root.querySelector('.first-page').cloneNode(true),continuation=root.querySelector('#r-continuation').content.firstElementChild.cloneNode(true),source=root.querySelector('.r-source');
  const leadSource=[...source.querySelector('.r-lead-source').children],laneSources=[...source.querySelectorAll('.r-lane-source')].map(l=>[...l.children]),photos=[...(source.querySelector('.r-photo-source')?.children||[])];

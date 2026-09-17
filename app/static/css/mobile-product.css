@@ -60,3 +60,6 @@
 @media(prefers-reduced-motion:reduce){.mobile-product *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 
 @media(max-width:767px){.m-inline-entry{padding:16px 0;border-bottom:1px solid #e5d5dc}.m-inline-entry h3{font-size:16px;margin:0 0 20px}.m-inclusion h3{margin:0}}
+/* Live sheets are HTML in a script-disabled frame, scaled at fixed A4 size. */
+.mobile-product .design-thumbnail[data-state=sample] img{opacity:1}
+#m-review-image{width:min(100%,276px);height:auto;margin:auto;box-shadow:0 5px 15px #492b3520}

@@ -1,7 +1,7 @@
 """A4 compositions from the 49-template audit; profile values stay in the domain model."""
 from copy import deepcopy
 from pathlib import Path
-from flask import current_app, render_template
+from flask import current_app, render_template, url_for
 from app.services.collection import SCRIPT_FONTS, file_uri, art_uri
 from app.models.collection import BY_ID, resolve_presentation
 import re, base64
@@ -13,7 +13,7 @@ def uri(path):
     return f'data:{mime};base64,'+base64.b64encode(path.read_bytes()).decode()
 
 
-def build_repaired_html(document):
+def build_repaired_html(document, *, inline_fonts=True):
     doc=deepcopy(document); design=deepcopy(REGISTRY[doc['template']]); n=design['number']
     if n==48 and doc.get('print_treatment')=='light':
         design.update(paper='#fffcf0',ink='#421927',accent='#76512a',label='#655d54')
@@ -61,7 +61,8 @@ def build_repaired_html(document):
             fonts.append((family,next((root/'fonts').glob(pattern)).name));fallback.append('"'+family+'"')
     css=(root/'css/repaired-document.css').read_text()
     for family,filename in fonts:
-        css+=f'\n@font-face{{font-family:"{family}";src:url("{file_uri(str(root/"fonts"/filename))}");font-weight:100 900}}'
+        font_url=file_uri(str(root/'fonts'/filename)) if inline_fonts else url_for('static', filename='fonts/'+filename)
+        css+=f'\n@font-face{{font-family:"{family}";src:url("{font_url}");font-weight:100 900}}'
     fs=','.join(fallback+['sans-serif']);display='Parichay Serif' if design['serif'] else 'Parichay Sans'
     css+=f'\n.repaired-document{{--font-body:"Parichay Sans",{fs};--font-display:"{display}",{fs};--paper:{design["paper"]};--accent:{design["accent"]};--ink:{design["ink"]};--label:{design["label"]};--body-size:{design["body_size"]}pt;--section-size:{design["heading_size"]}pt;--name-size:{design["name_size"]}pt;--photo-width:{design["portrait"][0]}mm;--photo-height:{design["portrait"][1]}mm;--lane:{design["lane"]}mm;--label-width:{design["label_width"]}mm;--left:{design.get("left",18)}mm;--right:{design.get("right",18)}mm;}}'
     return render_template('repaired-document.html',doc=doc,design=design,sacred=sacred,art=art,css=css)

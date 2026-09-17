@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/workspace.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/mobile-product.css') }}">
   <script id="app-config" type="application/json">{{ config_data|tojson }}</script>
+  <script defer src="{{ url_for('static', filename='js/repaired-paginator.js') }}"></script>
   <script type="module" src="{{ url_for('static', filename='js/editor.js') }}"></script>
 </head>
 <body class="editor-page">
@@ -38,7 +39,7 @@
     <div class="preview-toolbar"><strong id="preview-title" data-i18n="preview">Preview</strong><button id="expand-preview" class="button secondary" data-i18n="readPreview">Full preview</button></div>
     <div class="preview-caption"><strong id="template-name"></strong><span id="page-count">A4</span></div>
     <div class="preview-scroll" tabindex="-1"><div id="preview-scale"><div id="document-preview" data-state="empty">
-      <img id="preview-page-image" width="1200" height="1698" alt="" hidden>
+      <div id="preview-page-image" class="browser-preview-page" hidden></div>
       <div id="preview-message"><span class="document-placeholder" aria-hidden="true"></span><p id="preview-message-text" role="status"></p><button id="preview-retry" class="button secondary" data-i18n="tryAgain" hidden>Try again</button></div>
     </div></div></div>
     <div id="preview-page-controls" class="preview-page-controls" hidden><button id="preview-previous" class="icon-button" aria-label="Previous page">{{ icon('arrow-left') }}</button><span id="preview-page-number" role="status"></span><button id="preview-next" class="icon-button" aria-label="Next page">{{ icon('arrow-right') }}</button><button id="preview-zoom" class="text-button" aria-pressed="false" data-i18n="zoomIn">Zoom in</button></div>

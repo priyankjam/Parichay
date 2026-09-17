@@ -1,6 +1,6 @@
 import {createMobileProduct, isMobileProduct, mobileSteps} from './mobile-product.js';
 import { hobbies, hobbyLabel, selectedHobbies, hobbyText } from './hobbies.js';
-import { DocumentStudio } from './document-studio.js';
+import { DocumentStudio, mountPreviewPage } from './document-studio.js';
 import { escapeHTML, disclosure, personalGroups, sectionSteps, fieldError, moveEntry, icon, localeDirection } from './editor-ui.js';
 import { words } from './locales.js';
 import { migrateProfile } from './migrations.js';
@@ -263,20 +263,20 @@ function scalePreview(){
  const panel=$('preview-panel');if(getComputedStyle(panel).display==='none')return;
  const scroll=panel.querySelector('.preview-scroll'),modal=$('preview-dialog').open;
  let second=$('spotlight-next-page');
- if(!second){second=document.createElement('img');second.id='spotlight-next-page';second.hidden=true;scroll.append(second);}
+ if(!second){second=document.createElement('div');second.id='spotlight-next-page';second.hidden=true;scroll.append(second);}
  const result=studio?.cache.get(studio.selected);
- const spread=spotlight&&step===9&&!modal&&scroll.clientWidth>=580&&result?.pdf&&studio.page+1<result.pageCount;
+ const spread=spotlight&&step===9&&!modal&&scroll.clientWidth>=580&&result?.ready&&studio.page+1<result.pageCount;
  second.hidden=!spread;
  const count=spread?2:1;
  let width=previewZoom&&modal?794:mobile?.active&&modal?Math.min(794,Math.max(1,scroll.clientWidth-16)):Math.min(794,Math.max(1,(scroll.clientWidth-16-(spread?24:0))/count),Math.max(1,scroll.clientHeight-16)*210/297);
  $('preview-scale').style.width=`${width}px`;
  $('preview-scale').style.height=`${width*297/210}px`;
  if(spread){
-  const src='data:image/webp;base64,'+result.pages[studio.page+1];if(second.src!==src)second.src=src;
+  mountPreviewPage(second,result,studio.page+1);
   second.style.width=`${width}px`;second.style.height=`${width*297/210}px`;
-  second.alt=t('pageOf').replace('{page}',studio.page+2).replace('{total}',result.pageCount);
+  second.setAttribute('aria-label',t('pageOf').replace('{page}',studio.page+2).replace('{total}',result.pageCount));
  }
- if(result?.pdf)$('preview-page-number').textContent=t('pageOf').replace('{page}',spread?`${studio.page+1}–${studio.page+2}`:studio.page+1).replace('{total}',result.pageCount);
+ if(result?.ready)$('preview-page-number').textContent=t('pageOf').replace('{page}',spread?`${studio.page+1}–${studio.page+2}`:studio.page+1).replace('{total}',result.pageCount);
 }
 
 function goTo(index,push=true){

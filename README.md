@@ -74,7 +74,7 @@ There is deliberately **no SQLAlchemy/SQLite profile table** in this guest relea
 
 Repeatable lists support 12 entries each. Custom sections: eight; fields per custom section: twelve. Five photos, each source up to 8 MB/24 megapixels; accepted formats JPEG/PNG/WebP. Text total: 40,000 characters. Exports are limited to 20 pages. These limits bound computation rather than silently truncate user data. Age or birth date, if supplied, must represent an adult; no exact date of birth is required.
 
-The design studio renders the actual PDF into fixed-ratio A4 sheets. Thumbnail, selected-page preview and full preview come from the same Chromium/Jinja export engine, and PDF download reuses the exact previewed bytes when the data matches. All 49 saved template IDs now use the shared semantic builder in `services/repaired_documents.py`, explicit compositions in `biodata_templates/repair.json`, and `repaired-paginator.js`. The field registry still owns profile labels and values. Short education/career/family records stay together; oversized content continues at measured record, row and Unicode grapheme boundaries. There is no independent client-side print layout or text autoscaling. Page backgrounds are full bleed with readable internal text insets.
+The design studio requests escaped HTML and lays out fixed-ratio A4 sheets in the user's browser, without launching Chromium on the server. All 49 saved template IDs use the shared semantic builder in `services/repaired_documents.py`, compositions in `biodata_templates/repair.json`, and `repaired-paginator.js`. Gallery samples load immediately; the selected design previews current details. PDF/JPG/PNG downloads still use the isolated server renderer. Both paths use the same templates, fonts and pagination algorithm; browser font metrics can cause small differences, so a preview is not a cached copy of the exported PDF. Short records stay together; oversized content continues at measured row and Unicode grapheme boundaries. Backgrounds remain full bleed with readable text insets.
 
 ### Routes
 
@@ -83,6 +83,8 @@ The design studio renders the actual PDF into fixed-ratio A4 sheets. Thumbnail, 
 | `GET /` | English/Hindi landing page with Get started |
 | `GET /create` | Guest editor; embeds schema/config and CSRF token |
 | `GET /health` | Process health only; does not launch the renderer |
+| `POST /api/preview/html` | Profile JSON → private escaped HTML; browser paginates |
+| `POST /api/preview` | Legacy server-rendered PDF/page-image preview |
 | `POST /api/export/pdf` | Profile JSON → PDF attachment |
 | `POST /api/export/jpg` | Profile JSON → JPG or multipage ZIP |
 | `POST /api/export/png` | Profile JSON → PNG or multipage ZIP |

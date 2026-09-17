@@ -8,6 +8,24 @@ from app.services.rendering import export_document, preview_document, ExportErro
 bp = Blueprint('exports', __name__, url_prefix='/api')
 
 
+@bp.post('/preview/html')
+@limiter.limit('120 per minute')
+def html_preview():
+    """Escaped, private document markup; pagination runs in the user's browser."""
+    from app.services.repaired_documents import build_repaired_html
+    raw = request.get_json(silent=True)
+    if not isinstance(raw, dict):
+        return jsonify(error='Choose a valid preview request.'), 422
+    try:
+        document = Profile.parse(raw.get('profile')).document()
+        if not document['name'] and not document['sections']:
+            raise ValidationError('Add at least one included detail to preview your biodata.')
+        return jsonify(html=build_repaired_html(document, inline_fonts=False),
+                       accessible={'name': document['name'], 'sections': document['sections']})
+    except ValidationError as error:
+        return jsonify(error=str(error)), 422
+
+
 @bp.post('/preview')
 @limiter.limit('60 per minute')
 def preview():
